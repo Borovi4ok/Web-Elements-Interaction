@@ -6,6 +6,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 
 
 
+
 # "browser_name" - command line option
 def pytest_addoption(parser):
     parser.addoption(
