@@ -1,12 +1,14 @@
 from selenium.webdriver.common.by import By
 from WebInteractionDemoQA.test_data.data_test_elements import DataElements
-
+from WebInteractionDemoQA.utilities import use_fixtures
 
 # text and blocks presence on "elements" page
-# key in names is "elements"
+# key to run is "elements"
 def test_url_elements(browser, urls):
     browser.get(urls["elements"])
-    assert "elements" in browser.current_url
+
+    # to assert, call assert_in_url method in use_fixtures
+    use_fixtures.assert_in_url(browser, "element")
 
 
 def test_main_header_text_elements(browser):
@@ -37,8 +39,10 @@ def test_url_text_box(browser, urls):
 
 
 def test_text_box(browser):
+    # invoke data set from test_data package
     data = DataElements.data_text_box
 
+    # fill out text-box
     # full name field
     browser.find_element(By.CSS_SELECTOR, "input#userName").send_keys(data[0])
 
@@ -51,12 +55,13 @@ def test_text_box(browser):
     # permanent address field
     browser.find_element(By.XPATH, "//textarea[@id='permanentAddress']").send_keys(data[3])
 
-    # submit button
+    # click submit button
     element = browser.find_element(By.ID, "submit")
     browser.execute_script("arguments[0].scrollIntoView();", element)
     element.click()
 
 
+# verify passed data is present in output message
 def test_output_text_box(browser):
     data = DataElements.data_text_box
     elements_list = browser.find_elements(By.CLASS_NAME, "mb-1")
