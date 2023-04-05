@@ -1,7 +1,6 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from _pytest.fixtures import FixtureRequest
 from webdriver_manager.firefox import GeckoDriverManager
 
 
@@ -30,14 +29,9 @@ def browser(request):
         raise ValueError(f"Invalid browser name: {browser_name}")
     driver.maximize_window()
     yield driver
-
-
-@pytest.fixture(scope="function")
-def cleanup(browser, request: FixtureRequest):
-    yield
     print(f" Cleaning up cookies and closing browser after: '{request.node.name}' is executed.")
-    browser.delete_all_cookies()
-    browser.quit()
+    driver.delete_all_cookies()
+    driver.quit()
 
 
 @pytest.fixture

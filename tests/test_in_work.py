@@ -25,7 +25,9 @@ def test_text_box(browser):
     browser.find_element(By.XPATH, "//textarea[@id='permanentAddress']").send_keys(data[3])
 
     # submit button
-    browser.find_element(By.ID, "submit").click()
+    element = browser.find_element(By.ID, "submit")
+    browser.execute_script("arguments[0].scrollIntoView();", element)
+    element.click()
 
 
 def test_output_text_box(browser, cleanup):
@@ -34,6 +36,7 @@ def test_output_text_box(browser, cleanup):
     elements_list = browser.find_elements(By.CLASS_NAME, "mb-1")
 
     output_list = [element.text for element in elements_list]
-
+    print(output_list)
+    print(len(output_list))
     for i in range(0, 4):
         assert data[i] in output_list[i]

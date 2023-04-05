@@ -24,7 +24,7 @@ def test_select_message_elements(browser):
     assert text == "Please select an item from left to start practice."
 
 
-def test_footer_text_elements(browser, cleanup):
+def test_footer_text_elements(browser):
     text = browser.find_element(By.CSS_SELECTOR, "footer span").text
     assert "ALL RIGHTS RESERVED" in text
 
@@ -52,15 +52,14 @@ def test_text_box(browser):
     browser.find_element(By.XPATH, "//textarea[@id='permanentAddress']").send_keys(data[3])
 
     # submit button
-    browser.find_element(By.ID, "submit").click()
+    element = browser.find_element(By.ID, "submit")
+    browser.execute_script("arguments[0].scrollIntoView();", element)
+    element.click()
 
 
-def test_output_text_box(browser, cleanup):
+def test_output_text_box(browser):
     data = DataElements.data_text_box
-
     elements_list = browser.find_elements(By.CLASS_NAME, "mb-1")
-
     output_list = [element.text for element in elements_list]
-
     for i in range(0, 4):
         assert data[i] in output_list[i]
