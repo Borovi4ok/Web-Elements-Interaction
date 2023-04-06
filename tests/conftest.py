@@ -4,8 +4,6 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.firefox import GeckoDriverManager
 
 
-
-
 # "browser_name" - command line option
 def pytest_addoption(parser):
     parser.addoption(
@@ -26,11 +24,11 @@ def setup(request):
         service_firefox = Service(executable_path=GeckoDriverManager().install())
         driver = webdriver.Firefox(service=service_firefox)
     else:
-        raise ValueError(f"Invalid browser name: {browser_name}")
+        raise ValueError(f"\n Invalid browser name: {browser_name}")
     driver.maximize_window()
     request.cls.driver = driver
     yield driver
-    print(f" Cleaning up cookies and closing browser after: '{request.node.name}' is executed.")
+    print(f"\n Cleaning up cookies and closing browser after: '{request.node.name}' is executed.")
     driver.delete_all_cookies()
     driver.quit()
 
