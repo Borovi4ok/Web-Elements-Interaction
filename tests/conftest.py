@@ -13,29 +13,8 @@ def pytest_addoption(parser):
     )
 
 
-@pytest.fixture(scope="session")
-def browser(request):
-    browser_name = request.config.getoption("browser_name")
-    if browser_name == "chrome":
-        service_chrome = Service(r"C:\Disk D\Draft\QA Tester\Web Drivers\Chrome_webdriver.exe")
-        driver = webdriver.Chrome(service=service_chrome)
-    elif browser_name == "firefox":
-        # service_firefox = Service(r"C:\Disk D\Draft\QA Tester\Web Drivers\Firefox_gecko.exe")
-        # driver = webdriver.Firefox(service=service_firefox)
-        # driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
-        service_firefox = Service(executable_path=GeckoDriverManager().install())
-        driver = webdriver.Firefox(service=service_firefox)
-    else:
-        raise ValueError(f"Invalid browser name: {browser_name}")
-    driver.maximize_window()
-    yield driver
-    print(f" Cleaning up cookies and closing browser after: '{request.node.name}' is executed.")
-    driver.delete_all_cookies()
-    driver.quit()
-
-
 @pytest.fixture(scope="class")
-def browser_setup(request):
+def setup(request):
     browser_name = request.config.getoption("browser_name")
     if browser_name == "chrome":
         service_chrome = Service(r"C:\Disk D\Draft\QA Tester\Web Drivers\Chrome_webdriver.exe")
@@ -49,10 +28,12 @@ def browser_setup(request):
     else:
         raise ValueError(f"Invalid browser name: {browser_name}")
     driver.maximize_window()
+    request.cls.driver = driver
     yield driver
     print(f" Cleaning up cookies and closing browser after: '{request.node.name}' is executed.")
     driver.delete_all_cookies()
     driver.quit()
+
 
 @pytest.fixture
 def urls():
