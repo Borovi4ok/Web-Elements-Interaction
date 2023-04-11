@@ -1,90 +1,148 @@
 import random
 import pytest
-from WebInteractionDemoQA.utilities.use_fixtures import Assertions
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+from WebInteractionDemoQA.test_data.data_test_elements import DataElements
+from WebInteractionDemoQA.utilities.assert_functions import Assertions
+from WebInteractionDemoQA.utilities.reusable_functions import ReusableFunctions
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 
 
-class TestElementsPage(Assertions):
+class TestElementsPage(Assertions, ReusableFunctions):
+    # Suite 5. Test Web Tables
+    @pytest.mark.webtables
+    def test_url_element(self, urls):
+        self.driver.get(urls["webtables"])
+        self.verify_url("webtables")
 
-    # Suite 3. Test checkbox block on "checkbox" page
-    def test_url_checkbox(self, urls):
-        self.driver.get(urls["checkbox"])
-        self.verify_url("checkbox")
+    @pytest.mark.webtables
+    def test_header_sorted(self):
+        # click each column header and verify if sorted
 
-    @pytest.mark.checkbox
-    def test_click_dropdown(self):
-        # expand main "Home" dropdown and first- and second-level of nested dropdowns
-        # once dropdown expended CSS_SELECTOR: "svg...icon-expand-close" -> "svg...icon-expand-open"
-        actual = 0
-        # actual = count number of clicked dropdown icons
-        while True:
-            try:
-                element = self.driver.find_element(By.CSS_SELECTOR, "svg.rct-icon.rct-icon-expand-close")
-                self.driver.execute_script("arguments[0].scrollIntoView();", element)
-                element.click()
-                actual += 1
+        headers_list = self.driver.find_elements(By.CLASS_NAME, "rt-resizable-header-content")
+        num_columns = 6
+        # number of testable (sortable) columns in table
+        for i in range(0, num_columns):
+            headers_list[i].click()
+            # a column should be sorted
 
-            except NoSuchElementException:
-                break
+            ind = i + 1
+            # 'ind' = index for a column selector, (in DOM row (class='rt-td') number in order)
+            items_list = self.get_column_data(ind, 1)
+            # 1 (True) to get digits as "int" to verify alphabetically
 
-        expect = self.driver.find_elements(By.CSS_SELECTOR, "svg.rct-icon.rct-icon-expand-open")
-        self.verify_equal(actual, len(expect))
+            sorted_items = sorted(items_list)
+            self.verify_equal(items_list, sorted_items)
 
-    @pytest.mark.checkbox
-    def test_home_checkbox_message(self):
-        # verify success message when "Home" super-checkbox is selected
+    @pytest.mark.webtables
+    def test_search_field(self):
+        # pick any value from each column and search in table
 
-        self.driver.find_element(By.CSS_SELECTOR, ".rct-checkbox").click()
-        # click "Home" checkbox (outcome: all of them, including all nested, should be selected)
+        num_columns = 6
+        # number of testable (searchable) columns in table
 
-        text = self.driver.find_element(By.CSS_SELECTOR, "#result").text
-        full_text = text.replace('\n', ' ')
-        # remove line break from string extracted from message
+        for ind in range(1, num_columns + 1):
+            # 'ind' = index for a column selector, (in DOM row (class='rt-td') number in order)
 
-        self.verify_in_text("You have selected : home desktop", full_text)
+            items_list = self.get_column_data(ind, 0)
+            # call reusable func to get data from a column before search
+            # 0 parameter (False) to get digits as "str" to use verify_in_text assertion
 
-    @pytest.mark.checkbox
-    def test_all_checkboxes_selected(self):
-        # verify that after clicking on super-checkbox all level checkboxes were selected
+            rand_ind = random.randrange(0, len(items_list))
 
-        checkboxes_list = self.driver.find_elements(By.XPATH, "//input[@type='checkbox']")
-        self.verify_is_selected(checkboxes_list, is_selected=True)
+            search_value = items_list[rand_ind]
+            self.driver.find_element(By.ID, "searchBox").send_keys(search_value)
+            # insert any value from given column to 'search' box
 
-    @pytest.mark.checkbox
-    def test_all_checkboxes_unselected(self):
-        # verify that after clicking on super-checkbox "home" all level checkboxes were unselected
-        self.driver.find_element(By.CSS_SELECTOR, ".rct-checkbox").click()
-        # click on first found = "Home"
+            search_result_list = self.get_column_data(ind, 0)
+            # call reusable func to get data from a column after search
+            # 0 parameter (False) to get digits as "str" to use verify_in_text assertion
 
-        checkboxes_list = self.driver.find_elements(By.XPATH, "//input[@type='checkbox']")
-        self.verify_is_selected(checkboxes_list, is_selected=False)
-        # "is_selected=False" - assertion element not is_selected scenario
-
-    @pytest.mark.checkbox
-    def test_random_checkbox_selected(self):
-        # verify that a random checkbox can be selected and unselected
-
-        # checkboxes_click_icons = self.driver.find_elements(By.CSS_SELECTOR, "svg.rct-icon.rct-icon-uncheck")
-        checkboxes_click_icons = self.driver.find_elements(By.CSS_SELECTOR, ".rct-checkbox")
-        # list of elements with clickable checkbox area
-
-        checkboxes_state_list = self.driver.find_elements(By.XPATH, "//input[@type='checkbox']")
-        # list of elements with checkboxes selected state attribute
-
-        self.verify_equal(len(checkboxes_click_icons), len(checkboxes_state_list))
-        # verify both list contain equal number of elements
-
-        i = random.randrange(0, len(checkboxes_state_list))
-        # random index to select an accidental checkbox
-
-        checkboxes_click_icons[i].click()
-        self.verify_is_selected(checkboxes_state_list[i], is_selected=True)
-        # verify random checkbox was selected
-
-        checkboxes_click_icons[i].click()
-        self.verify_is_selected(checkboxes_state_list[i], is_selected=False)
-        # verify random checkbox was unselected
+            for result in search_result_list:
+                self.verify_in_text(search_value, result)
+                self.driver.refresh()
+                # refresh since original rows of the table are not being displayed after clearing the search box
+                # send_keys(Keys.RETURN) or clicking on another element on the page after clearing search - not helpful
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+    """# Suite 5. Test Web Tables
+    @pytest.mark.webtables
+    def test_url_element(self, urls):
+        self.driver.get(urls["webtables"])
+        self.verify_url("webtables")
+
+    @pytest.mark.webtables
+    def test_search_field(self):
+        # pick any value from each column and search in table
+
+        num_columns = 6
+        # number of testable (searchable) columns in table
+
+        for ind in range(1, num_columns + 1):
+            # 'ind' = index for a column selector, (in DOM row (class='rt-td') number in order)
+
+            items_list = self.get_column_data(ind, 0)
+            # call reusable func to get data from a column before search
+            # 0 parameter (False) to get digits as "str" to use verify_in_text assertion
+
+            rand_ind = random.randrange(0, len(items_list))
+
+            search_value = items_list[rand_ind]
+            self.driver.find_element(By.ID, "searchBox").send_keys(search_value)
+            # insert any value from given column to 'search' box
+
+            search_result_list = self.get_column_data(ind, 0)
+            # call reusable func to get data from a column after search
+            # 0 parameter (False) to get digits as "str" to use verify_in_text assertion
+
+            for result in search_result_list:
+                self.verify_in_text(search_value, result)
+                self.driver.refresh()
+                # refresh since original rows of the table are not being displayed after clearing the search box
+                # send_keys(Keys.RETURN) or clicking on another element on the page after clearing search - not helpful"""
+
+    """@pytest.mark.webtables
+    def test_data_edit(self):
+        # pick any value from each column and replace with a test value
+
+        num_columns = 6
+        # number of testable (searchable) columns in table
+
+        for ind in range(1, num_columns + 1):
+            # 'ind' = index for a column selector, (in DOM row (class='rt-td') number in order)
+
+            items_list = self.get_column_data(ind, 0)
+            # call reusable func to get data from a column before search
+            # 0 parameter (False) to get digits as "str" to use verify_in_text assertion
+
+            rand_ind = random.randrange(0, len(items_list))
+
+            search_value = items_list[rand_ind]
+            self.driver.find_element(By.ID, "searchBox").send_keys(search_value)
+            # insert any value from given column to 'search' box
+
+            search_result_list = self.get_column_data(ind, 0)
+            # call reusable func to get data from a column after search
+            # 0 parameter (False) to get digits as "str" to use verify_in_text assertion
+
+            for result in search_result_list:
+                self.verify_in_text(search_value, result)
+                self.driver.refresh()
+                # refresh since original rows of the table are not being displayed after clearing the search box
+                # send_keys(Keys.RETURN) or clicking on another element on the page after clearing search - not helpful"""
