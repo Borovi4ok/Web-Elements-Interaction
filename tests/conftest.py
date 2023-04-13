@@ -1,7 +1,14 @@
 import pytest
 from selenium import webdriver
+from selenium.common import TimeoutException
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.firefox import GeckoDriverManager
+from selenium.webdriver.support import expected_conditions as EC
+import logging
+
+driver = None
 
 
 # "browser_name" - command line option
@@ -13,18 +20,17 @@ def pytest_addoption(parser):
 
 @pytest.fixture(scope="class")
 def setup(request):
+    global driver
     browser_name = request.config.getoption("browser_name")
     if browser_name == "chrome":
         service_chrome = Service(r"C:\Disk D\Draft\QA Tester\Web Drivers\Chrome_webdriver.exe")
         driver = webdriver.Chrome(service=service_chrome)
     elif browser_name == "firefox":
-        # service_firefox = Service(r"C:\Disk D\Draft\QA Tester\Web Drivers\Firefox_gecko.exe")
-        # driver = webdriver.Firefox(service=service_firefox)
-        # driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
         service_firefox = Service(executable_path=GeckoDriverManager().install())
         driver = webdriver.Firefox(service=service_firefox)
     else:
         raise ValueError(f"\n Invalid browser name: {browser_name}")
+
     driver.maximize_window()
     request.cls.driver = driver
     yield driver
@@ -45,4 +51,32 @@ def urls():
             "broken": "https://demoqa.com/broken",
             "upload_download": "https://demoqa.com/upload-download",
             "dynamic_properties": "https://demoqa.com/dynamic-properties"
-    }
+            }
+
+
+"""# code - two func - that captures screenshot when TC failed and place in report
+@pytest.mark.hookwrapper
+def pytest_runtest_makereport(item):
+    pytest_html = item.config.pluginmanager.getplugin('html')
+    outcome = yield
+    report = outcome.get_result()
+    extra = getattr(report, 'extra', [])
+
+    if report.when == "call" or report.when == "setup":
+        # always add url to report
+        extra.append(pytest_html.extras.url('http://www.example.com/'))
+        xfail = hasattr(report, 'wasxfail')
+        if (report.skipped and xfail) or (report.failed and not xfail):
+            # only add additional html on failure
+            file_name = report.nodeid.replace("::", "_") + ".png"
+            _capture_screenshot(file_name)
+            if file_name:
+                html = '<div><img src="%s" alt="screaenshot" style="width:304px;height;228px;" ' \
+                       'onclick="window.open(this.src)" align="right"/></div>' % file_name
+                extra.append(pytest_html.extras.html(html))
+                report.extra = extra
+
+
+def _capture_screenshot(name):
+    driver.get_screenshot_as_file(name)
+"""
