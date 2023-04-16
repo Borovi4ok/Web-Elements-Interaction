@@ -14,8 +14,8 @@ class TestTextBox(Assertions, ReusableFunctions):
 
     @pytest.mark.text_box
     def test_submission_form(self):
-        # invoke data-list set from test_data package
         data = TestData.data_text_box
+        # invoke data-list set from test_data package
 
         self.driver.find_element(By.CSS_SELECTOR, "input#userName").send_keys(data[0])
         # full in name field
@@ -34,9 +34,7 @@ class TestTextBox(Assertions, ReusableFunctions):
         element.click()
         # click submit button
 
-    # verify data presence in output message
-    @pytest.mark.text_box
-    def test_box_output(self):
+        # verify data presence in output message
         data_list = TestData.data_text_box
         elements_list = self.driver.find_elements(By.CLASS_NAME, "mb-1")
         output_list = [element.text for element in elements_list]

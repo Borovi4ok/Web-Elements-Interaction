@@ -46,11 +46,8 @@ def urls():
             "checkbox": "https://demoqa.com/checkbox",
             "radio_button": "https://demoqa.com/radio-button",
             "webtables": "https://demoqa.com/webtables",
-            "buttons": "https://demoqa.com/buttons",
-            "links": "https://demoqa.com/links",
-            "broken": "https://demoqa.com/broken",
-            "upload_download": "https://demoqa.com/upload-download",
-            "dynamic_properties": "https://demoqa.com/dynamic-properties"
+            "prompt_authorisation": "https://the-internet.herokuapp.com/basic_auth",
+
             }
 
 
