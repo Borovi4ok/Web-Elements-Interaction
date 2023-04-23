@@ -1,0 +1,10 @@
+2023-04-16 17:29:58,341 :INFO :verify_url :
+ Asserted in 'test_url_box': 'text-box' found in URL.
+2023-04-16 17:29:59,077 :INFO :verify_in_text :
+ Asserted in 'test_submission_form': 'Khazimat Semere' found in full text.
+2023-04-16 17:29:59,092 :INFO :verify_in_text :
+ Asserted in 'test_submission_form': 'xejok61334@duiter.com' found in full text.
+2023-04-16 17:29:59,105 :INFO :verify_in_text :
+ Asserted in 'test_submission_form': '4573 Metz Lane, UNITED STATES' found in full text.
+2023-04-16 17:29:59,118 :INFO :verify_in_text :
+ Asserted in 'test_submission_form': '42213 Paramount Lane, Canada' found in full text.

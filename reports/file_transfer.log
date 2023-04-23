@@ -1,0 +1,8 @@
+2023-04-22 17:35:24,942 :INFO :verify_url :
+ Asserted in 'test_url_file_transfer': 'upload-download' found in URL.
+2023-04-22 17:35:26,072 :INFO :verify_path_exists :
+ Assertion in 'test_download': file downloaded successfully!
+2023-04-22 17:35:26,166 :INFO :verify_is_displayed :
+ Asserted in 'test_upload': element displayed.
+2023-04-22 17:35:26,192 :INFO :verify_in_text :
+ Asserted in 'test_upload': 'sampleFile.jpeg' found in full text.

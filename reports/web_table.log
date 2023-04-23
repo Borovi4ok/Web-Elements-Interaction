@@ -1,0 +1,34 @@
+2023-04-16 17:18:34,376 :INFO :verify_url :
+ Asserted in 'test_url_webtable': 'webtables' found in URL.
+2023-04-16 17:18:34,848 :INFO :verify_equal :
+ Asserted in 'test_webtable_header_sorted': 'actual' value is equal to 'expected'.
+2023-04-16 17:18:35,097 :INFO :verify_equal :
+ Asserted in 'test_webtable_header_sorted': 'actual' value is equal to 'expected'.
+2023-04-16 17:18:35,380 :INFO :verify_equal :
+ Asserted in 'test_webtable_header_sorted': 'actual' value is equal to 'expected'.
+2023-04-16 17:18:35,671 :INFO :verify_equal :
+ Asserted in 'test_webtable_header_sorted': 'actual' value is equal to 'expected'.
+2023-04-16 17:18:35,918 :INFO :verify_equal :
+ Asserted in 'test_webtable_header_sorted': 'actual' value is equal to 'expected'.
+2023-04-16 17:18:36,165 :INFO :verify_equal :
+ Asserted in 'test_webtable_header_sorted': 'actual' value is equal to 'expected'.
+2023-04-16 17:18:36,525 :INFO :verify_in_text :
+ Asserted in 'test_webtable_search_field': 'Kierra' found in full text.
+2023-04-16 17:18:37,949 :INFO :verify_in_text :
+ Asserted in 'test_webtable_search_field': 'Cantrell' found in full text.
+2023-04-16 17:18:39,097 :INFO :verify_in_text :
+ Asserted in 'test_webtable_search_field': '39' found in full text.
+2023-04-16 17:18:40,516 :INFO :verify_in_text :
+ Asserted in 'test_webtable_search_field': 'kierra@example.com' found in full text.
+2023-04-16 17:18:42,111 :INFO :verify_in_text :
+ Asserted in 'test_webtable_search_field': '12000' found in full text.
+2023-04-16 17:18:43,582 :INFO :verify_in_text :
+ Asserted in 'test_webtable_search_field': 'Legal' found in full text.
+2023-04-16 17:18:45,920 :INFO :verify_equal :
+ Asserted in 'test_webtable_add_row': 'actual' value is equal to 'expected'.
+2023-04-16 17:18:46,974 :INFO :verify_equal :
+ Asserted in 'test_webtable_edit_row': 'actual' value is equal to 'expected'.
+2023-04-16 17:18:47,245 :INFO :verify_equal :
+ Asserted in 'test_webtable_delete_row': 'actual' value is equal to 'expected'.
+2023-04-16 17:18:47,265 :INFO :verify_deleted :
+ Asserted in 'test_webtable_delete_row': element deleted.

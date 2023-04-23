@@ -1,0 +1,18 @@
+2023-04-17 21:13:12,093 :INFO :verify_url :
+ Asserted in 'test_url_links': 'links' found in URL.
+2023-04-17 21:13:14,604 :INFO :verify_url :
+ Asserted in 'test_dynamic_link': 'https://demoqa.com/' found in URL.
+2023-04-17 21:13:15,701 :INFO :verify_equal :
+ Asserted in 'test_api_call_link': '201' value is equal to '201'.
+2023-04-17 21:13:16,317 :INFO :verify_equal :
+ Asserted in 'test_api_call_link': '204' value is equal to '204'.
+2023-04-17 21:13:16,915 :INFO :verify_equal :
+ Asserted in 'test_api_call_link': '301' value is equal to '301'.
+2023-04-17 21:13:17,516 :INFO :verify_equal :
+ Asserted in 'test_api_call_link': '400' value is equal to '400'.
+2023-04-17 21:13:18,113 :INFO :verify_equal :
+ Asserted in 'test_api_call_link': '401' value is equal to '401'.
+2023-04-17 21:13:18,708 :INFO :verify_equal :
+ Asserted in 'test_api_call_link': '403' value is equal to '403'.
+2023-04-17 21:13:19,309 :INFO :verify_equal :
+ Asserted in 'test_api_call_link': '404' value is equal to '404'.

@@ -1,0 +1,10 @@
+2023-04-16 17:31:15,246 :INFO :verify_url :
+ Asserted in 'test_url_element': 'element' found in URL.
+2023-04-16 17:31:15,298 :INFO :verify_equal :
+ Asserted in 'test_header_text': 'actual' value is equal to 'expected'.
+2023-04-16 17:31:15,641 :INFO :verify_is_displayed :
+ Asserted in 'test_main_menu_presence': element displayed.
+2023-04-16 17:31:15,702 :INFO :verify_equal :
+ Asserted in 'test_select_message': 'actual' value is equal to 'expected'.
+2023-04-16 17:31:15,746 :INFO :verify_in_text :
+ Asserted in 'test_footer_text': 'ALL RIGHTS RESERVED' found in full text.

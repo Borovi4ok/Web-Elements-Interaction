@@ -1,15 +1,19 @@
 import pytest
 from selenium import webdriver
 from selenium.common import TimeoutException
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.firefox import GeckoDriverManager
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 import logging
 
-driver = None
+from WebInteractionDemoQA.data.test_data import TestData
 
+driver = None
+default_download_dir = None
 
 # "browser_name" - command line option
 def pytest_addoption(parser):
@@ -21,10 +25,16 @@ def pytest_addoption(parser):
 @pytest.fixture(scope="class")
 def setup(request):
     global driver
+    global default_download_dir
     browser_name = request.config.getoption("browser_name")
     if browser_name == "chrome":
+        # set the Chrome options to download files to the specified directory
+        chrome_options = Options()
+        default_download_dir = TestData.download_directory
+        chrome_options.add_experimental_option("prefs", {"download.default_directory": default_download_dir})
+
         service_chrome = Service(r"C:\Disk D\Draft\QA Tester\Web Drivers\Chrome_webdriver.exe")
-        driver = webdriver.Chrome(service=service_chrome)
+        driver = webdriver.Chrome(service=service_chrome, options=chrome_options)
     elif browser_name == "firefox":
         service_firefox = Service(executable_path=GeckoDriverManager().install())
         driver = webdriver.Firefox(service=service_firefox)
@@ -33,6 +43,7 @@ def setup(request):
 
     driver.maximize_window()
     request.cls.driver = driver
+    request.cls.default_download_dir = default_download_dir
     yield driver
     print(f"\n Cleaning up cookies and closing browser after: '{request.node.name}' is executed.")
     driver.delete_all_cookies()
@@ -46,9 +57,16 @@ def urls():
             "checkbox": "https://demoqa.com/checkbox",
             "radio_button": "https://demoqa.com/radio-button",
             "webtables": "https://demoqa.com/webtables",
-            "prompt_authorisation": "https://the-internet.herokuapp.com/basic_auth",
-
+            "buttons": "https://demoqa.com/buttons",
+            "links": "https://demoqa.com/links",
+            "upload_download": "https://demoqa.com/upload-download",
+            "dynamic_properties": "https://demoqa.com/dynamic-properties"
             }
+
+
+@pytest.fixture
+def action_chains():
+    return ActionChains(driver)
 
 
 """# code - two func - that captures screenshot when TC failed and place in report

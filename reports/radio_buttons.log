@@ -1,0 +1,18 @@
+2023-04-13 16:50:21,521 :INFO :verify_url :
+ Asserted in 'test_url_radio_button': 'radio-button' found in URL.
+2023-04-13 16:50:21,583 :INFO :verify_equal :
+ Asserted in 'test_select_radio_buttons': 'actual' value is equal to 'expected'.
+2023-04-13 16:50:21,663 :INFO :verify_is_selected :
+ Asserted in 'test_select_radio_buttons': element(s) selected.
+2023-04-13 16:50:21,755 :INFO :verify_is_selected :
+ Asserted in 'test_select_radio_buttons': element(s) selected.
+2023-04-13 16:50:21,755 :INFO :verify_is_selected :
+ Asserted in 'test_select_radio_buttons': element(s) selected.
+2023-04-13 16:50:21,775 :INFO :verify_is_selected :
+ Asserted in 'test_select_radio_buttons': element(s) not selected.
+2023-04-13 16:50:21,775 :INFO :verify_is_selected :
+ Asserted in 'test_select_radio_buttons': element(s) not selected.
+2023-04-13 16:50:21,775 :INFO :verify_is_selected :
+ Asserted in 'test_select_radio_buttons': element(s) not selected.
+2023-04-13 16:50:21,789 :INFO :test_select_radio_buttons :
+ Test function 'pytest_pyfunc_call': Radio button with index 2 is disable, skipping click.

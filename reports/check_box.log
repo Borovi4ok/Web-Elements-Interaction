@@ -1,0 +1,20 @@
+2023-04-16 17:32:51,247 :INFO :verify_url :
+ Asserted in 'test_url_checkbox': 'checkbox' found in URL.
+2023-04-16 17:32:51,722 :INFO :verify_equal :
+ Asserted in 'test_click_dropdown': 'actual' value is equal to 'expected'.
+2023-04-16 17:32:51,831 :INFO :verify_in_text :
+ Asserted in 'test_home_checkbox_message': 'You have selected : home desktop' found in full text.
+2023-04-16 17:32:52,023 :INFO :verify_is_selected :'test_all_checkboxes_selected': Number of found elements = 17
+2023-04-16 17:32:52,024 :INFO :verify_is_selected :
+ Asserted in 'test_all_checkboxes_selected': element(s) selected.
+2023-04-16 17:32:52,175 :INFO :verify_is_selected :'test_all_checkboxes_unselected': Number of found elements = 17
+2023-04-16 17:32:52,175 :INFO :verify_is_selected :
+ Asserted in 'test_all_checkboxes_unselected': element(s) not selected.
+2023-04-16 17:32:52,205 :INFO :verify_equal :
+ Asserted in 'test_random_checkbox_selected': 'actual' value is equal to 'expected'.
+2023-04-16 17:32:52,260 :INFO :verify_is_selected :
+ Asserted in 'test_random_checkbox_selected': element(s) selected.
+2023-04-16 17:32:52,305 :INFO :verify_is_selected :
+ Asserted in 'test_random_checkbox_selected': element(s) not selected.
+2023-04-16 17:32:52,341 :ERROR :verify_equal :
+ Assertion in 'test_screenshot_checkbox' failed: actual value 'Home' is not equal to expected 'Wrong text'.

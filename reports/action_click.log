@@ -1,0 +1,8 @@
+2023-04-16 21:56:10,914 :INFO :verify_url :
+ Asserted in 'test_url_action': 'buttons' found in URL.
+2023-04-16 21:56:11,274 :INFO :verify_is_displayed :
+ Asserted in 'test_action_double_click': element displayed.
+2023-04-16 21:56:11,605 :INFO :verify_is_displayed :
+ Asserted in 'test_action_right_click': element displayed.
+2023-04-16 21:56:11,696 :INFO :verify_is_displayed :
+ Asserted in 'test_action_dynamic_click': element displayed.
