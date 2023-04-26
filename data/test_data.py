@@ -23,3 +23,7 @@ class TestData:
     download_directory = "C:\\Users\\bogod\\PycharmProjects\\pythonProject\\WebInteractionDemoQA\\data\\"
     file_name = "sampleFile.jpeg"
 
+    # for Suite 8. Test Dynamic Properties, "test_button_color_change"
+    expected_white = "rgba(255, 255, 255, 1)"
+    expected_red = "rgba(220, 53, 69, 1)"
+

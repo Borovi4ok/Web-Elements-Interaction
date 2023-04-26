@@ -56,7 +56,7 @@ class ReusableFunctions:
             wait = WebDriverWait(self.driver, time_to_wait)
 
             # getattr - dynamically retrieve ExpectedCondition method based on the value of the ec_condition parameter
-            wait.until(getattr(EC, ec_condition)((locator_strategy, locator_value)))
+            wait_print = wait.until(getattr(EC, ec_condition)((locator_strategy, locator_value)))
             print(f"\n For '{test_func_name}': EC condition '{ec_condition}' satisfied within {time_to_wait} sec.")
             log.info(f"\n For '{test_func_name}': EC condition '{ec_condition}' satisfied within {time_to_wait} sec.")
             return element

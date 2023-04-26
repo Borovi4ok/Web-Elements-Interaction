@@ -1,0 +1,14 @@
+2023-04-24 17:21:42,917 :INFO :verify_url :
+ Asserted in 'test_url_dynamic_properties': 'dynamic-properties' found in URL.
+2023-04-24 17:21:43,020 :INFO :verify_is_displayed :
+ Asserted in 'test_random_id': element displayed.
+2023-04-24 17:21:48,579 :INFO :explicitly_wait_for_element :
+ For 'test_enable_with_delay': EC condition 'element_to_be_clickable' satisfied within 5 sec.
+2023-04-24 17:21:48,597 :INFO :verify_enabled :
+ Asserted in 'test_enable_with_delay': element is enabled.
+2023-04-24 17:21:50,221 :INFO :verify_equal :
+ Asserted in 'test_button_color_change': 'rgba(255, 255, 255, 1)' value is equal to 'rgba(255, 255, 255, 1)'.
+2023-04-24 17:21:55,278 :INFO :verify_equal :
+ Asserted in 'test_button_color_change': 'rgba(220, 53, 69, 1)' value is equal to 'rgba(220, 53, 69, 1)'.
+2023-04-24 17:22:00,830 :INFO :verify_is_displayed :
+ Asserted in 'test_visible_with_delay': element displayed.
