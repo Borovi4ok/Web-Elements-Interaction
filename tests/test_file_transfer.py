@@ -24,6 +24,7 @@ class TestFileTransfer(Assertions, ReusableFunctions):
     @pytest.mark.file_transfer
     def test_upload(self):
         # send keys with file path directly to <input>, without click
+        # "default_download_dir" is defined in conftest.py "setup"
         file_input = self.driver.find_element(By.CSS_SELECTOR, "input#uploadFile")
         upload_file_path = (self.default_download_dir + TestData.file_name)
 

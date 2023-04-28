@@ -1,4 +1,5 @@
 import inspect
+import random
 
 import pytest
 from selenium.webdriver.common.by import By
@@ -56,11 +57,27 @@ class ReusableFunctions:
             wait = WebDriverWait(self.driver, time_to_wait)
 
             # getattr - dynamically retrieve ExpectedCondition method based on the value of the ec_condition parameter
-            wait_print = wait.until(getattr(EC, ec_condition)((locator_strategy, locator_value)))
+            wait.until(getattr(EC, ec_condition)((locator_strategy, locator_value)))
             print(f"\n For '{test_func_name}': EC condition '{ec_condition}' satisfied within {time_to_wait} sec.")
             log.info(f"\n For '{test_func_name}': EC condition '{ec_condition}' satisfied within {time_to_wait} sec.")
             return element
         except NoSuchElementException:
-            print(f"\n For '{test_func_name}': EC condition '{ec_condition}' is not satisfied within {time_to_wait} sec.")
-            log.info(f"\n For '{test_func_name}': EC condition '{ec_condition}' is not satisfied within {time_to_wait} sec.")
+            print(
+                f"\n For '{test_func_name}': EC condition '{ec_condition}' is not satisfied within {time_to_wait} sec.")
+            log.info(
+                f"\n For '{test_func_name}': EC condition '{ec_condition}' is not satisfied within {time_to_wait} sec.")
             raise
+
+    @staticmethod
+    def get_random_number(maximum):
+        random_number = random.randrange(0, maximum)
+        return random_number
+
+    @staticmethod
+    def select_match(elements, match):
+        for element in elements:
+            if element.text == match:
+                return element
+
+    def scroll_into_view(self, element):
+        self.driver.execute_script("arguments[0].scrollIntoView();", element)

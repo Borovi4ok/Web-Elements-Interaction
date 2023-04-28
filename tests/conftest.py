@@ -60,7 +60,8 @@ def urls():
             "buttons": "https://demoqa.com/buttons",
             "links": "https://demoqa.com/links",
             "upload_download": "https://demoqa.com/upload-download",
-            "dynamic_properties": "https://demoqa.com/dynamic-properties"
+            "dynamic_properties": "https://demoqa.com/dynamic-properties",
+            "forms": "https://demoqa.com/automation-practice-form"
             }
 
 
