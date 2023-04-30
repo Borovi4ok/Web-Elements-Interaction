@@ -9,6 +9,9 @@ class ObjectsForms:
     last_name = (By.ID, "lastName")
     email = (By.CSS_SELECTOR, "input#userEmail")
     gender_radio_click = (By.XPATH, "//div[@class='custom-control custom-radio custom-control-inline']")
+
+    # chained locator
+    gender_radio_label = (By.XPATH, ".//label")
     gender_radio_assert = (By.XPATH, "//input[@type='radio']")
     mobile = (By.CSS_SELECTOR, "input#userNumber")
     calendar_dropdown = (By.ID, "dateOfBirthInput")
@@ -28,9 +31,15 @@ class ObjectsForms:
     hobbies_check_boxes_assertable = (By.XPATH, "//input[@type='checkbox']")
     picture_upload = (By.CSS_SELECTOR, "input#uploadPicture")
     address_text_area = (By.CSS_SELECTOR, "textarea#currentAddress")
-    state_dropdown = (By.ID, "react-select-3-input")
-    city_dropdown = (By.ID, "react-select-4-input")
+    state_dropdown = (By.XPATH, "(//div[@class=' css-tlfecz-indicatorContainer'])[1]")
+    state_options = (By.XPATH, "//div[@class=' css-yt9ioa-option' or @class=' css-1n7v3ny-option']")
+    state_selected = (By.CLASS_NAME, "css-1uccc91-singleValue")
+    city_dropdown = (By.XPATH, "( //div[@class=' css-1wy0on6'])[2]")
+    city_options = (By.XPATH, "//div[@class=' css-1n7v3ny-option' or @class=' css-yt9ioa-option']")
+    city_selected = (By.XPATH, "(//div[@class=' css-1uccc91-singleValue'])[2]")
     submit_button = (By.CSS_SELECTOR, "button#submit")
+    success_message = (By.ID, "example-modal-sizes-title-lg")
+    confirmation_table = (By.XPATH, "//div[@class='table-responsive']//td")
 
     def get_first_name(self):
         return self.driver.find_element(*ObjectsForms.first_name)
@@ -43,6 +52,11 @@ class ObjectsForms:
 
     def get_gender_radio_click(self):
         return self.driver.find_elements(*ObjectsForms.gender_radio_click)
+
+    @staticmethod
+    # returns chained locator from "get_gender_radio_click"
+    def get_gender_radio_label(parent_element):
+        return parent_element.find_element(*ObjectsForms.gender_radio_label)
 
     def get_gender_radio_assert(self):
         return self.driver.find_elements(*ObjectsForms.gender_radio_assert)
@@ -92,8 +106,26 @@ class ObjectsForms:
     def get_state_dropdown(self):
         return self.driver.find_element(*ObjectsForms.state_dropdown)
 
+    def get_state_options(self):
+        return self.driver.find_elements(*ObjectsForms.state_options)
+
+    def get_state_selected(self):
+        return self.driver.find_elements(*ObjectsForms.state_selected)
+
     def get_city_dropdown(self):
         return self.driver.find_element(*ObjectsForms.city_dropdown)
 
+    def get_city_options(self):
+        return self.driver.find_elements(*ObjectsForms.city_options)
+
+    def get_city_selected(self):
+        return self.driver.find_elements(*ObjectsForms.city_selected)
+
     def get_submit_button(self):
         return self.driver.find_element(*ObjectsForms.submit_button)
+
+    def get_success_message(self):
+        return self.driver.find_element(*ObjectsForms.success_message)
+
+    def get_confirmation(self):
+        return self.driver.find_elements(*ObjectsForms.confirmation_table)

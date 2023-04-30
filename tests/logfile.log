@@ -362,3 +362,327 @@
  Assertion in 'test_address_box' failed: actual value '' is not equal to expected '42213 Paramount Lane'.
 2023-04-27 21:38:31,056 :INFO :verify_url :
  Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-29 09:58:25,151 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-29 10:01:14,635 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-29 10:02:13,486 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-29 10:02:52,823 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-29 10:04:09,689 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-29 10:05:28,147 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-29 10:12:48,754 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-29 10:18:33,034 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-29 10:21:02,865 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-29 10:22:43,163 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-29 10:24:17,204 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-29 10:26:11,978 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-29 10:26:17,430 :INFO :verify_equal :
+ Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
+2023-04-29 10:26:54,306 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-29 10:26:54,788 :INFO :verify_equal :
+ Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
+2023-04-29 10:29:48,117 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-29 10:29:48,634 :INFO :explicitly_wait_for_element :
+ For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-29 10:29:48,676 :INFO :verify_equal :
+ Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
+2023-04-29 10:49:46,232 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-29 10:49:46,696 :INFO :explicitly_wait_for_element :
+ For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-29 10:49:46,738 :INFO :verify_equal :
+ Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
+2023-04-29 10:52:18,365 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-29 10:52:18,809 :INFO :explicitly_wait_for_element :
+ For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-29 10:52:18,850 :INFO :verify_equal :
+ Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
+2023-04-29 10:55:16,312 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-29 10:55:16,828 :INFO :explicitly_wait_for_element :
+ For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-29 10:55:16,867 :INFO :verify_equal :
+ Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
+2023-04-29 10:56:38,546 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-29 10:56:39,099 :INFO :explicitly_wait_for_element :
+ For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-29 10:56:39,138 :INFO :verify_equal :
+ Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
+2023-04-29 10:57:28,284 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-29 10:57:28,782 :INFO :explicitly_wait_for_element :
+ For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-29 10:57:28,821 :INFO :verify_equal :
+ Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
+2023-04-29 10:57:44,086 :INFO :explicitly_wait_for_element :
+ For 'test_city_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-29 10:57:44,127 :ERROR :verify_equal :
+ Assertion in 'test_city_dropbox' failed: actual value 'NCR' is not equal to expected 'Noida'.
+2023-04-30 15:16:29,880 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 15:16:30,504 :INFO :explicitly_wait_for_element :
+ For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 15:16:30,552 :INFO :verify_equal :
+ Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
+2023-04-30 15:21:47,586 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 15:21:48,193 :INFO :explicitly_wait_for_element :
+ For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 15:21:48,235 :INFO :verify_equal :
+ Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
+2023-04-30 15:22:03,413 :INFO :explicitly_wait_for_element :
+ For 'test_city_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 15:22:03,440 :ERROR :verify_equal :
+ Assertion in 'test_city_dropbox' failed: actual value 'NCR' is not equal to expected 'Noida'.
+2023-04-30 15:26:31,379 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 15:26:31,873 :INFO :explicitly_wait_for_element :
+ For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 15:26:31,911 :INFO :verify_equal :
+ Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
+2023-04-30 15:26:37,102 :INFO :explicitly_wait_for_element :
+ For 'test_city_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 15:26:37,129 :ERROR :verify_equal :
+ Assertion in 'test_city_dropbox' failed: actual value 'NCR' is not equal to expected 'Noida'.
+2023-04-30 15:29:15,809 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 15:29:16,370 :INFO :explicitly_wait_for_element :
+ For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 15:29:16,408 :INFO :verify_equal :
+ Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
+2023-04-30 15:29:21,623 :INFO :explicitly_wait_for_element :
+ For 'test_city_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 15:29:52,346 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 15:29:52,883 :INFO :explicitly_wait_for_element :
+ For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 15:29:52,922 :INFO :verify_equal :
+ Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
+2023-04-30 15:29:58,107 :INFO :explicitly_wait_for_element :
+ For 'test_city_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 15:29:58,141 :INFO :verify_equal :
+ Asserted in 'test_city_dropbox': 'Noida' value is equal to 'Noida'.
+2023-04-30 15:31:37,199 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 15:31:37,499 :INFO :verify_equal :
+ Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
+2023-04-30 15:31:37,603 :INFO :verify_equal :
+ Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
+2023-04-30 15:31:37,724 :INFO :verify_equal :
+ Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
+2023-04-30 15:31:37,826 :INFO :verify_is_selected :
+ Asserted in 'test_gender_radio': element(s) selected.
+2023-04-30 15:31:37,932 :INFO :verify_equal :
+ Asserted in 'test_mobile': '5720001111' value is equal to '5720001111'.
+2023-04-30 15:31:40,130 :INFO :verify_equal :
+ Asserted in 'test_date_of_birth': '15 Jun 1990' value is equal to '15 Jun 1990'.
+2023-04-30 15:31:40,271 :INFO :explicitly_wait_for_element :
+ For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 15:31:40,387 :INFO :verify_equal :
+ Asserted in 'test_subjects_auto_complete': 'Commerce' value is equal to 'Commerce'.
+2023-04-30 15:31:40,572 :INFO :verify_is_selected :
+ Asserted in 'test_hobbies_check_boxes': element(s) selected.
+2023-04-30 15:31:40,594 :INFO :verify_is_selected :
+ Asserted in 'test_hobbies_check_boxes': element(s) selected.
+2023-04-30 15:31:40,614 :INFO :verify_is_selected :
+ Asserted in 'test_hobbies_check_boxes': element(s) selected.
+2023-04-30 15:31:41,232 :INFO :explicitly_wait_for_element :
+ For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 15:31:41,269 :INFO :verify_equal :
+ Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
+2023-04-30 15:31:46,521 :INFO :explicitly_wait_for_element :
+ For 'test_city_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 15:31:46,558 :INFO :verify_equal :
+ Asserted in 'test_city_dropbox': 'Noida' value is equal to 'Noida'.
+2023-04-30 16:50:22,953 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 16:50:23,116 :INFO :verify_equal :
+ Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
+2023-04-30 16:50:23,268 :INFO :verify_equal :
+ Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
+2023-04-30 16:50:23,394 :INFO :verify_equal :
+ Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
+2023-04-30 16:50:23,501 :INFO :verify_is_selected :
+ Asserted in 'test_gender_radio': element(s) selected.
+2023-04-30 16:50:23,611 :INFO :verify_equal :
+ Asserted in 'test_mobile': '5720001111' value is equal to '5720001111'.
+2023-04-30 16:50:25,845 :INFO :verify_equal :
+ Asserted in 'test_date_of_birth': '15 Jun 1990' value is equal to '15 Jun 1990'.
+2023-04-30 16:50:25,954 :INFO :explicitly_wait_for_element :
+ For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 16:50:26,093 :INFO :verify_equal :
+ Asserted in 'test_subjects_auto_complete': 'Commerce' value is equal to 'Commerce'.
+2023-04-30 16:50:26,284 :INFO :verify_is_selected :
+ Asserted in 'test_hobbies_check_boxes': element(s) selected.
+2023-04-30 16:50:26,307 :INFO :verify_is_selected :
+ Asserted in 'test_hobbies_check_boxes': element(s) selected.
+2023-04-30 16:50:26,329 :INFO :verify_is_selected :
+ Asserted in 'test_hobbies_check_boxes': element(s) selected.
+2023-04-30 16:50:26,999 :INFO :explicitly_wait_for_element :
+ For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 16:50:27,037 :INFO :verify_equal :
+ Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
+2023-04-30 16:50:27,238 :INFO :explicitly_wait_for_element :
+ For 'test_city_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 16:50:27,275 :INFO :verify_equal :
+ Asserted in 'test_city_dropbox': 'Noida' value is equal to 'Noida'.
+2023-04-30 16:58:29,159 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 16:58:29,297 :INFO :verify_equal :
+ Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
+2023-04-30 16:58:29,435 :INFO :verify_equal :
+ Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
+2023-04-30 16:58:29,570 :INFO :verify_equal :
+ Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
+2023-04-30 16:58:29,686 :INFO :verify_is_selected :
+ Asserted in 'test_gender_radio': element(s) selected.
+2023-04-30 16:58:29,797 :INFO :verify_equal :
+ Asserted in 'test_mobile': '5720001111' value is equal to '5720001111'.
+2023-04-30 16:58:31,955 :INFO :verify_equal :
+ Asserted in 'test_date_of_birth': '15 Jun 1990' value is equal to '15 Jun 1990'.
+2023-04-30 16:58:32,068 :INFO :explicitly_wait_for_element :
+ For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 16:58:32,190 :INFO :verify_equal :
+ Asserted in 'test_subjects_auto_complete': 'Commerce' value is equal to 'Commerce'.
+2023-04-30 16:58:32,384 :INFO :verify_is_selected :
+ Asserted in 'test_hobbies_check_boxes': element(s) selected.
+2023-04-30 16:58:32,407 :INFO :verify_is_selected :
+ Asserted in 'test_hobbies_check_boxes': element(s) selected.
+2023-04-30 16:58:32,428 :INFO :verify_is_selected :
+ Asserted in 'test_hobbies_check_boxes': element(s) selected.
+2023-04-30 16:58:33,060 :INFO :explicitly_wait_for_element :
+ For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 16:58:33,097 :INFO :verify_equal :
+ Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
+2023-04-30 16:58:33,296 :INFO :explicitly_wait_for_element :
+ For 'test_city_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 16:58:33,333 :INFO :verify_equal :
+ Asserted in 'test_city_dropbox': 'Noida' value is equal to 'Noida'.
+2023-04-30 17:02:50,904 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 17:02:51,064 :INFO :verify_equal :
+ Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
+2023-04-30 17:02:51,199 :INFO :verify_equal :
+ Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
+2023-04-30 17:02:51,346 :INFO :verify_equal :
+ Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
+2023-04-30 17:02:51,454 :INFO :verify_is_selected :
+ Asserted in 'test_gender_radio': element(s) selected.
+2023-04-30 17:02:51,565 :INFO :verify_equal :
+ Asserted in 'test_mobile': '5720001111' value is equal to '5720001111'.
+2023-04-30 17:02:53,729 :INFO :verify_equal :
+ Asserted in 'test_date_of_birth': '15 Jun 1990' value is equal to '15 Jun 1990'.
+2023-04-30 17:02:53,860 :INFO :explicitly_wait_for_element :
+ For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 17:02:53,970 :INFO :verify_equal :
+ Asserted in 'test_subjects_auto_complete': 'Commerce' value is equal to 'Commerce'.
+2023-04-30 17:02:54,154 :INFO :verify_is_selected :
+ Asserted in 'test_hobbies_check_boxes': element(s) selected.
+2023-04-30 17:02:54,176 :INFO :verify_is_selected :
+ Asserted in 'test_hobbies_check_boxes': element(s) selected.
+2023-04-30 17:02:54,197 :INFO :verify_is_selected :
+ Asserted in 'test_hobbies_check_boxes': element(s) selected.
+2023-04-30 17:02:54,817 :INFO :explicitly_wait_for_element :
+ For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 17:02:54,854 :INFO :verify_equal :
+ Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
+2023-04-30 17:02:55,050 :INFO :explicitly_wait_for_element :
+ For 'test_city_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 17:02:55,088 :INFO :verify_equal :
+ Asserted in 'test_city_dropbox': 'Noida' value is equal to 'Noida'.
+2023-04-30 17:02:55,207 :INFO :verify_in_text :
+ Asserted in 'test_submit_button': 'Thanks for submitting the form' found in full text.
+2023-04-30 17:29:20,446 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 17:29:20,629 :INFO :verify_equal :
+ Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
+2023-04-30 17:29:20,797 :INFO :verify_equal :
+ Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
+2023-04-30 17:29:20,938 :INFO :verify_equal :
+ Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
+2023-04-30 17:29:21,043 :INFO :verify_is_selected :
+ Asserted in 'test_gender_radio': element(s) selected.
+2023-04-30 17:29:21,160 :INFO :verify_equal :
+ Asserted in 'test_mobile': '5720001111' value is equal to '5720001111'.
+2023-04-30 17:29:23,462 :INFO :verify_equal :
+ Asserted in 'test_date_of_birth': '15 Jun 1990' value is equal to '15 Jun 1990'.
+2023-04-30 17:29:23,577 :INFO :explicitly_wait_for_element :
+ For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 17:29:23,694 :INFO :verify_equal :
+ Asserted in 'test_subjects_auto_complete': 'Commerce' value is equal to 'Commerce'.
+2023-04-30 17:29:23,881 :INFO :verify_is_selected :
+ Asserted in 'test_hobbies_check_boxes': element(s) selected.
+2023-04-30 17:29:23,903 :INFO :verify_is_selected :
+ Asserted in 'test_hobbies_check_boxes': element(s) selected.
+2023-04-30 17:29:23,928 :INFO :verify_is_selected :
+ Asserted in 'test_hobbies_check_boxes': element(s) selected.
+2023-04-30 17:29:24,604 :INFO :explicitly_wait_for_element :
+ For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 17:29:24,640 :INFO :verify_equal :
+ Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
+2023-04-30 17:29:24,825 :INFO :explicitly_wait_for_element :
+ For 'test_city_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-04-30 17:29:24,862 :INFO :verify_equal :
+ Asserted in 'test_city_dropbox': 'Noida' value is equal to 'Noida'.
+2023-04-30 17:29:24,977 :INFO :verify_in_text :
+ Asserted in 'test_submit_button': 'Thanks for submitting the form' found in full text.
+2023-04-30 18:09:22,196 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 18:34:15,530 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 18:34:15,688 :ERROR :verify_is_selected :
+ Assertion in 'test_gender_radio' failed: element(s) not selected.
+2023-04-30 18:37:36,478 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 18:37:36,678 :ERROR :verify_is_selected :
+ Assertion in 'test_gender_radio' failed: element(s) not selected.
+2023-04-30 18:43:32,096 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 19:36:43,093 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 19:36:43,294 :ERROR :verify_is_selected :
+ Assertion in 'test_gender_radio' failed: element(s) not selected.
+2023-04-30 19:37:28,148 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 19:49:06,679 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 19:49:06,933 :INFO :verify_is_selected :
+ Asserted in 'test_gender_radio': element(s) selected.
+2023-04-30 19:59:13,380 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 20:02:13,784 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 20:14:10,002 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 20:14:10,258 :INFO :verify_is_selected :
+ Asserted in 'test_gender_radio': element(s) selected.
+2023-04-30 20:20:20,734 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 20:20:20,977 :INFO :verify_is_selected :
+ Asserted in 'test_gender_radio': element(s) selected.
+2023-04-30 20:34:47,158 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 20:34:47,489 :INFO :verify_is_selected :
+ Asserted in 'test_gender_radio': element(s) selected.
+2023-04-30 20:35:23,685 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 20:35:23,992 :INFO :verify_is_selected :
+ Asserted in 'test_gender_radio': element(s) selected.
+2023-04-30 20:49:12,540 :INFO :verify_url :
+ Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
+2023-04-30 20:49:12,811 :INFO :verify_is_selected :
+ Asserted in 'test_gender_radio': element(s) selected.

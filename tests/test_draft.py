@@ -22,7 +22,7 @@ class TestForms(Assertions, ReusableFunctions):
         self.driver.get(urls["forms"])
         self.verify_url("automation-practice-form")
 
-    """@pytest.mark.forms
+    @pytest.mark.forms
     def test_first_name(self):
         forms = ObjectsForms(self.driver)
         first_name = TestData.data_forms["first_name"]
@@ -49,16 +49,23 @@ class TestForms(Assertions, ReusableFunctions):
     @pytest.mark.forms
     def test_gender_radio(self):
         forms = ObjectsForms(self.driver)
-        ran = TestData.random
-        # random number to click any radio
+        gender = TestData.data_forms["gender"]
 
+        # click radio with respective gender indicated in data_forms
         radio_clickable_list = forms.get_gender_radio_click()
-        radio_clickable_list[ran].click()
-        # select random radio
+        for el in radio_clickable_list:
+            # get the label element for the current radio by chaining from it with get_gender_radio_label() method
+            el_label = forms.get_gender_radio_label(el)
+            el_text = el_label.text
+            if el_text == gender:
+                el.click()
 
+        # verify the respective radio is selected using assertable locators
         radio_assertable_list = forms.get_gender_radio_assert()
-        self.verify_is_selected(radio_assertable_list[ran], is_selected=True)
-        # verify selected radio with index [ran] is selected
+        for val in radio_assertable_list:
+            val_attribute = val.get_attribute("value")
+            if val_attribute == gender:
+                self.verify_is_selected(val, is_selected=True)
 
     @pytest.mark.forms
     def test_mobile(self):
@@ -146,15 +153,111 @@ class TestForms(Assertions, ReusableFunctions):
         address = TestData.data_forms["address"]
         text_box = forms.get_address_text_area()
         self.scroll_into_view(text_box)
-        text_box.send_keys(address)"""
+        text_box.send_keys(address)
 
     @pytest.mark.forms
     def test_state_dropbox(self):
+        forms = ObjectsForms(self.driver)
+
         # set window to 700px. wide to interact with web elements covered by advertisement
         self.driver.set_window_size(700, self.driver.execute_script("return window.outerHeight"))
 
-        time.sleep(10)
-        print("finishing")
+        # state dropdown click
+        state_drop = forms.get_state_dropdown()
+        self.scroll_into_view(state_drop)
+        state_drop.click()
+
+        # get list of available state options
+        elements_list = forms.get_state_options()
+
+        # select state indicated in test data
+        state_match = TestData.data_forms["state"]
+        state = self.select_match(elements_list, state_match)
+        state.click()
+
+        # wait for a locator with selected value to be located
+        by_locator = ObjectsForms.state_selected
+        self.explicitly_wait_for_element(by_locator, 5, "presence_of_element_located")
+
+        # verify selected state matches expected
+        # 'state_elements' returns list
+        state_elements = forms.get_state_selected()
+        state_selected = state_elements[0].text
+        self.verify_equal(state_selected, state_match)
+
+    @pytest.mark.forms
+    def test_city_dropbox(self):
+        forms = ObjectsForms(self.driver)
+
+        # city dropdown click
+        city_drop = forms.get_city_dropdown()
+        self.scroll_into_view(city_drop)
+        city_drop.click()
+
+        # get list of available city options
+        elements_list = forms.get_city_options()
+
+        # select city indicated in test data
+        city_match = TestData.data_forms["city"]
+        city = self.select_match(elements_list, city_match)
+        city.click()
+
+        # wait for a locator with selected value to be located
+        by_locator = ObjectsForms.city_selected
+        self.explicitly_wait_for_element(by_locator, 5, "presence_of_element_located")
+
+        # verify selected city matches expected
+        # 'city_elements' returns list
+        city_elements = forms.get_city_selected()
+        city_selected = city_elements[0].text
+        self.verify_equal(city_selected, city_match)
+
+    @pytest.mark.forms
+    def test_submit_button(self):
+        forms = ObjectsForms(self.driver)
+        forms.get_submit_button().click()
+        message_actual = forms.get_success_message().text
+        message_expected = TestData.data_forms["success_message"]
+        self.verify_in_text(message_expected, message_actual)
+
+    """@pytest.mark.forms
+    def test_confirmation_table(self):
+        forms = ObjectsForms(self.driver)
+
+        # get text from confirmation table (submitted form)
+        elements_list = forms.get_confirmation()
+        values_list = self.extract_text_from_list(elements_list)
+        # "values_list" structure - [key, value, ...]
+
+        # modify "data_forms" dictionary to "confirmation_table" order
+        expected_confirmation = {
+            "Student Name"
+        }
+    
+    
+    
+    # example of GPT, but should do myself
+        expected_values = {
+    "Student Name": f"{data_forms['first_name']} {data_forms['last_name']}",
+    "Student Email": data_forms["email"],
+    "Mobile": data_forms["mobile"],
+    "Date of Birth": f"{data_forms['day_birth']} {data_forms['month_birth']},{data_forms['year_birth']}",
+    "Subjects": data_forms["subject_full"],
+    "Address": data_forms["address"],
+    "State and City": f"{data_forms['state']} {data_forms['city']}"
+
+
+    for i in range(0, len(confirm_list), 2):
+        key = confirm_list[i]
+        value = confirm_list[i+1]
+        assert value == expected_values[key]
+        
+
+    def test_radio(self):
+        lista = self.driver.find_elements(By.XPATH, "//div[@class='custom-control custom-radio custom-control-inline']/label")
+        for element in lista:
+            print(element.text)"""
+
 
 
 

@@ -35,8 +35,10 @@ class TestData:
     random = ReusableFunctions.get_random_number(max_ind)
     # create random index for radio button to click in range (0, max_ind)
 
-    data_forms = {"first_name": "Semere", "last_name": "Khazimat", "email": "xejok61334@duiter.com",
+    data_forms = {"first_name": "Semere", "last_name": "Khazimat", "email": "xejok61334@duiter.com", "gender": "Female",
                   "mobile": "5720001111", "month_birth": "June", "month_birth_assert": "Jun", "year_birth": "1990",
-                  "day_birth": "15", "subject_short": "co", "subject_full": "Commerce", "address": "42213 Paramount Lane"}
+                  "day_birth": "15", "subject_short": "co", "subject_full": "Commerce", "address": "42213 Paramount "
+                                                                                                   "Lane",
+                  "state": "NCR", "city": "Noida", "success_message": "Thanks for submitting the form"}
     # "month_birth_assert" = abbreviated "month_birth"
 

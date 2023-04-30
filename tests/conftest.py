@@ -9,7 +9,6 @@ from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 import logging
-
 from WebInteractionDemoQA.data.test_data import TestData
 
 driver = None
