@@ -1,3 +1,4 @@
+import pytest
 from selenium.webdriver.common.by import By
 
 
@@ -27,8 +28,11 @@ class ObjectsForms:
     subjects_auto_complete_field = (By.CSS_SELECTOR, "input#subjectsInput")
     subjects_auto_complete_suggestions = (By.CSS_SELECTOR, "div.subjects-auto-complete__option.css-yt9ioa-option")
     subjects_auto_complete_result = (By.CSS_SELECTOR, "div.css-12jo7m5.subjects-auto-complete__multi-value__label")
-    hobbies_check_boxes_clickable = (By.XPATH, "//div[@class='custom-control custom-checkbox custom-control-inline']")
-    hobbies_check_boxes_assertable = (By.XPATH, "//input[@type='checkbox']")
+    hobbies_checkboxes_clickable = (By.XPATH, "//div[@class='custom-control custom-checkbox custom-control-inline']")
+
+    # chained locator
+    hobbies_checkboxes_label = (By.XPATH, ".//label")
+    hobbies_checkboxes_assertable = (By.XPATH, "//input[@type='checkbox']")
     picture_upload = (By.CSS_SELECTOR, "input#uploadPicture")
     address_text_area = (By.CSS_SELECTOR, "textarea#currentAddress")
     state_dropdown = (By.XPATH, "(//div[@class=' css-tlfecz-indicatorContainer'])[1]")
@@ -91,11 +95,16 @@ class ObjectsForms:
     def get_subjects_auto_complete_result(self):
         return self.driver.find_elements(*ObjectsForms.subjects_auto_complete_result)
 
-    def get_hobbies_check_boxes_clickable(self):
-        return self.driver.find_elements(*ObjectsForms.hobbies_check_boxes_clickable)
+    def get_hobbies_checkboxes_clickable(self):
+        return self.driver.find_elements(*ObjectsForms.hobbies_checkboxes_clickable)
 
-    def get_hobbies_check_boxes_assertable(self):
-        return self.driver.find_elements(*ObjectsForms.hobbies_check_boxes_assertable)
+    @staticmethod
+    # returns chained locator from "get_gender_radio_click"
+    def get_checkbox_label(parent_element):
+        return parent_element.find_element(*ObjectsForms.hobbies_checkboxes_label)
+
+    def get_hobbies_checkboxes_assertable(self):
+        return self.driver.find_elements(*ObjectsForms.hobbies_checkboxes_assertable)
 
     def get_picture_upload(self):
         return self.driver.find_element(*ObjectsForms.picture_upload)

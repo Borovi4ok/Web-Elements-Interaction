@@ -1,688 +1,74 @@
-2023-04-26 11:24:36,092 :INFO :verify_url :
+2023-05-04 18:31:32,529 :INFO :verify_url :
  Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-26 11:26:37,862 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-26 11:36:55,604 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-26 11:37:42,192 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-26 12:08:08,089 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 14:13:13,411 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 14:17:43,121 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 14:51:49,869 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 14:51:50,120 :INFO :verify_equal :
+2023-05-04 18:31:32,734 :INFO :verify_equal :
  Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-27 14:51:50,268 :INFO :verify_equal :
+2023-05-04 18:31:32,858 :INFO :verify_equal :
  Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-27 14:51:50,578 :INFO :verify_equal :
+2023-05-04 18:31:33,029 :INFO :verify_equal :
  Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-27 14:53:52,394 :INFO :verify_url :
+2023-05-04 18:33:27,740 :INFO :verify_url :
  Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 14:53:52,567 :INFO :verify_equal :
+2023-05-04 18:33:27,888 :INFO :verify_equal :
  Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-27 14:53:52,728 :INFO :verify_equal :
+2023-05-04 18:33:28,017 :INFO :verify_equal :
  Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-27 14:53:52,889 :INFO :verify_equal :
+2023-05-04 18:33:28,145 :INFO :verify_equal :
  Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-27 14:55:22,635 :INFO :verify_url :
+2023-05-04 19:40:22,952 :INFO :verify_url :
  Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 14:55:22,831 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-27 14:55:22,958 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-27 14:55:23,087 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-27 14:58:24,129 :INFO :verify_url :
+2023-05-04 19:43:10,000 :INFO :verify_url :
  Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 14:58:24,306 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-27 14:58:24,441 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-27 14:58:24,571 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-27 15:05:34,840 :INFO :verify_url :
+2023-05-04 19:55:37,918 :INFO :verify_url :
  Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 15:05:35,041 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-27 15:05:35,456 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-27 15:05:35,618 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-27 15:07:25,939 :INFO :verify_url :
+2023-05-04 19:57:17,155 :INFO :verify_url :
  Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 15:07:26,087 :INFO :verify_equal :
+2023-05-04 19:57:17,343 :INFO :verify_equal :
  Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-27 15:07:26,214 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-27 15:07:26,341 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-27 15:13:51,354 :INFO :verify_url :
+2023-05-04 20:41:42,934 :INFO :verify_url :
  Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 15:13:51,513 :INFO :verify_equal :
+2023-05-04 20:41:43,090 :INFO :verify_equal :
  Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-27 15:13:51,642 :INFO :verify_equal :
+2023-05-04 20:41:43,249 :INFO :verify_equal :
  Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-27 15:13:51,773 :INFO :verify_equal :
+2023-05-04 20:41:43,388 :INFO :verify_equal :
  Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-27 15:19:15,514 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 15:19:15,686 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-27 15:19:15,885 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-27 15:19:16,023 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-27 15:20:51,903 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 15:20:52,051 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-27 15:20:52,184 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-27 15:20:52,317 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-27 15:21:19,023 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 15:21:19,171 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-27 15:21:19,297 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-27 15:21:19,430 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-27 15:25:39,593 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 15:25:39,781 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-27 15:25:39,949 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-27 15:25:40,080 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-27 15:28:09,560 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 15:28:09,839 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-27 15:28:10,033 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-27 15:28:10,192 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-27 15:33:13,657 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 15:33:13,806 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-27 15:33:13,928 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-27 15:33:14,058 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-27 15:33:58,412 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 15:33:58,526 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-27 15:33:58,667 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-27 15:33:58,826 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-27 15:36:58,195 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 15:36:58,360 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-27 15:36:58,484 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-27 15:36:58,617 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-27 15:37:50,008 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 15:37:50,147 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-27 15:37:50,287 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-27 15:37:50,411 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-27 15:43:47,439 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 15:43:47,592 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-27 15:43:47,729 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-27 15:43:47,856 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-27 15:52:52,361 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 15:52:52,532 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-27 15:52:52,684 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-27 15:52:52,828 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-27 15:52:52,929 :ERROR :verify_is_selected :
- Assertion in 'test_gender_radio' failed: element(s) not selected.
-2023-04-27 15:53:56,207 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 15:53:56,330 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-27 15:53:56,520 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-27 15:53:56,660 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-27 15:53:56,747 :ERROR :verify_is_selected :
- Assertion in 'test_gender_radio' failed: element(s) not selected.
-2023-04-27 15:57:00,417 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 15:57:00,535 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-27 15:57:00,742 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-27 15:57:00,886 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-27 16:04:18,438 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 16:04:18,611 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-27 16:04:18,760 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-27 16:04:18,892 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-27 16:04:19,003 :INFO :verify_is_selected :
+2023-05-04 20:41:43,588 :INFO :verify_is_selected :
  Asserted in 'test_gender_radio': element(s) selected.
-2023-04-27 16:56:13,187 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 16:56:13,332 :ERROR :verify_equal :
- Assertion in 'test_mobile' failed: actual value 'mobile' is not equal to expected '5720001111'.
-2023-04-27 16:56:25,542 :ERROR :verify_equal :
- Assertion in 'test_date_of_birth' failed: actual value 'mobilemobi' is not equal to expected '5720001111'.
-2023-04-27 16:58:18,091 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 16:58:18,239 :ERROR :verify_equal :
- Assertion in 'test_mobile' failed: actual value 'mobile' is not equal to expected '5720001111'.
-2023-04-27 16:58:30,579 :ERROR :verify_equal :
- Assertion in 'test_date_of_birth' failed: actual value 'mobilemobi' is not equal to expected '5720001111'.
-2023-04-27 16:58:57,427 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 16:58:57,546 :INFO :verify_equal :
+2023-05-04 20:41:43,714 :INFO :verify_equal :
  Asserted in 'test_mobile': '5720001111' value is equal to '5720001111'.
-2023-04-27 16:59:09,909 :INFO :verify_equal :
- Asserted in 'test_date_of_birth': '5720001111' value is equal to '5720001111'.
-2023-04-27 16:59:47,620 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 16:59:47,796 :INFO :verify_equal :
- Asserted in 'test_mobile': '5720001111' value is equal to '5720001111'.
-2023-04-27 17:00:00,080 :INFO :verify_equal :
- Asserted in 'test_date_of_birth': '5720001111' value is equal to '5720001111'.
-2023-04-27 17:10:09,262 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 17:10:09,383 :INFO :verify_equal :
- Asserted in 'test_mobile': '5720001111' value is equal to '5720001111'.
-2023-04-27 17:10:11,650 :ERROR :verify_equal :
- Assertion in 'test_date_of_birth' failed: actual value '' is not equal to expected '15 Jun 1990'.
-2023-04-27 17:12:40,022 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 17:12:40,157 :INFO :verify_equal :
- Asserted in 'test_mobile': '5720001111' value is equal to '5720001111'.
-2023-04-27 17:12:42,330 :INFO :verify_equal :
+2023-05-04 20:41:46,064 :INFO :verify_equal :
  Asserted in 'test_date_of_birth': '15 Jun 1990' value is equal to '15 Jun 1990'.
-2023-04-27 19:07:05,762 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 19:09:41,277 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 19:11:58,057 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 19:13:55,337 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 19:13:55,517 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_all_elements_located' satisfied within 10 sec.
-2023-04-27 19:16:07,084 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 19:16:07,234 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_all_elements_located' satisfied within 1 sec.
-2023-04-27 19:41:04,129 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 19:41:04,272 :INFO :explicitly_wait_for_element :
+2023-05-04 20:41:46,222 :INFO :explicitly_wait_for_element :
  For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-27 19:41:32,843 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 19:41:32,995 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-27 19:42:11,102 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 19:42:11,277 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-27 19:43:59,573 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 19:43:59,784 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-27 19:45:28,080 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 19:45:28,253 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-27 19:45:28,359 :ERROR :verify_equal :
- Assertion in 'test_subjects_auto_complete' failed: actual value '<selenium.webdriver.remote.webelement.WebElement (session="3d72f1e2267586910259c92ed7bd11c6", element="8658c550-886a-44a0-9e9e-e9345a14c70d")>' is not equal to expected '[<selenium.webdriver.remote.webelement.WebElement (session="3d72f1e2267586910259c92ed7bd11c6", element="75068685-a9d9-4639-8507-00767577dbf8")>]'.
-2023-04-27 19:46:53,525 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 19:46:53,785 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-27 19:46:53,874 :ERROR :verify_equal :
- Assertion in 'test_subjects_auto_complete' failed: actual value '<selenium.webdriver.remote.webelement.WebElement (session="365147153a7ce78fa637e61b2d944277", element="8b187c73-096a-40c8-ab6b-c68ad5a8fdd9")>' is not equal to expected '[<selenium.webdriver.remote.webelement.WebElement (session="365147153a7ce78fa637e61b2d944277", element="5bee6ad6-edfe-4299-86bd-b6291c567df8")>]'.
-2023-04-27 19:50:12,504 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 19:50:12,747 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-27 19:50:12,844 :ERROR :verify_equal :
- Assertion in 'test_subjects_auto_complete' failed: actual value '<selenium.webdriver.remote.webelement.WebElement (session="c00c6404c8348856f5fe9ea7040de0fd", element="c3629353-9684-4209-88a6-e3cf3022e7d5")>' is not equal to expected '[<selenium.webdriver.remote.webelement.WebElement (session="c00c6404c8348856f5fe9ea7040de0fd", element="d93c0014-89f8-4d85-b6d7-961329a00e90")>]'.
-2023-04-27 19:51:25,012 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 19:51:25,164 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-27 19:52:12,521 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 19:52:12,694 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-27 19:55:04,634 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 19:55:04,899 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-27 19:56:05,331 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 19:56:05,484 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-27 19:56:29,288 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 19:56:29,447 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-27 19:56:49,148 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 19:56:49,317 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-27 20:02:30,475 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 20:02:30,643 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-27 20:04:02,015 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 20:04:02,177 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-27 20:05:07,979 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 20:05:08,133 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-27 20:07:09,751 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 20:07:09,925 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-27 20:08:13,029 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 20:08:13,282 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-27 20:11:12,315 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 20:11:12,466 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-27 20:11:12,587 :INFO :verify_equal :
+2023-05-04 20:41:46,364 :INFO :verify_equal :
  Asserted in 'test_subjects_auto_complete': 'Commerce' value is equal to 'Commerce'.
-2023-04-27 20:14:35,994 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 20:14:36,182 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-27 20:14:36,360 :INFO :verify_equal :
- Asserted in 'test_subjects_auto_complete': 'Commerce' value is equal to 'Commerce'.
-2023-04-27 20:18:40,692 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 20:20:56,416 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 20:27:09,046 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 20:29:43,551 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 20:31:31,233 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 20:33:45,039 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 20:34:22,819 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 20:34:44,884 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 20:40:10,313 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 20:40:10,551 :INFO :verify_is_selected :
- Asserted in 'test_hobbies_check_boxes': element(s) selected.
-2023-04-27 20:40:10,571 :INFO :verify_is_selected :
- Asserted in 'test_hobbies_check_boxes': element(s) selected.
-2023-04-27 20:40:10,594 :INFO :verify_is_selected :
- Asserted in 'test_hobbies_check_boxes': element(s) selected.
-2023-04-27 20:57:10,582 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 20:57:53,169 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 20:58:24,301 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 21:30:12,736 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-27 21:30:12,893 :ERROR :verify_equal :
- Assertion in 'test_address_box' failed: actual value '' is not equal to expected '42213 Paramount Lane'.
-2023-04-27 21:38:31,056 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-29 09:58:25,151 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-29 10:01:14,635 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-29 10:02:13,486 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-29 10:02:52,823 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-29 10:04:09,689 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-29 10:05:28,147 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-29 10:12:48,754 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-29 10:18:33,034 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-29 10:21:02,865 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-29 10:22:43,163 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-29 10:24:17,204 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-29 10:26:11,978 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-29 10:26:17,430 :INFO :verify_equal :
- Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
-2023-04-29 10:26:54,306 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-29 10:26:54,788 :INFO :verify_equal :
- Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
-2023-04-29 10:29:48,117 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-29 10:29:48,634 :INFO :explicitly_wait_for_element :
+2023-05-04 20:41:47,179 :INFO :explicitly_wait_for_element :
  For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-29 10:29:48,676 :INFO :verify_equal :
+2023-05-04 20:41:47,227 :INFO :verify_equal :
  Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
-2023-04-29 10:49:46,232 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-29 10:49:46,696 :INFO :explicitly_wait_for_element :
- For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-29 10:49:46,738 :INFO :verify_equal :
- Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
-2023-04-29 10:52:18,365 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-29 10:52:18,809 :INFO :explicitly_wait_for_element :
- For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-29 10:52:18,850 :INFO :verify_equal :
- Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
-2023-04-29 10:55:16,312 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-29 10:55:16,828 :INFO :explicitly_wait_for_element :
- For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-29 10:55:16,867 :INFO :verify_equal :
- Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
-2023-04-29 10:56:38,546 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-29 10:56:39,099 :INFO :explicitly_wait_for_element :
- For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-29 10:56:39,138 :INFO :verify_equal :
- Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
-2023-04-29 10:57:28,284 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-29 10:57:28,782 :INFO :explicitly_wait_for_element :
- For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-29 10:57:28,821 :INFO :verify_equal :
- Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
-2023-04-29 10:57:44,086 :INFO :explicitly_wait_for_element :
+2023-05-04 20:41:47,416 :INFO :explicitly_wait_for_element :
  For 'test_city_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-29 10:57:44,127 :ERROR :verify_equal :
- Assertion in 'test_city_dropbox' failed: actual value 'NCR' is not equal to expected 'Noida'.
-2023-04-30 15:16:29,880 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 15:16:30,504 :INFO :explicitly_wait_for_element :
- For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 15:16:30,552 :INFO :verify_equal :
- Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
-2023-04-30 15:21:47,586 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 15:21:48,193 :INFO :explicitly_wait_for_element :
- For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 15:21:48,235 :INFO :verify_equal :
- Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
-2023-04-30 15:22:03,413 :INFO :explicitly_wait_for_element :
- For 'test_city_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 15:22:03,440 :ERROR :verify_equal :
- Assertion in 'test_city_dropbox' failed: actual value 'NCR' is not equal to expected 'Noida'.
-2023-04-30 15:26:31,379 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 15:26:31,873 :INFO :explicitly_wait_for_element :
- For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 15:26:31,911 :INFO :verify_equal :
- Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
-2023-04-30 15:26:37,102 :INFO :explicitly_wait_for_element :
- For 'test_city_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 15:26:37,129 :ERROR :verify_equal :
- Assertion in 'test_city_dropbox' failed: actual value 'NCR' is not equal to expected 'Noida'.
-2023-04-30 15:29:15,809 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 15:29:16,370 :INFO :explicitly_wait_for_element :
- For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 15:29:16,408 :INFO :verify_equal :
- Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
-2023-04-30 15:29:21,623 :INFO :explicitly_wait_for_element :
- For 'test_city_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 15:29:52,346 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 15:29:52,883 :INFO :explicitly_wait_for_element :
- For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 15:29:52,922 :INFO :verify_equal :
- Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
-2023-04-30 15:29:58,107 :INFO :explicitly_wait_for_element :
- For 'test_city_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 15:29:58,141 :INFO :verify_equal :
+2023-05-04 20:41:47,456 :INFO :verify_equal :
  Asserted in 'test_city_dropbox': 'Noida' value is equal to 'Noida'.
-2023-04-30 15:31:37,199 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 15:31:37,499 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-30 15:31:37,603 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-30 15:31:37,724 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-30 15:31:37,826 :INFO :verify_is_selected :
- Asserted in 'test_gender_radio': element(s) selected.
-2023-04-30 15:31:37,932 :INFO :verify_equal :
- Asserted in 'test_mobile': '5720001111' value is equal to '5720001111'.
-2023-04-30 15:31:40,130 :INFO :verify_equal :
- Asserted in 'test_date_of_birth': '15 Jun 1990' value is equal to '15 Jun 1990'.
-2023-04-30 15:31:40,271 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 15:31:40,387 :INFO :verify_equal :
- Asserted in 'test_subjects_auto_complete': 'Commerce' value is equal to 'Commerce'.
-2023-04-30 15:31:40,572 :INFO :verify_is_selected :
- Asserted in 'test_hobbies_check_boxes': element(s) selected.
-2023-04-30 15:31:40,594 :INFO :verify_is_selected :
- Asserted in 'test_hobbies_check_boxes': element(s) selected.
-2023-04-30 15:31:40,614 :INFO :verify_is_selected :
- Asserted in 'test_hobbies_check_boxes': element(s) selected.
-2023-04-30 15:31:41,232 :INFO :explicitly_wait_for_element :
- For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 15:31:41,269 :INFO :verify_equal :
- Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
-2023-04-30 15:31:46,521 :INFO :explicitly_wait_for_element :
- For 'test_city_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 15:31:46,558 :INFO :verify_equal :
- Asserted in 'test_city_dropbox': 'Noida' value is equal to 'Noida'.
-2023-04-30 16:50:22,953 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 16:50:23,116 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-30 16:50:23,268 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-30 16:50:23,394 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-30 16:50:23,501 :INFO :verify_is_selected :
- Asserted in 'test_gender_radio': element(s) selected.
-2023-04-30 16:50:23,611 :INFO :verify_equal :
- Asserted in 'test_mobile': '5720001111' value is equal to '5720001111'.
-2023-04-30 16:50:25,845 :INFO :verify_equal :
- Asserted in 'test_date_of_birth': '15 Jun 1990' value is equal to '15 Jun 1990'.
-2023-04-30 16:50:25,954 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 16:50:26,093 :INFO :verify_equal :
- Asserted in 'test_subjects_auto_complete': 'Commerce' value is equal to 'Commerce'.
-2023-04-30 16:50:26,284 :INFO :verify_is_selected :
- Asserted in 'test_hobbies_check_boxes': element(s) selected.
-2023-04-30 16:50:26,307 :INFO :verify_is_selected :
- Asserted in 'test_hobbies_check_boxes': element(s) selected.
-2023-04-30 16:50:26,329 :INFO :verify_is_selected :
- Asserted in 'test_hobbies_check_boxes': element(s) selected.
-2023-04-30 16:50:26,999 :INFO :explicitly_wait_for_element :
- For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 16:50:27,037 :INFO :verify_equal :
- Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
-2023-04-30 16:50:27,238 :INFO :explicitly_wait_for_element :
- For 'test_city_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 16:50:27,275 :INFO :verify_equal :
- Asserted in 'test_city_dropbox': 'Noida' value is equal to 'Noida'.
-2023-04-30 16:58:29,159 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 16:58:29,297 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-30 16:58:29,435 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-30 16:58:29,570 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-30 16:58:29,686 :INFO :verify_is_selected :
- Asserted in 'test_gender_radio': element(s) selected.
-2023-04-30 16:58:29,797 :INFO :verify_equal :
- Asserted in 'test_mobile': '5720001111' value is equal to '5720001111'.
-2023-04-30 16:58:31,955 :INFO :verify_equal :
- Asserted in 'test_date_of_birth': '15 Jun 1990' value is equal to '15 Jun 1990'.
-2023-04-30 16:58:32,068 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 16:58:32,190 :INFO :verify_equal :
- Asserted in 'test_subjects_auto_complete': 'Commerce' value is equal to 'Commerce'.
-2023-04-30 16:58:32,384 :INFO :verify_is_selected :
- Asserted in 'test_hobbies_check_boxes': element(s) selected.
-2023-04-30 16:58:32,407 :INFO :verify_is_selected :
- Asserted in 'test_hobbies_check_boxes': element(s) selected.
-2023-04-30 16:58:32,428 :INFO :verify_is_selected :
- Asserted in 'test_hobbies_check_boxes': element(s) selected.
-2023-04-30 16:58:33,060 :INFO :explicitly_wait_for_element :
- For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 16:58:33,097 :INFO :verify_equal :
- Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
-2023-04-30 16:58:33,296 :INFO :explicitly_wait_for_element :
- For 'test_city_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 16:58:33,333 :INFO :verify_equal :
- Asserted in 'test_city_dropbox': 'Noida' value is equal to 'Noida'.
-2023-04-30 17:02:50,904 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 17:02:51,064 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-30 17:02:51,199 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-30 17:02:51,346 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-30 17:02:51,454 :INFO :verify_is_selected :
- Asserted in 'test_gender_radio': element(s) selected.
-2023-04-30 17:02:51,565 :INFO :verify_equal :
- Asserted in 'test_mobile': '5720001111' value is equal to '5720001111'.
-2023-04-30 17:02:53,729 :INFO :verify_equal :
- Asserted in 'test_date_of_birth': '15 Jun 1990' value is equal to '15 Jun 1990'.
-2023-04-30 17:02:53,860 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 17:02:53,970 :INFO :verify_equal :
- Asserted in 'test_subjects_auto_complete': 'Commerce' value is equal to 'Commerce'.
-2023-04-30 17:02:54,154 :INFO :verify_is_selected :
- Asserted in 'test_hobbies_check_boxes': element(s) selected.
-2023-04-30 17:02:54,176 :INFO :verify_is_selected :
- Asserted in 'test_hobbies_check_boxes': element(s) selected.
-2023-04-30 17:02:54,197 :INFO :verify_is_selected :
- Asserted in 'test_hobbies_check_boxes': element(s) selected.
-2023-04-30 17:02:54,817 :INFO :explicitly_wait_for_element :
- For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 17:02:54,854 :INFO :verify_equal :
- Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
-2023-04-30 17:02:55,050 :INFO :explicitly_wait_for_element :
- For 'test_city_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 17:02:55,088 :INFO :verify_equal :
- Asserted in 'test_city_dropbox': 'Noida' value is equal to 'Noida'.
-2023-04-30 17:02:55,207 :INFO :verify_in_text :
+2023-05-04 20:41:47,576 :INFO :verify_in_text :
  Asserted in 'test_submit_button': 'Thanks for submitting the form' found in full text.
-2023-04-30 17:29:20,446 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 17:29:20,629 :INFO :verify_equal :
- Asserted in 'test_first_name': 'Semere' value is equal to 'Semere'.
-2023-04-30 17:29:20,797 :INFO :verify_equal :
- Asserted in 'test_last_name': 'Khazimat' value is equal to 'Khazimat'.
-2023-04-30 17:29:20,938 :INFO :verify_equal :
- Asserted in 'test_email': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
-2023-04-30 17:29:21,043 :INFO :verify_is_selected :
- Asserted in 'test_gender_radio': element(s) selected.
-2023-04-30 17:29:21,160 :INFO :verify_equal :
- Asserted in 'test_mobile': '5720001111' value is equal to '5720001111'.
-2023-04-30 17:29:23,462 :INFO :verify_equal :
- Asserted in 'test_date_of_birth': '15 Jun 1990' value is equal to '15 Jun 1990'.
-2023-04-30 17:29:23,577 :INFO :explicitly_wait_for_element :
- For 'test_subjects_auto_complete': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 17:29:23,694 :INFO :verify_equal :
- Asserted in 'test_subjects_auto_complete': 'Commerce' value is equal to 'Commerce'.
-2023-04-30 17:29:23,881 :INFO :verify_is_selected :
- Asserted in 'test_hobbies_check_boxes': element(s) selected.
-2023-04-30 17:29:23,903 :INFO :verify_is_selected :
- Asserted in 'test_hobbies_check_boxes': element(s) selected.
-2023-04-30 17:29:23,928 :INFO :verify_is_selected :
- Asserted in 'test_hobbies_check_boxes': element(s) selected.
-2023-04-30 17:29:24,604 :INFO :explicitly_wait_for_element :
- For 'test_state_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 17:29:24,640 :INFO :verify_equal :
- Asserted in 'test_state_dropbox': 'NCR' value is equal to 'NCR'.
-2023-04-30 17:29:24,825 :INFO :explicitly_wait_for_element :
- For 'test_city_dropbox': EC condition 'presence_of_element_located' satisfied within 5 sec.
-2023-04-30 17:29:24,862 :INFO :verify_equal :
- Asserted in 'test_city_dropbox': 'Noida' value is equal to 'Noida'.
-2023-04-30 17:29:24,977 :INFO :verify_in_text :
- Asserted in 'test_submit_button': 'Thanks for submitting the form' found in full text.
-2023-04-30 18:09:22,196 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 18:34:15,530 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 18:34:15,688 :ERROR :verify_is_selected :
- Assertion in 'test_gender_radio' failed: element(s) not selected.
-2023-04-30 18:37:36,478 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 18:37:36,678 :ERROR :verify_is_selected :
- Assertion in 'test_gender_radio' failed: element(s) not selected.
-2023-04-30 18:43:32,096 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 19:36:43,093 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 19:36:43,294 :ERROR :verify_is_selected :
- Assertion in 'test_gender_radio' failed: element(s) not selected.
-2023-04-30 19:37:28,148 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 19:49:06,679 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 19:49:06,933 :INFO :verify_is_selected :
- Asserted in 'test_gender_radio': element(s) selected.
-2023-04-30 19:59:13,380 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 20:02:13,784 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 20:14:10,002 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 20:14:10,258 :INFO :verify_is_selected :
- Asserted in 'test_gender_radio': element(s) selected.
-2023-04-30 20:20:20,734 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 20:20:20,977 :INFO :verify_is_selected :
- Asserted in 'test_gender_radio': element(s) selected.
-2023-04-30 20:34:47,158 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 20:34:47,489 :INFO :verify_is_selected :
- Asserted in 'test_gender_radio': element(s) selected.
-2023-04-30 20:35:23,685 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 20:35:23,992 :INFO :verify_is_selected :
- Asserted in 'test_gender_radio': element(s) selected.
-2023-04-30 20:49:12,540 :INFO :verify_url :
- Asserted in 'test_url_forms': 'automation-practice-form' found in URL.
-2023-04-30 20:49:12,811 :INFO :verify_is_selected :
- Asserted in 'test_gender_radio': element(s) selected.
+2023-05-04 20:41:47,975 :INFO :verify_equal :
+ Asserted in 'test_confirmation_table': 'Semere Khazimat' value is equal to 'Semere Khazimat'.
+2023-05-04 20:41:47,985 :INFO :verify_equal :
+ Asserted in 'test_confirmation_table': 'xejok61334@duiter.com' value is equal to 'xejok61334@duiter.com'.
+2023-05-04 20:41:47,996 :INFO :verify_equal :
+ Asserted in 'test_confirmation_table': 'Female' value is equal to 'Female'.
+2023-05-04 20:41:48,005 :INFO :verify_equal :
+ Asserted in 'test_confirmation_table': '5720001111' value is equal to '5720001111'.
+2023-05-04 20:41:48,015 :INFO :verify_equal :
+ Asserted in 'test_confirmation_table': '15 June,1990' value is equal to '15 June,1990'.
+2023-05-04 20:41:48,026 :INFO :verify_equal :
+ Asserted in 'test_confirmation_table': 'Commerce' value is equal to 'Commerce'.
+2023-05-04 20:41:48,036 :INFO :verify_equal :
+ Asserted in 'test_confirmation_table': 'Sports, Music' value is equal to 'Sports, Music'.
+2023-05-04 20:41:48,047 :INFO :verify_equal :
+ Asserted in 'test_confirmation_table': 'sampleFile.jpeg' value is equal to 'sampleFile.jpeg'.
+2023-05-04 20:41:48,058 :INFO :verify_equal :
+ Asserted in 'test_confirmation_table': '42213 Paramount Lane' value is equal to '42213 Paramount Lane'.
+2023-05-04 20:41:48,068 :INFO :verify_equal :
+ Asserted in 'test_confirmation_table': 'NCR Noida' value is equal to 'NCR Noida'.
