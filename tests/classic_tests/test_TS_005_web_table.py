@@ -7,7 +7,7 @@ from WebInteractionDemoQA.utilities.assert_functions import Assertions
 from WebInteractionDemoQA.utilities.reusable_functions import ReusableFunctions
 
 
-# Suite 5. Test Web Tables
+# Suite 5. Test Web Tables, Classic Model
 class TestWebTable(Assertions, ReusableFunctions):
     @pytest.mark.webtables
     def test_url_webtable(self, urls):
@@ -27,7 +27,9 @@ class TestWebTable(Assertions, ReusableFunctions):
 
             ind = i + 1
             # 'ind' = index for a column selector, (in DOM row (class='rt-td') number in order)
-            items_list = self.get_column_data(ind, as_int=True)
+
+            column_data = self.driver.find_elements(By.XPATH, f"//div[@class='rt-tr-group']//div[@class='rt-td'][{ind}]")
+            items_list = self.get_column_data(column_data, as_int=True)
             # 1 (True) to get digits as "int" to verify alphabetically
 
             sorted_items = sorted(items_list)
@@ -42,8 +44,8 @@ class TestWebTable(Assertions, ReusableFunctions):
 
         for ind in range(1, num_columns + 1):
             # 'ind' = index for a column selector, (in DOM row (class='rt-td') number in order)
-
-            items_list = self.get_column_data(ind, as_int=False)
+            column_data = self.driver.find_elements(By.XPATH, f"//div[@class='rt-tr-group']//div[@class='rt-td'][{ind}]")
+            items_list = self.get_column_data(column_data, as_int=False)
             # call reusable func to get data from a column before search
             # 0 parameter (False) to get digits as "str" to use verify_in_text assertion
 
@@ -53,7 +55,7 @@ class TestWebTable(Assertions, ReusableFunctions):
             self.driver.find_element(By.ID, "searchBox").send_keys(search_value)
             # insert any value from given column to 'search' box
 
-            search_result_list = self.get_column_data(ind, as_int=False)
+            search_result_list = self.get_column_data(column_data, as_int=False)
             # call reusable func to get data from a column after search
             # 0 parameter (False) to get digits as "str" to use verify_in_text assertion
 
@@ -66,8 +68,8 @@ class TestWebTable(Assertions, ReusableFunctions):
     @pytest.mark.webtables
     def test_webtable_add_row(self):
         # Add a row with test data
-
-        rows_list = self.get_column_data(1, as_int=False)
+        column_data = self.driver.find_elements(By.XPATH, f"//div[@class='rt-tr-group']//div[@class='rt-td'][1]")
+        rows_list = self.get_column_data(column_data, as_int=False)
         original_rows_amount = len(rows_list)
         # take a list of rows in first column and define an original number of filled rows
 
@@ -134,8 +136,8 @@ class TestWebTable(Assertions, ReusableFunctions):
 
         log = Assertions.get_logger()
         test_func_name = inspect.stack()[1][3]
-
-        first_column_elements = self.get_column_data(1, as_int=False)
+        column_data = self.driver.find_elements(By.XPATH, f"//div[@class='rt-tr-group']//div[@class='rt-td'][1]")
+        first_column_elements = self.get_column_data(column_data, as_int=False)
         original_rows_amount = len(first_column_elements)
         # take a list of elements in the first column and define an original number of filled rows
 
@@ -143,7 +145,7 @@ class TestWebTable(Assertions, ReusableFunctions):
                                  f"//div[@class='rt-td' and text()='{TestData.data_edit_row_table[1]}']/following-sibling::div//span[@title='Delete']").click()
         # delete
 
-        verify_first_column_elements = self.get_column_data(1, as_int=False)
+        verify_first_column_elements = self.get_column_data(column_data, as_int=False)
         left_rows_amount = len(verify_first_column_elements)
         self.verify_equal(left_rows_amount + 1, original_rows_amount)
         # verify number of columns one less

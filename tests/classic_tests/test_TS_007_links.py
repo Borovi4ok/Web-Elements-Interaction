@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 
-# Suite 7. Test Links
+# Suite 7. Test Links, Classic Model
 class TestLinks(Assertions, ReusableFunctions):
     @pytest.mark.links
     def test_url_links(self, urls):

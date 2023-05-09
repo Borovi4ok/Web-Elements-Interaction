@@ -6,7 +6,7 @@ from WebInteractionDemoQA.utilities.reusable_functions import ReusableFunctions
 from selenium.common.exceptions import NoSuchElementException
 
 
-# Suite 3. Test checkbox block on "checkbox" page
+# Suite 3. Test checkbox block on "checkbox" page, Classic Model
 class TestCheckBox(Assertions, ReusableFunctions):
     def test_url_checkbox(self, urls):
         self.driver.get(urls["checkbox"])

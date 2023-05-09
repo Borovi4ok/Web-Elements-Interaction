@@ -1,0 +1,18 @@
+2023-05-08 20:29:39,290 :INFO :verify_url :
+ Asserted in 'test_url_windows': 'windows' found in URL.
+2023-05-08 20:29:39,697 :INFO :verify_url :
+ Asserted in 'test_new_tab': 'https://demoqa.com/sample' found in URL.
+2023-05-08 20:29:39,759 :INFO :explicitly_wait_for_element :
+ For 'test_new_tab': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-05-08 20:29:39,833 :INFO :verify_equal :
+ Asserted in 'test_new_tab': 'This is a sample page' value is equal to 'This is a sample page'.
+2023-05-08 20:29:40,409 :INFO :verify_url :
+ Asserted in 'test_new_window': 'https://demoqa.com/sample' found in URL.
+2023-05-08 20:29:40,556 :INFO :explicitly_wait_for_element :
+ For 'test_new_window': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-05-08 20:29:40,613 :INFO :verify_equal :
+ Asserted in 'test_new_window': 'This is a sample page' value is equal to 'This is a sample page'.
+2023-05-08 20:29:41,228 :INFO :explicitly_wait_for_element :
+ For 'test_about_blank_window': EC condition 'presence_of_element_located' satisfied within 5 sec.
+2023-05-08 20:29:41,264 :INFO :verify_in_text :
+ Asserted in 'test_about_blank_window': 'Knowledge increases by sharing but not by saving.' found in full text.

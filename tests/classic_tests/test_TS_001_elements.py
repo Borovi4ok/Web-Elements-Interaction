@@ -4,7 +4,7 @@ from WebInteractionDemoQA.utilities.assert_functions import Assertions
 from WebInteractionDemoQA.utilities.reusable_functions import ReusableFunctions
 
 
-# Suite 1. Test blocks and text presence on "Elements" page
+# Suite 1. Test blocks and text presence on "Elements" page, Classic Model
 class TestElementsPage(Assertions, ReusableFunctions):
     @pytest.mark.elements
     def test_url_element(self, urls):

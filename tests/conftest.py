@@ -14,10 +14,11 @@ from WebInteractionDemoQA.data.test_data import TestData
 driver = None
 default_download_dir = None
 
+
 # "browser_name" - command line option
 def pytest_addoption(parser):
     parser.addoption(
-        "--browser_name", action="store", default="chrome", help="my option: what browser to use to run tests"
+        "--browser_name", action="store", default="firefox", help="my option: what browser to use to run tests"
     )
 
 
@@ -58,9 +59,11 @@ def urls():
             "webtables": "https://demoqa.com/webtables",
             "buttons": "https://demoqa.com/buttons",
             "links": "https://demoqa.com/links",
+            "broken_links": "https://demoqa.com/broken",
             "upload_download": "https://demoqa.com/upload-download",
             "dynamic_properties": "https://demoqa.com/dynamic-properties",
-            "forms": "https://demoqa.com/automation-practice-form"
+            "forms": "https://demoqa.com/automation-practice-form",
+            "windows": "https://demoqa.com/browser-windows"
             }
 
 

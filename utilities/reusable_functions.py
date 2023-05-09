@@ -13,16 +13,13 @@ from WebInteractionDemoQA.utilities.assert_functions import Assertions
 @pytest.mark.usefixtures("setup")
 class ReusableFunctions:
 
-    def get_column_data(self, ind, as_int=True):
-        column_data = self.driver.find_elements(By.XPATH, f"//div[@class='rt-tr-group']//div[@class='rt-td'][{ind}]")
-        # data from any given column in table depending on 'ind'
-        # 'ind' = index for a column selector, (in DOM row (class='rt-td') number in order)
+    def get_column_data(self, column_data, as_int=True):
         # as_int parameter to return digits as: if True = int, if False = str
 
         items_list = []
         # items_list - extracted text, removed empty strings, digits converted in int or str
-        for item in column_data:
-            text = item.text
+        for data in column_data:
+            text = data.text
             if text.strip() and not text.isdigit():
 
                 items_list.append(text)

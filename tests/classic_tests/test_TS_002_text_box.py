@@ -5,7 +5,7 @@ from WebInteractionDemoQA.utilities.assert_functions import Assertions
 from WebInteractionDemoQA.utilities.reusable_functions import ReusableFunctions
 
 
-# Suite 2. Test text-box submit form on "text_box" page
+# Suite 2. Test text-box submit form on "text_box" page, Classic Model
 class TestTextBox(Assertions, ReusableFunctions):
     @pytest.mark.text_box
     def test_url_box(self, urls):

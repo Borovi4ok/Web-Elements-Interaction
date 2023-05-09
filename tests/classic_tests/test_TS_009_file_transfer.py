@@ -6,7 +6,7 @@ from WebInteractionDemoQA.utilities.reusable_functions import ReusableFunctions
 from selenium.webdriver.common.by import By
 
 
-# Suite 7. Test File Transfer
+# Suite 9. Test File Transfer, Classic Model
 class TestFileTransfer(Assertions, ReusableFunctions):
     @pytest.mark.file_transfer
     def test_url_file_transfer(self, urls):

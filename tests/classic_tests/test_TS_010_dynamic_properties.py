@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 import time
 
 
-# Suite 8. Test Dynamic Properties
+# Suite 10. Test Dynamic Properties, Classic Model
 class TestDynamicProperties(Assertions, ReusableFunctions):
     @pytest.mark.dynamic_properties
     def test_url_dynamic_properties(self, urls):

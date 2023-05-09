@@ -10,7 +10,7 @@ def forms_page(setup):
     return ObjectsForms(setup)
 
 
-# Suite 9. Test Forms
+# Suite 11. Test Forms, Page Object Model
 class TestForms(Assertions, ReusableFunctions):
 
     @pytest.mark.forms

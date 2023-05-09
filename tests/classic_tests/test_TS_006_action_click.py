@@ -4,7 +4,7 @@ from WebInteractionDemoQA.utilities.reusable_functions import ReusableFunctions
 from selenium.webdriver.common.by import By
 
 
-# Suite 6. Test Action Click
+# Suite 6. Test Action Click, Classic Model
 class TestActionClick(Assertions, ReusableFunctions):
     @pytest.mark.action_click
     def test_url_action(self, urls):

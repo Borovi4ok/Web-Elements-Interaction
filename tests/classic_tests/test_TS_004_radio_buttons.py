@@ -5,9 +5,9 @@ from WebInteractionDemoQA.utilities.reusable_functions import ReusableFunctions
 import inspect
 
 
-# Suite 1. Test blocks and text presence on "Elements" page
+# Suite 4. Test radio-buttons, Classic Model
 class TestRadioButtons(Assertions, ReusableFunctions):
-    # Suite 4. Test radio-buttons
+
     @pytest.mark.radio
     def test_url_radio_button(self, urls):
         self.driver.get(urls["radio_button"])
