@@ -1,11 +1,9 @@
 import os
 import time
 from selenium.webdriver.support import expected_conditions as EC
-
 import pytest
 import inspect
 import logging
-
 from selenium.webdriver.support.wait import WebDriverWait
 
 
@@ -26,62 +24,70 @@ class Assertions:
     def verify_url(self, text):
         test_func_name = inspect.stack()[1][3]
         log = Assertions.get_logger()
+
         try:
             assert text in self.driver.current_url
         except AssertionError:
-            print(f"\n Assertion in '{test_func_name}' failed: '{text}' not found in URL.")
-            log.error(f"\n Assertion in '{test_func_name}' failed: '{text}' not found in URL.")
+            message = f"\n Assertion in '{test_func_name}' failed: '{text}' not found in URL."
+            print(message)
+            log.error(message)
             raise
         else:
-            print(f"\n Asserted in '{test_func_name}': '{text}' found in URL.")
-            log.info(f"\n Asserted in '{test_func_name}': '{text}' found in URL.")
+            message = f"\n Asserted in '{test_func_name}': '{text}' found in URL."
+            print(message)
+            log.info(message)
 
     @staticmethod
     def verify_equal(actual, expect):
         test_func_name = inspect.stack()[1][3]
         log = Assertions.get_logger()
+
         try:
             assert actual == expect
         except AssertionError:
-            print(
-                f"\n Assertion in '{test_func_name}' failed: actual value '{actual}' is not equal to expected '{expect}'.")
-            log.error(
-                f"\n Assertion in '{test_func_name}' failed: actual value '{actual}' is not equal to expected '{expect}'.")
+            message = f"\n Assertion in '{test_func_name}' failed: actual value '{actual}' is not equal to expected '{expect}'."
+            print(message)
+            log.error(message)
             raise
         else:
-            print(f"\n Asserted in '{test_func_name}': '{actual}' value is equal to '{expect}.")
-            log.info(f"\n Asserted in '{test_func_name}': '{actual}' value is equal to '{expect}'.")
+            message = f"\n Asserted in '{test_func_name}': '{actual}' value is equal to '{expect}."
+            print(message)
+            log.info(message)
 
     @staticmethod
     def verify_in_text(short_text, full_text):
         test_func_name = inspect.stack()[1][3]
         log = Assertions.get_logger()
+
         try:
             assert short_text in full_text
         except AssertionError:
-            print(
-                f"\n Assertion in '{test_func_name}' failed: text '{short_text}' is not present in full text '{full_text}'.")
-            log.error(
-                f"\n Assertion in '{test_func_name}' failed: text '{short_text}' is not present in full text '{full_text}'.")
+            message = f"\n Assertion in '{test_func_name}' failed: text '{short_text}' is not present in full text '{full_text}'."
+            print(message)
+            log.error(message)
             raise
         else:
-            print(f"\n Asserted in '{test_func_name}': '{short_text}' found in full text.")
-            log.info(f"\n Asserted in '{test_func_name}': '{short_text}' found in full text.")
+            message = f"\n Asserted in '{test_func_name}': '{short_text}' found in full text."
+            print(message)
+            log.info(message)
 
     def verify_is_displayed(self, element):
         test_func_name = inspect.stack()[1][3]
         log = Assertions.get_logger()
+
         try:
             wait = WebDriverWait(self.driver, 10)
             wait.until(EC.visibility_of(element))
             assert element.is_displayed()
         except AssertionError:
-            print(f"\n Assertion in '{test_func_name}' failed: element not found.")
-            log.error(f"\n Assertion in '{test_func_name}' failed: element not found.")
+            message = f"\n Assertion in '{test_func_name}' failed: element not found."
+            print(message)
+            log.error(message)
             raise
         else:
-            print(f"\n Asserted in '{test_func_name}': element displayed.")
-            log.info(f"\n Asserted in '{test_func_name}': element displayed.")
+            message = f"\n Asserted in '{test_func_name}': element displayed."
+            print(message)
+            log.error(message)
 
     @staticmethod
     def verify_is_selected(element, is_selected=True):
@@ -91,6 +97,7 @@ class Assertions:
 
         test_func_name = inspect.stack()[1][3]
         log = Assertions.get_logger()
+
         try:
             if isinstance(element, list):
                 i = 0
@@ -111,32 +118,39 @@ class Assertions:
 
         except AssertionError:
             if is_selected:
-                print(f"\n Assertion in '{test_func_name}' failed: element(s) not selected.")
-                log.error(f"\n Assertion in '{test_func_name}' failed: element(s) not selected.")
+                message = f"\n Assertion in '{test_func_name}' failed: element(s) not selected."
+                print(message)
+                log.error(message)
             else:
-                print(f"\n Assertion in '{test_func_name}' failed: element(s) selected.")
-                log.error(f"\n Assertion in '{test_func_name}' failed: element(s) selected.")
+                message = f"\n Assertion in '{test_func_name}' failed: element(s) selected."
+                print(message)
+                log.error(message)
             raise
         else:
             if is_selected:
-                print(f"\n Asserted in '{test_func_name}': element(s) selected.")
-                log.info(f"\n Asserted in '{test_func_name}': element(s) selected.")
+                message = f"\n Asserted in '{test_func_name}': element(s) selected."
+                print(message)
+                log.info(message)
             else:
-                print(f"\n Asserted in '{test_func_name}': element(s) not selected.")
-                log.info(f"\n Asserted in '{test_func_name}': element(s) not selected.")
+                message = f"\n Asserted in '{test_func_name}': element(s) not selected."
+                print(message)
+                log.info(message)
 
     def verify_deleted(self, by, locator):
         test_func_name = inspect.stack()[1][3]
         log = Assertions.get_logger()
+
         try:
             assert not self.driver.find_elements(by, locator)
         except AssertionError:
-            print(f"\n Assertion in '{test_func_name}' failed: element found.")
-            log.error(f"\n Assertion in '{test_func_name}' failed: element found.")
+            message = f"\n Assertion in '{test_func_name}' failed: element found."
+            print(message)
+            log.error(message)
             raise
         else:
-            print(f"\n Asserted in '{test_func_name}': element deleted.")
-            log.info(f"\n Asserted in '{test_func_name}': element deleted.")
+            message = f"\n Asserted in '{test_func_name}': element deleted."
+            print(message)
+            log.info(message)
 
     @staticmethod
     def verify_path_exists(path, timeout):
@@ -149,22 +163,100 @@ class Assertions:
             timeout -= 1
 
         if os.path.exists(path):
-            print(f"\n Assertion in '{test_func_name}': file downloaded successfully!")
-            log.info(f"\n Assertion in '{test_func_name}': file downloaded successfully!")
+            message = f"\n Assertion in '{test_func_name}': file downloaded successfully!"
+            print(message)
+            log.info(message)
         else:
-            print(f"\n Assertion in '{test_func_name}':File download failed")
-            log.error(f"\n Assertion in '{test_func_name}':File download failed")
+            message = f"\n Assertion in '{test_func_name}':File download failed"
+            print(message)
+            log.error(message)
 
     @staticmethod
     def verify_enabled(element):
         test_func_name = inspect.stack()[1][3]
         log = Assertions.get_logger()
+
         try:
             assert element.is_enabled()
         except AssertionError:
-            print(f"\n Assertion in '{test_func_name}' failed: element is not enabled.")
-            log.error(f"\n Assertion in '{test_func_name}' failed: element is not enabled.")
+            message = f"\n Assertion in '{test_func_name}' failed: element is not enabled."
+            print(message)
+            log.error(message)
             raise
         else:
-            print(f"\n Asserted in '{test_func_name}': element is enabled.")
-            log.info(f"\n Asserted in '{test_func_name}': element is enabled.")
+            message = f"\n Asserted in '{test_func_name}': element is enabled."
+            print(message)
+            log.info(message)
+
+    def verify_image_width(self, image):
+        test_func_name = inspect.stack()[1][3]
+        log = Assertions.get_logger()
+
+        natural_width = self.driver.execute_script("return arguments[0].naturalWidth;", image)
+        if natural_width > 0:
+            message = f"\n Asserted in '{test_func_name}': image is present with width {natural_width} px."
+            print(message)
+            log.info(message)
+        elif natural_width == 0:
+            message = f"\n Assertion in '{test_func_name}' failed: image is broken, width is {natural_width} px."
+            print(message)
+            log.error(message)
+            # raise AssertionError in case of a broken image
+            raise AssertionError(message)
+        else:
+            message = f"\n Something went wrong in '{test_func_name}': image has width '{natural_width}' px."
+            print(message)
+            log.error(message)
+            # raise ValueError for other unexpected cases
+            raise ValueError(message)
+
+    # creating custom wait condition to verify a URL change
+    class URLChange:
+        def __init__(self, driver, original_url):
+            # Initializes the class instance with driver and original_url
+            self.driver = driver
+            self.current_url = original_url
+
+        def __call__(self, driver):
+            # Special method to make the instance callable, which verifies the URL change
+            return self.driver.current_url != self.current_url
+
+    def verify_url_change(self, by_locator, time_wait):
+        # method to verify a URL change after clicking a link
+        test_func_name = inspect.stack()[1][3]
+        log = self.get_logger()
+
+        original_url = self.driver.current_url
+        # saving the current URL as original_url before clicking the link
+        try:
+            locator_strategy, locator_value = by_locator
+            # unpacking 'by_locator' tuple
+
+            # click the link
+            link = self.driver.find_element(locator_strategy, locator_value)
+            wait = WebDriverWait(self.driver, time_wait)
+            wait.until(EC.element_to_be_clickable((locator_strategy, locator_value)))
+            link.click()
+
+            url_changes = self.URLChange(self.driver, original_url)
+            # creates an instance of URLChange class to verify the URL change
+
+            wait.until(url_changes)
+            # waits for the URL to change
+
+            new_url = self.driver.current_url
+            # get new URL after clicking the link
+
+            # assert that the new URL is different from the original URL
+            assert new_url != original_url
+            message = f"\n Asserted in '{test_func_name}': new URL is '{new_url}' and it's different from the original."
+            print(message)
+            log.info(message)
+            return new_url
+
+        except AssertionError:
+            message = f"\n Asserted in '{test_func_name}' failed: new URL is '{new_url}' and it's not different from " \
+                      f"the original."
+            print(message)
+            log.error(message)
+            raise

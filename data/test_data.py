@@ -18,6 +18,9 @@ class TestData:
     # for Suite 7. Test Links, "test_api_call_link"
     expected_status_respond = ["201", "204", "301", "400", "401", "403", "404"]
 
+    # for Suite 8. Test Broken Links and Images
+    expected_link_url = "https://demoqa.com/"
+
     # conftest.py, "setup"
     # for Suite 9. Test File Transfer, "test_download"
     # for Suite 9. Test File Transfer, "test_upload"

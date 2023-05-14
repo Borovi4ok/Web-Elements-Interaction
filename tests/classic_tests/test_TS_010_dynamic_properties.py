@@ -29,7 +29,7 @@ class TestDynamicProperties(Assertions, ReusableFunctions):
         ec_condition = "element_to_be_clickable"
 
         # call explicit wait
-        enabled_element = self.explicitly_wait_for_element(by_locator, time_to_wait, ec_condition)
+        enabled_element = self.explicitly_wait(by_locator, time_to_wait, ec_condition)
 
         # no need to assert since "element_to_be_clickable" condition is already satisfied
         self.verify_enabled(enabled_element)

@@ -21,6 +21,7 @@ def get_excel_row_data(test_case_name):
 
                 # create a dictionary of key-value pairs
                 excel_data_dict[sheet.cell(row=1, column=j).value] = sheet.cell(row=i, column=j).value
+    # print(excel_data_dict)
     return excel_data_dict
 
 

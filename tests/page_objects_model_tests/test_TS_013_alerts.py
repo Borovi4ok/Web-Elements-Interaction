@@ -1,19 +1,7 @@
-import inspect
-import os
-import random
-from selenium.common import NoSuchElementException
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
-from WebInteractionDemoQA.data.test_data import TestData
-from selenium.webdriver.chrome.options import Options
 import pytest
-from WebInteractionDemoQA.data.excel_data import get_excel_data
 from WebInteractionDemoQA.page_objects.objects_TS_013_alerts import Alerts
 from WebInteractionDemoQA.utilities.assert_functions import Assertions
 from WebInteractionDemoQA.utilities.reusable_functions import ReusableFunctions
-import time
 from WebInteractionDemoQA.data.excel_data import get_excel_data
 
 
@@ -46,7 +34,7 @@ class TestAlerts(Assertions, ReusableFunctions):
         expected_text = get_excel_data("013_alert", "text_verify")
         self.verify_in_text(alert_text, expected_text)
         alert.accept()
-    
+
     @pytest.mark.alerts
     def test_delayed_alert(self, alerts_page, get_excel_data):
         alerts_page.get_delayed_alert_button().click()
@@ -61,7 +49,7 @@ class TestAlerts(Assertions, ReusableFunctions):
         expected_text = get_excel_data("013_delayed_alert", "text_verify")
         self.verify_in_text(alert_text, expected_text)
         alert.accept()
-    
+
     @pytest.mark.alerts
     def test_confirm_accept(self, alerts_page, get_excel_data):
         # click "confirm box" button
@@ -77,7 +65,7 @@ class TestAlerts(Assertions, ReusableFunctions):
         expected_text = get_excel_data("013_confirm_accept", "text_verify")
         self.verify_in_text(alert_text, expected_text)
 
-        # accept "confirm" and verify success message 
+        # accept "confirm" and verify success message
         alert.accept()
         result_element = alerts_page.get_confirm_result_message()
         result_message = result_element.text

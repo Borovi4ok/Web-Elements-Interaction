@@ -1,0 +1,14 @@
+2023-05-13 20:01:30,477 :INFO :verify_url :
+ Asserted in 'test_url_broken_links': 'broken' found in URL.
+2023-05-13 20:01:30,547 :ERROR :verify_is_displayed :
+ Asserted in 'test_valid_image': element displayed.
+2023-05-13 20:01:30,566 :INFO :verify_image_width :
+ Asserted in 'test_valid_image': image is present with width 347 px.
+2023-05-13 20:01:30,609 :ERROR :verify_is_displayed :
+ Asserted in 'test_broken_image': element displayed.
+2023-05-13 20:01:30,626 :ERROR :verify_image_width :
+ Assertion in 'test_broken_image' failed: image is broken, width is 0 px.
+2023-05-13 20:01:33,235 :INFO :verify_url_change :
+ Asserted in 'test_valid_link': new URL is 'https://demoqa.com/' and it's different from the original.
+2023-05-13 20:01:33,248 :INFO :verify_equal :
+ Asserted in 'test_valid_link': 'https://demoqa.com/' value is equal to 'https://demoqa.com/.

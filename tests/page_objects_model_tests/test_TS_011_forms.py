@@ -1,6 +1,6 @@
 from WebInteractionDemoQA.data.test_data import TestData
 import pytest
-from WebInteractionDemoQA.page_objects.objects_forms import ObjectsForms
+from WebInteractionDemoQA.page_objects.objects_TS_011_forms import ObjectsForms
 from WebInteractionDemoQA.utilities.assert_functions import Assertions
 from WebInteractionDemoQA.utilities.reusable_functions import ReusableFunctions
 
@@ -102,7 +102,7 @@ class TestForms(Assertions, ReusableFunctions):
         by_locator = forms_page.subjects_auto_complete_suggestions
         time_to_wait = 5
         ec_condition = "presence_of_element_located"
-        self.explicitly_wait_for_element(by_locator, time_to_wait, ec_condition)
+        self.explicitly_wait(by_locator, time_to_wait, ec_condition)
 
         # get list of suggestions and select the value
         suggestions = forms_page.get_subjects_auto_complete_suggestions()
@@ -168,7 +168,7 @@ class TestForms(Assertions, ReusableFunctions):
 
         # wait for a locator with selected value to be located
         by_locator = ObjectsForms.state_selected
-        self.explicitly_wait_for_element(by_locator, 5, "presence_of_element_located")
+        self.explicitly_wait(by_locator, 5, "presence_of_element_located")
 
         # verify selected state matches expected
         # 'state_elements' returns list
@@ -193,7 +193,7 @@ class TestForms(Assertions, ReusableFunctions):
 
         # wait for a locator with selected value to be located
         by_locator = ObjectsForms.city_selected
-        self.explicitly_wait_for_element(by_locator, 5, "presence_of_element_located")
+        self.explicitly_wait(by_locator, 5, "presence_of_element_located")
 
         # verify selected city matches expected
         # 'city_elements' returns list

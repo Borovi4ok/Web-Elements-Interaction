@@ -18,7 +18,7 @@ default_download_dir = None
 # "browser_name" - command line option
 def pytest_addoption(parser):
     parser.addoption(
-        "--browser_name", action="store", default="firefox", help="my option: what browser to use to run tests"
+        "--browser_name", action="store", default="chrome", help="my option: what browser to use to run tests"
     )
 
 
@@ -63,7 +63,8 @@ def urls():
             "upload_download": "https://demoqa.com/upload-download",
             "dynamic_properties": "https://demoqa.com/dynamic-properties",
             "forms": "https://demoqa.com/automation-practice-form",
-            "windows": "https://demoqa.com/browser-windows"
+            "windows": "https://demoqa.com/browser-windows",
+            "alerts": "https://demoqa.com/alerts"
             }
 
 
@@ -71,8 +72,8 @@ def urls():
 def action_chains():
     return ActionChains(driver)
 
-
-"""# code - two func - that captures screenshot when TC failed and place in report
+"""
+# code - two func - that captures screenshot when TC failed and place in report
 @pytest.mark.hookwrapper
 def pytest_runtest_makereport(item):
     pytest_html = item.config.pluginmanager.getplugin('html')

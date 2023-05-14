@@ -1,0 +1,28 @@
+2023-05-14 19:45:19,876 :INFO :verify_url :
+ Asserted in 'test_url_alerts': 'alerts' found in URL.
+2023-05-14 19:45:19,937 :INFO :explicitly_wait :
+ For 'test_alert': EC condition 'alert_is_present' satisfied within 7 sec.
+2023-05-14 19:45:19,962 :INFO :verify_in_text :
+ Asserted in 'test_alert': 'You clicked a button' found in full text.
+2023-05-14 19:45:25,144 :INFO :explicitly_wait :
+ For 'test_delayed_alert': EC condition 'alert_is_present' satisfied within 7 sec.
+2023-05-14 19:45:25,167 :INFO :verify_in_text :
+ Asserted in 'test_delayed_alert': 'This alert appeared after 5 seconds' found in full text.
+2023-05-14 19:45:25,243 :INFO :explicitly_wait :
+ For 'test_confirm_accept': EC condition 'alert_is_present' satisfied within 5 sec.
+2023-05-14 19:45:25,267 :INFO :verify_in_text :
+ Asserted in 'test_confirm_accept': 'Do you confirm action?' found in full text.
+2023-05-14 19:45:25,335 :INFO :verify_in_text :
+ Asserted in 'test_confirm_accept': 'You selected Ok' found in full text.
+2023-05-14 19:45:25,402 :INFO :explicitly_wait :
+ For 'test_confirm_dismiss': EC condition 'alert_is_present' satisfied within 5 sec.
+2023-05-14 19:45:25,424 :INFO :verify_in_text :
+ Asserted in 'test_confirm_dismiss': 'Do you confirm action?' found in full text.
+2023-05-14 19:45:25,475 :INFO :verify_in_text :
+ Asserted in 'test_confirm_dismiss': 'You selected Cancel' found in full text.
+2023-05-14 19:45:25,558 :INFO :explicitly_wait :
+ For 'test_prompt': EC condition 'alert_is_present' satisfied within 5 sec.
+2023-05-14 19:45:25,586 :INFO :verify_in_text :
+ Asserted in 'test_prompt': 'Please enter your name' found in full text.
+2023-05-14 19:45:25,652 :INFO :verify_in_text :
+ Asserted in 'test_prompt': 'Abudintark' found in full text.
