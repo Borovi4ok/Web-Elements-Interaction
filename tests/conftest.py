@@ -64,7 +64,8 @@ def urls():
             "dynamic_properties": "https://demoqa.com/dynamic-properties",
             "forms": "https://demoqa.com/automation-practice-form",
             "windows": "https://demoqa.com/browser-windows",
-            "alerts": "https://demoqa.com/alerts"
+            "alerts": "https://demoqa.com/alerts",
+            "frames": "https://demoqa.com/frames"
             }
 
 

@@ -1,0 +1,8 @@
+2023-05-16 21:43:36,803 :INFO :verify_url :
+ Asserted in 'test_url_frames': 'frames' found in URL.
+2023-05-16 21:43:36,885 :INFO :verify_in_text :
+ Asserted in 'test_iframe_1': 'This is a sample page' found in full text.
+2023-05-16 21:43:36,916 :INFO :log_print :
+ For 'test_iframe_2': found 2 iframes on the page
+2023-05-16 21:43:36,977 :INFO :verify_in_text :
+ Asserted in 'test_iframe_2': 'This is a sample page' found in full text.

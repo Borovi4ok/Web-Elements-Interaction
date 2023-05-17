@@ -98,3 +98,14 @@ class ReusableFunctions:
                 print(message)
                 log.info(message)
                 raise
+
+    # log and print message with respective log level
+    @staticmethod
+    def log_print(log_level, message):
+        # e.g.( "info", "some message to log")
+
+        test_func_name = inspect.stack()[1][3]
+        log = Assertions.get_logger()
+        print(f"\n For '{test_func_name}': {message}")
+        getattr(log, log_level)(f"\n For '{test_func_name}': {message}")
+        # getattr - dynamically retrieves the logging function based on the string log_level

@@ -1,19 +1,7 @@
-import inspect
-import os
-import random
-from selenium.common import NoSuchElementException
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
-from WebInteractionDemoQA.data.test_data import TestData
-from selenium.webdriver.chrome.options import Options
 import pytest
-from WebInteractionDemoQA.data.excel_data import get_excel_data
 from WebInteractionDemoQA.page_objects.objects_TS_014_frames import Frames
 from WebInteractionDemoQA.utilities.assert_functions import Assertions
 from WebInteractionDemoQA.utilities.reusable_functions import ReusableFunctions
-import time
 from WebInteractionDemoQA.data.excel_data import get_excel_data
 
 
@@ -27,6 +15,8 @@ class TestFrames(Assertions, ReusableFunctions):
     @pytest.mark.frames
     def test_url_frames(self, urls, get_excel_data):
         self.driver.get(urls["frames"])
+        title = self.driver.title
+        print(title)
 
         # get_excel_data(TS#_TC_name, key)
         expected_url = get_excel_data("014_url_frames", "text_verify")
