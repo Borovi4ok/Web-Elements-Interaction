@@ -1,0 +1,6 @@
+2023-05-19 20:30:50,584 :INFO :verify_url :
+ Asserted in 'test_url_nested_frames': 'nestedframes' found in URL.
+2023-05-19 20:30:50,725 :INFO :verify_in_text :
+ Asserted in 'test_parent_frame': 'Parent frame' found in full text.
+2023-05-19 20:30:50,836 :INFO :verify_in_text :
+ Asserted in 'test_child_frame': 'Child Iframe' found in full text.

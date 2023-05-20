@@ -1,0 +1,6 @@
+2023-05-19 21:14:36,905 :INFO :verify_url :
+ Asserted in 'test_url_modal_dialogs': 'modal-dialogs' found in URL.
+2023-05-19 21:14:37,132 :INFO :verify_in_text :
+ Asserted in 'test_small_modal': 'This is a small modal' found in full text.
+2023-05-19 21:14:37,467 :INFO :verify_in_text :
+ Asserted in 'test_large_modal': 'standard dummy text ever since the 1500s,' found in full text.

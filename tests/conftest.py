@@ -65,7 +65,9 @@ def urls():
             "forms": "https://demoqa.com/automation-practice-form",
             "windows": "https://demoqa.com/browser-windows",
             "alerts": "https://demoqa.com/alerts",
-            "frames": "https://demoqa.com/frames"
+            "frames": "https://demoqa.com/frames",
+            "nested_frames": "https://demoqa.com/nestedframes",
+            "modal_dialogs": "https://demoqa.com/modal-dialogs",
             }
 
 
