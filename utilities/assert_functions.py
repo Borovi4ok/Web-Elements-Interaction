@@ -50,7 +50,7 @@ class Assertions:
             log.error(message)
             raise
         else:
-            message = f"\n Asserted in '{test_func_name}': '{actual}' value is equal to '{expect}."
+            message = f"\n Asserted in '{test_func_name}': '{actual}' value is equal to '{expect}'."
             print(message)
             log.info(message)
 
@@ -86,6 +86,23 @@ class Assertions:
             raise
         else:
             message = f"\n Asserted in '{test_func_name}': element displayed."
+            print(message)
+            log.error(message)
+
+    @staticmethod
+    def verify_is_not_displayed(element):
+        test_func_name = inspect.stack()[1][3]
+        log = Assertions.get_logger()
+
+        try:
+            assert not element.is_displayed()
+        except AssertionError:
+            message = f"\n Assertion in '{test_func_name}' failed: element found."
+            print(message)
+            log.error(message)
+            raise
+        else:
+            message = f"\n Asserted in '{test_func_name}': element is not displayed."
             print(message)
             log.error(message)
 

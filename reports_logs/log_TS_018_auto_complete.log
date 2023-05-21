@@ -1,0 +1,14 @@
+2023-05-21 20:23:35,132 :INFO :verify_url :
+ Asserted in 'test_url_autocomplete': 'auto-complete' found in URL.
+2023-05-21 20:23:35,294 :INFO :explicitly_wait :
+ For 'test_multiple_colors_field': EC condition 'presence_of_all_elements_located' satisfied within 5sec.
+2023-05-21 20:23:35,512 :INFO :explicitly_wait :
+ For 'test_multiple_colors_field': EC condition 'presence_of_all_elements_located' satisfied within 5sec.
+2023-05-21 20:23:35,665 :INFO :explicitly_wait :
+ For 'test_multiple_colors_field': EC condition 'presence_of_all_elements_located' satisfied within 5sec.
+2023-05-21 20:23:35,781 :INFO :verify_equal :
+ Asserted in 'test_multiple_colors_field': '['Green', 'Yellow', 'Red']' value is equal to '['Green', 'Yellow', 'Red']'.
+2023-05-21 20:23:35,902 :INFO :explicitly_wait :
+ For 'test_single_color_field': EC condition 'presence_of_all_elements_located' satisfied within 5sec.
+2023-05-21 20:23:35,999 :INFO :verify_equal :
+ Asserted in 'test_single_color_field': 'Indigo' value is equal to 'Indigo'.

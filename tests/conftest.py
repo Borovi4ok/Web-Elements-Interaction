@@ -68,6 +68,8 @@ def urls():
             "frames": "https://demoqa.com/frames",
             "nested_frames": "https://demoqa.com/nestedframes",
             "modal_dialogs": "https://demoqa.com/modal-dialogs",
+            "accordion": "https://demoqa.com/accordian",
+            "auto_complete": "https://demoqa.com/auto-complete",
             }
 
 

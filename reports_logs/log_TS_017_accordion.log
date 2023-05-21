@@ -1,0 +1,34 @@
+2023-05-21 16:38:59,007 :INFO :verify_url :
+ Asserted in 'test_url_accordion': 'accordian' found in URL.
+2023-05-21 16:38:59,034 :INFO :log_print :
+ For 'test_accordion': Found 3 card headers in accordion
+2023-05-21 16:38:59,080 :INFO :log_print :
+ For 'test_accordion': Testing 'What is Lorem Ipsum?' card:
+2023-05-21 16:38:59,156 :INFO :verify_equal :
+ Asserted in 'test_accordion': 'collapse show' value is equal to 'collapse show'.
+2023-05-21 16:38:59,218 :ERROR :verify_is_displayed :
+ Asserted in 'test_accordion': element displayed.
+2023-05-21 16:38:59,858 :INFO :verify_equal :
+ Asserted in 'test_accordion': 'collapse' value is equal to 'collapse'.
+2023-05-21 16:38:59,883 :ERROR :verify_is_not_displayed :
+ Asserted in 'test_accordion': element is not displayed.
+2023-05-21 16:38:59,910 :INFO :log_print :
+ For 'test_accordion': Testing 'Where does it come from?' card:
+2023-05-21 16:39:00,514 :INFO :verify_equal :
+ Asserted in 'test_accordion': 'collapse show' value is equal to 'collapse show'.
+2023-05-21 16:39:00,560 :ERROR :verify_is_displayed :
+ Asserted in 'test_accordion': element displayed.
+2023-05-21 16:39:01,143 :INFO :verify_equal :
+ Asserted in 'test_accordion': 'collapse' value is equal to 'collapse'.
+2023-05-21 16:39:01,162 :ERROR :verify_is_not_displayed :
+ Asserted in 'test_accordion': element is not displayed.
+2023-05-21 16:39:01,180 :INFO :log_print :
+ For 'test_accordion': Testing 'Why do we use it?' card:
+2023-05-21 16:39:01,771 :INFO :verify_equal :
+ Asserted in 'test_accordion': 'collapse show' value is equal to 'collapse show'.
+2023-05-21 16:39:01,819 :ERROR :verify_is_displayed :
+ Asserted in 'test_accordion': element displayed.
+2023-05-21 16:39:02,391 :INFO :verify_equal :
+ Asserted in 'test_accordion': 'collapse' value is equal to 'collapse'.
+2023-05-21 16:39:02,410 :ERROR :verify_is_not_displayed :
+ Asserted in 'test_accordion': element is not displayed.

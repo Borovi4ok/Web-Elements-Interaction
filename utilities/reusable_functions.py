@@ -13,7 +13,8 @@ from WebInteractionDemoQA.utilities.assert_functions import Assertions
 @pytest.mark.usefixtures("setup")
 class ReusableFunctions:
 
-    def get_column_data(self, column_data, as_int=True):
+    @staticmethod
+    def get_column_data(column_data, as_int=True):
         # as_int parameter to return digits as: if True = int, if False = str
 
         items_list = []
@@ -57,6 +58,7 @@ class ReusableFunctions:
     def scroll_into_view(self, element):
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
 
+    # wait for an element or condition
     def explicitly_wait(self, by_locator, time_to_wait, ec_condition):
         # if wait for an element, argument to pass (by_locator, time_to_wait, ec_condition)
         # if wait does not involve element, (False, time_to_wait, ec_condition)
@@ -109,3 +111,10 @@ class ReusableFunctions:
         print(f"\n For '{test_func_name}': {message}")
         getattr(log, log_level)(f"\n For '{test_func_name}': {message}")
         # getattr - dynamically retrieves the logging function based on the string log_level
+
+    # lambda function to create a custom expected condition based on the attribute status
+    def attribute_contains(self, element, attribute, value):
+        return lambda driver=self.driver: value in element.get_attribute(attribute)
+
+
+

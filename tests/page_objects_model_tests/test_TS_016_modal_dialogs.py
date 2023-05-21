@@ -30,6 +30,11 @@ class TestModalDialogs(Assertions, ReusableFunctions):
 
         # get text from modal dialog and verify it
         text_element = modal_dialogs_page.get_small_modal_text()
+
+        # wait for text to be visible
+        by_locator = modal_dialogs_page.small_modal_text
+        self.explicitly_wait(by_locator, 5, "visibility_of_element_located")
+
         text = text_element.text
         expected_text = get_excel_data("016_small_modal", "text_verify")
         self.verify_in_text(expected_text, text)
@@ -48,6 +53,11 @@ class TestModalDialogs(Assertions, ReusableFunctions):
 
         # get text from modal dialog and verify it
         text_element = modal_dialogs_page.get_large_modal_text()
+
+        # wait for text to be visible
+        by_locator = modal_dialogs_page.large_modal_text
+        self.explicitly_wait(by_locator, 5, "visibility_of_element_located")
+
         text = text_element.text
         expected_text = get_excel_data("016_large_modal", "text_verify")
         self.verify_in_text(expected_text, text)
