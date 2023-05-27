@@ -1,12 +1,10 @@
 import inspect
 import random
-
+import sys
 import pytest
-from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
-
 from WebInteractionDemoQA.utilities.assert_functions import Assertions
 
 
@@ -105,7 +103,6 @@ class ReusableFunctions:
     @staticmethod
     def log_print(log_level, message):
         # e.g.( "info", "some message to log")
-
         test_func_name = inspect.stack()[1][3]
         log = Assertions.get_logger()
         print(f"\n For '{test_func_name}': {message}")

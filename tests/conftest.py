@@ -70,6 +70,7 @@ def urls():
             "modal_dialogs": "https://demoqa.com/modal-dialogs",
             "accordion": "https://demoqa.com/accordian",
             "auto_complete": "https://demoqa.com/auto-complete",
+            "date_picker": "https://demoqa.com/date-picker",
             }
 
 

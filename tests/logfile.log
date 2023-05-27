@@ -1,0 +1,164 @@
+2023-05-25 16:38:15,288 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 16:39:11,024 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 16:40:56,323 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 16:42:39,815 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 16:43:48,748 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 16:45:38,961 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 16:49:48,351 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 16:50:55,338 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 17:32:52,149 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 17:53:12,875 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 17:53:54,540 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 17:55:48,862 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 18:07:29,530 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 18:07:30,965 :INFO :verify_equal :
+ Asserted in 'test_date_picker': '06/11/2001' value is equal to '06/11/2001'.
+2023-05-25 20:12:42,150 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 20:14:14,653 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 20:16:07,618 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 20:17:00,903 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 20:17:21,700 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 20:18:27,074 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 20:21:37,243 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 20:22:14,190 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 20:24:39,097 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 20:38:08,769 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 20:39:22,942 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 20:40:13,126 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 20:41:49,866 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 20:42:40,452 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 20:43:25,588 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 20:44:16,978 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 20:52:06,727 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 20:54:13,983 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 20:55:31,102 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-25 20:56:21,249 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 08:36:57,931 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 08:38:46,083 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 08:49:40,746 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 08:51:46,142 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 08:55:04,771 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 09:01:16,035 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 09:02:27,742 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 13:12:11,660 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 13:14:52,166 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 19:52:21,397 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 19:54:05,886 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 19:55:06,271 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 20:03:49,154 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 20:03:50,221 :INFO :log_print :
+ For 'test_date_and_time_picker': Selected year is '2007'
+2023-05-26 20:17:45,627 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 20:19:11,188 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 20:19:12,273 :INFO :log_print :
+ For 'test_date_and_time_picker': Selected year is '2007'
+2023-05-26 20:20:41,066 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 20:20:42,143 :INFO :log_print :
+ For 'test_date_and_time_picker': Selected year is '2007'
+2023-05-26 20:21:09,569 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 20:23:02,653 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 20:23:03,728 :INFO :log_print :
+ For 'test_date_and_time_picker': Selected year is '2007'
+2023-05-26 20:29:25,883 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 20:33:19,995 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 20:37:16,392 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 20:38:57,711 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 20:43:31,727 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 20:51:11,235 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 20:51:12,711 :INFO :log_print :
+ For 'test_date_and_time_picker': Selected year is '2007'
+2023-05-26 20:57:57,924 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 20:57:59,003 :INFO :log_print :
+ For 'test_date_and_time_picker': Selected year is '2007'
+2023-05-26 21:12:46,261 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 21:13:32,061 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 21:14:36,102 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 21:15:15,007 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 21:15:37,678 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 21:15:38,944 :INFO :log_print :
+ For 'test_date_and_time_picker': Selected year is '2007'
+2023-05-26 21:19:25,649 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 21:19:26,776 :INFO :log_print :
+ For 'test_date_and_time_picker': Selected year is '2007'
+2023-05-26 21:19:49,380 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 21:25:42,433 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 21:27:09,990 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 21:28:12,362 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 21:28:18,745 :INFO :log_print :
+ For 'test_date_and_time_picker': Selected year is '1879'
+2023-05-26 21:39:15,132 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 21:40:07,653 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 21:40:52,744 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-26 21:41:00,592 :INFO :log_print :
+ For 'test_date_and_time_picker': Selected year is '1879'

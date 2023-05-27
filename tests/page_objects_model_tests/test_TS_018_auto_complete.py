@@ -18,7 +18,6 @@ class TestAutoComplete(Assertions, ReusableFunctions):
 
         # get_excel_data(TS#_TC_name, key)
         expected_url = get_excel_data("018_url_auto_complete", "text_verify")
-        print(expected_url)
         self.verify_url(expected_url)
 
     @pytest.mark.autocomplete
@@ -60,7 +59,6 @@ class TestAutoComplete(Assertions, ReusableFunctions):
 
         first_characters = color_data_name[0:2]
         # send only the first two characters of color name to get auto-complete options
-        print(first_characters)
 
         input_field.send_keys(first_characters)
 
