@@ -1,0 +1,26 @@
+2023-05-28 21:04:09,959 :INFO :verify_url :
+ Asserted in 'test_url_date_picker': 'date-picker' found in URL.
+2023-05-28 21:04:11,432 :INFO :verify_equal :
+ Asserted in 'test_date_picker': '06/11/2001' value is equal to '06/11/2001'.
+2023-05-28 21:04:13,458 :INFO :log_print :
+ For 'test_dt_year': Selected year is '1979'
+2023-05-28 21:04:13,492 :INFO :verify_in_text :
+ Asserted in 'test_dt_year': '1979' found in full text.
+2023-05-28 21:04:14,636 :INFO :explicitly_wait :
+ For 'test_dt_year_alternative': EC condition 'presence_of_element_located' satisfied within 5sec.
+2023-05-28 21:04:17,016 :INFO :log_print :
+ For 'test_dt_year_alternative': 1979 found, clicking.
+2023-05-28 21:04:17,263 :INFO :log_print :
+ For 'test_dt_month': Selected mont is 'October'
+2023-05-28 21:04:17,340 :INFO :verify_in_text :
+ Asserted in 'test_dt_month': 'October' found in full text.
+2023-05-28 21:04:17,403 :INFO :log_print :
+ For 'test_dt_day': Selected day is '2'
+2023-05-28 21:04:17,496 :INFO :verify_in_text :
+ Asserted in 'test_dt_day': '2' found in full text.
+2023-05-28 21:04:18,300 :INFO :log_print :
+ For 'test_dt_time': Selected time is '22:45'
+2023-05-28 21:04:18,375 :INFO :verify_in_text :
+ Asserted in 'test_dt_time': '22:45' found in full text.
+2023-05-28 21:04:18,412 :INFO :verify_equal :
+ Asserted in 'test_dt_verify_date_and_time_selected': 'October 02 1979 22:45' value is equal to 'October 02 1979 22:45'.
