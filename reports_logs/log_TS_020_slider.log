@@ -1,0 +1,22 @@
+2023-06-03 12:27:46,694 :INFO :verify_url :
+ Asserted in 'test_url_slider': 'slider' found in URL.
+2023-06-03 12:27:46,754 :INFO :log_print :
+ For 'test_thumb_original_position': Slider thumb original value is '25'
+2023-06-03 12:27:46,768 :INFO :verify_equal :
+ Asserted in 'test_thumb_original_position': '25' value is equal to '25'.
+2023-06-03 12:27:47,051 :INFO :log_print :
+ For 'test_slider': Drag offset is '100'
+2023-06-03 12:27:47,798 :INFO :verify_with_tolerance :
+ Asserted in 'test_slider': '70.0' value is close to expected value '68.94' with tolerance'2'.
+2023-06-03 12:27:47,815 :INFO :log_print :
+ For 'test_slider': Drag offset is '270'
+2023-06-03 12:27:48,386 :INFO :verify_with_tolerance :
+ Asserted in 'test_slider': '100.0' value is close to expected value '100' with tolerance'2'.
+2023-06-03 12:27:48,398 :INFO :log_print :
+ For 'test_slider': Drag offset is '-100'
+2023-06-03 12:27:48,974 :INFO :verify_with_tolerance :
+ Asserted in 'test_slider': '30.0' value is close to expected value '31.06' with tolerance'2'.
+2023-06-03 12:27:48,986 :INFO :log_print :
+ For 'test_slider': Drag offset is '-270'
+2023-06-03 12:27:49,559 :INFO :verify_with_tolerance :
+ Asserted in 'test_slider': '0.0' value is close to expected value '0' with tolerance'2'.

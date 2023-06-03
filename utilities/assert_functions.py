@@ -1,3 +1,4 @@
+import math
 import os
 import time
 from selenium.webdriver.support import expected_conditions as EC
@@ -277,3 +278,22 @@ class Assertions:
             print(message)
             log.error(message)
             raise
+
+    @staticmethod
+    def verify_with_tolerance(actual, expected, tolerance):
+        test_func_name = inspect.stack()[1][3]
+        log = Assertions.get_logger()
+
+        try:
+            assert math.isclose(actual, expected, rel_tol=tolerance)
+        except AssertionError:
+            message = f"\n Assertion in '{test_func_name}' failed: actual value '{actual}' with tolerance" \
+                      f"'{tolerance}' is not close to expected value '{expected}'."
+            print(message)
+            log.error(message)
+            raise
+        else:
+            message = f"\n Asserted in '{test_func_name}': '{actual}' value is close to expected value '{expected}' " \
+                      f"with tolerance'{tolerance}'."
+            print(message)
+            log.info(message)

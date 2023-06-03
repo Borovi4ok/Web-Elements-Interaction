@@ -71,6 +71,7 @@ def urls():
             "accordion": "https://demoqa.com/accordian",
             "auto_complete": "https://demoqa.com/auto-complete",
             "date_picker": "https://demoqa.com/date-picker",
+            "slider": "https://demoqa.com/slider",
             }
 
 
