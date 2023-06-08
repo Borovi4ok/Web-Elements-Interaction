@@ -71,8 +71,8 @@ class ReusableFunctions:
             locator_strategy, locator_value = by_locator
 
             try:
-                element = self.driver.find_element(locator_strategy, locator_value)
                 wait.until(getattr(EC, ec_condition)((locator_strategy, locator_value)))
+                element = self.driver.find_element(locator_strategy, locator_value)
                 """getattr - dynamically retrieves an attribute from EC class based on the value of the ec_condition 
                 parameter"""
                 message = f"\n For '{test_func_name}': EC condition '{ec_condition}' satisfied within {time_to_wait}sec."

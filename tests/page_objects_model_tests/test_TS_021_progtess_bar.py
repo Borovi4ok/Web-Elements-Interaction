@@ -1,29 +1,8 @@
 import pytest
-from selenium.webdriver.common.action_chains import ActionChains
-
 from WebInteractionDemoQA.page_objects.object_TS_021_progtess_bar import ProgressBar
-from WebInteractionDemoQA.page_objects.objects_TS_019_date_picker import DatePicker
-from WebInteractionDemoQA.page_objects.objects_TS_020_slider import Slider
 from WebInteractionDemoQA.utilities.assert_functions import Assertions
 from WebInteractionDemoQA.utilities.reusable_functions import ReusableFunctions
-from datetime import datetime
-import inspect
-import os
-import random
-from selenium.common import NoSuchElementException
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
-from WebInteractionDemoQA.data.test_data import TestData
-from selenium.webdriver.chrome.options import Options
-from WebInteractionDemoQA.page_objects.objects_TS_017_accordion import Accordion
 import time
-from WebInteractionDemoQA.data.excel_data import get_excel_data
-from WebInteractionDemoQA.page_objects.objects_TS_014_frames import Frames
-from WebInteractionDemoQA.page_objects.objects_TS_015_nested_frames import NestedFrames
-from WebInteractionDemoQA.page_objects.objects_TS_016_modal_dialogs import ModalDialogs
-from WebInteractionDemoQA.page_objects.objects_TS_018_auto_complete import AutoComplete
 from WebInteractionDemoQA.data.excel_data import get_excel_data
 
 
@@ -31,7 +10,7 @@ from WebInteractionDemoQA.data.excel_data import get_excel_data
 def progress_bar_page(setup):
     return ProgressBar(setup)
 
-finished
+
 # Suite 21. Test Progress Bar, Page Object Model
 class TestProgressBar(Assertions, ReusableFunctions):
     @pytest.mark.progress_bar
@@ -42,7 +21,6 @@ class TestProgressBar(Assertions, ReusableFunctions):
         expected_url = get_excel_data("021_url_progress_bar", "text_verify")
         self.verify_url(expected_url)
 
-    """
     @pytest.mark.progress_bar
     def test_start_position(self, progress_bar_page, get_excel_data):
         progress_info = progress_bar_page.get_progress_info()
@@ -51,7 +29,6 @@ class TestProgressBar(Assertions, ReusableFunctions):
         print(f"progress = {progress}")
         expected_progress = get_excel_data("021_start_position", "text_verify")
         self.verify_equal(progress, expected_progress)
-    """
 
     @pytest.mark.progress_bar
     def test_progress(self, progress_bar_page, get_excel_data):

@@ -1,0 +1,30 @@
+2023-06-08 17:47:56,155 :INFO :verify_url :
+ Asserted in 'test_url_progress_bar': 'progress-bar' found in URL.
+2023-06-08 17:47:56,220 :INFO :verify_equal :
+ Asserted in 'test_start_position': '0' value is equal to '0'.
+2023-06-08 17:47:56,284 :INFO :log_print :
+ For 'test_progress': Progress starts from '0'px. filled in.
+2023-06-08 17:48:01,989 :INFO :verify_with_tolerance :
+ Asserted in 'test_progress': '364.263' value is close to expected value '357.0' with tolerance'10'.
+2023-06-08 17:48:02,000 :INFO :verify_with_tolerance :
+ Asserted in 'test_progress': '56' value is close to expected value '50' with tolerance'6'.
+2023-06-08 17:48:02,012 :INFO :verify_equal :
+ Asserted in 'test_progress': 'rgb(33, 37, 41)' value is equal to 'rgb(33, 37, 41)'.
+2023-06-08 17:48:06,749 :INFO :explicitly_wait :
+ For 'test_completed': EC condition 'presence_of_element_located' satisfied within 15sec.
+2023-06-08 17:48:06,787 :INFO :verify_with_tolerance :
+ Asserted in 'test_completed': '707.05' value is close to expected value '714.0' with tolerance'5'.
+2023-06-08 17:48:06,828 :INFO :verify_equal :
+ Asserted in 'test_completed': '100' value is equal to '100'.
+2023-06-08 17:48:06,900 :INFO :verify_equal :
+ Asserted in 'test_completed': 'rgb(40, 167, 69)' value is equal to 'rgb(40, 167, 69)'.
+2023-06-08 17:48:06,917 :INFO :log_print :
+ For 'test_reset': Progress is completed
+2023-06-08 17:48:06,962 :INFO :verify_is_displayed :
+ Asserted in 'test_reset': element displayed.
+2023-06-08 17:48:07,009 :INFO :log_print :
+ For 'test_reset': Progress is reset
+2023-06-08 17:48:07,041 :INFO :explicitly_wait :
+ For 'test_reset': EC condition 'presence_of_element_located' satisfied within 2sec.
+2023-06-08 17:48:07,067 :INFO :verify_deleted :
+ Asserted in 'test_reset': element deleted.

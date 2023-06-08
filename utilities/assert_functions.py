@@ -88,7 +88,7 @@ class Assertions:
         else:
             message = f"\n Asserted in '{test_func_name}': element displayed."
             print(message)
-            log.error(message)
+            log.info(message)
 
     @staticmethod
     def verify_is_not_displayed(element):

@@ -116,6 +116,7 @@ class TestDatePicker(Assertions, ReusableFunctions):
 
         year_tab = date_picker_page.get_dt_year_tab()  # select year tab
         by_locator = date_picker_page.dt_year_tab
+        print(f"by locator = {by_locator}")
         self.explicitly_wait(by_locator, 5, "presence_of_element_located")
         year_tab.click()
         testing_date = get_excel_data("019_date_and_time_picker", "text_verify")  # testing date from Excel sheet
