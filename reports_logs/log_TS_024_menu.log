@@ -1,0 +1,40 @@
+2023-06-10 18:19:17,454 :INFO :verify_url :
+ Asserted in 'test_url_menu': 'menu' found in URL.
+2023-06-10 18:19:17,507 :INFO :verify_enabled :
+ Asserted in 'test_main_item_1': element is enabled.
+2023-06-10 18:19:17,851 :INFO :explicitly_wait :
+ For 'test_dropdown_main_item_2': EC condition 'visibility_of_element_located' satisfied within 5sec.
+2023-06-10 18:19:18,222 :INFO :explicitly_wait :
+ For 'test_dropdown_main_item_2': EC condition 'visibility_of_element_located' satisfied within 5sec.
+2023-06-10 18:19:18,241 :INFO :log_print :
+ For 'test_dropdown_main_item_2': Verifying for menu-item 'Sub Item'
+2023-06-10 18:19:18,272 :INFO :verify_is_displayed :
+ Asserted in 'test_dropdown_main_item_2': element displayed.
+2023-06-10 18:19:18,295 :INFO :verify_enabled :
+ Asserted in 'test_dropdown_main_item_2': element is enabled.
+2023-06-10 18:19:18,314 :INFO :log_print :
+ For 'test_dropdown_main_item_2': Verifying for menu-item 'Sub Item'
+2023-06-10 18:19:18,343 :INFO :verify_is_displayed :
+ Asserted in 'test_dropdown_main_item_2': element displayed.
+2023-06-10 18:19:18,362 :INFO :verify_enabled :
+ Asserted in 'test_dropdown_main_item_2': element is enabled.
+2023-06-10 18:19:18,382 :INFO :log_print :
+ For 'test_dropdown_main_item_2': Verifying for menu-item 'SUB SUB LIST »'
+2023-06-10 18:19:18,415 :INFO :verify_is_displayed :
+ Asserted in 'test_dropdown_main_item_2': element displayed.
+2023-06-10 18:19:18,434 :INFO :verify_enabled :
+ Asserted in 'test_dropdown_main_item_2': element is enabled.
+2023-06-10 18:19:18,455 :INFO :log_print :
+ For 'test_dropdown_main_item_2': Verifying for menu-item 'Sub Sub Item 1'
+2023-06-10 18:19:18,485 :INFO :verify_is_displayed :
+ Asserted in 'test_dropdown_main_item_2': element displayed.
+2023-06-10 18:19:18,503 :INFO :verify_enabled :
+ Asserted in 'test_dropdown_main_item_2': element is enabled.
+2023-06-10 18:19:18,523 :INFO :log_print :
+ For 'test_dropdown_main_item_2': Verifying for menu-item 'Sub Sub Item 2'
+2023-06-10 18:19:18,553 :INFO :verify_is_displayed :
+ Asserted in 'test_dropdown_main_item_2': element displayed.
+2023-06-10 18:19:18,574 :INFO :verify_enabled :
+ Asserted in 'test_dropdown_main_item_2': element is enabled.
+2023-06-10 18:19:18,615 :INFO :verify_enabled :
+ Asserted in 'test_main_item_3': element is enabled.

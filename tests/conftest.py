@@ -73,6 +73,9 @@ def urls():
             "date_picker": "https://demoqa.com/date-picker",
             "slider": "https://demoqa.com/slider",
             "progress_bar": "https://demoqa.com/progress-bar",
+            "tabs": "https://demoqa.com/tabs",
+            "tooltips": "https://demoqa.com/tool-tips",
+            "menu": "https://demoqa.com/menu",
             }
 
 

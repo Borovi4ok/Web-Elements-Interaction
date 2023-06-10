@@ -80,7 +80,7 @@ class ReusableFunctions:
                 log.info(message)
                 return element
 
-            except NoSuchElementException:
+            except (NoSuchElementException, TimeoutException):
                 message = f"\n For '{test_func_name}': EC condition '{ec_condition}' is not satisfied within {time_to_wait} sec."
                 print(message)
                 log.info(message)

@@ -206,6 +206,23 @@ class Assertions:
             print(message)
             log.info(message)
 
+    @staticmethod
+    def verify_not_enabled(element):
+        test_func_name = inspect.stack()[1][3]
+        log = Assertions.get_logger()
+
+        try:
+            assert not element.is_enabled()
+        except AssertionError:
+            message = f"\n Assertion in '{test_func_name}' failed: element is enabled."
+            print(message)
+            log.error(message)
+            raise
+        else:
+            message = f"\n Asserted in '{test_func_name}': element is not enabled."
+            print(message)
+            log.info(message)
+
     def verify_image_width(self, image):
         test_func_name = inspect.stack()[1][3]
         log = Assertions.get_logger()
@@ -297,3 +314,4 @@ class Assertions:
                       f"with tolerance'{tolerance}'."
             print(message)
             log.info(message)
+

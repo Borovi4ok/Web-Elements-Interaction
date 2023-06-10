@@ -1,0 +1,20 @@
+2023-06-10 09:20:13,632 :INFO :verify_url :
+ Asserted in 'test_url_tooltips': 'tool-tips' found in URL.
+2023-06-10 09:20:13,983 :INFO :explicitly_wait :
+ For 'test_button_hover': EC condition 'visibility_of_element_located' satisfied within 5sec.
+2023-06-10 09:20:14,011 :INFO :log_print :
+ For 'test_button_hover': Tooltip text is 'You hovered over the Button'
+2023-06-10 09:20:14,043 :INFO :verify_is_displayed :
+ Asserted in 'test_button_hover': element displayed.
+2023-06-10 09:20:15,382 :INFO :explicitly_wait :
+ For 'test_text_field_hover': EC condition 'visibility_of_element_located' satisfied within 5sec.
+2023-06-10 09:20:15,404 :INFO :log_print :
+ For 'test_text_field_hover': Tooltip text is 'You hovered over the text field'
+2023-06-10 09:20:15,430 :INFO :verify_is_displayed :
+ Asserted in 'test_text_field_hover': element displayed.
+2023-06-10 09:20:16,766 :INFO :explicitly_wait :
+ For 'test_text_link': EC condition 'visibility_of_element_located' satisfied within 5sec.
+2023-06-10 09:20:16,786 :INFO :log_print :
+ For 'test_text_link': Tooltip text is 'You hovered over the Contrary'
+2023-06-10 09:20:16,812 :INFO :verify_is_displayed :
+ Asserted in 'test_text_link': element displayed.

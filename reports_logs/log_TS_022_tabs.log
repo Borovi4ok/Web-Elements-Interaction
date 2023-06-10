@@ -1,0 +1,18 @@
+2023-06-09 16:55:19,741 :INFO :verify_url :
+ Asserted in 'test_url_tabs': 'tabs' found in URL.
+2023-06-09 16:55:19,806 :INFO :log_print :
+ For 'test_tabs': Clicking 'What' tab.
+2023-06-09 16:55:19,962 :INFO :verify_is_displayed :
+ Asserted in 'test_tabs': element displayed.
+2023-06-09 16:55:19,982 :INFO :log_print :
+ For 'test_tabs': Clicking 'Origin' tab.
+2023-06-09 16:55:20,068 :INFO :verify_is_displayed :
+ Asserted in 'test_tabs': element displayed.
+2023-06-09 16:55:20,090 :INFO :log_print :
+ For 'test_tabs': Clicking 'Use' tab.
+2023-06-09 16:55:20,178 :INFO :verify_is_displayed :
+ Asserted in 'test_tabs': element displayed.
+2023-06-09 16:55:20,199 :INFO :log_print :
+ For 'test_tabs': Clicking 'More' tab.
+2023-06-09 16:55:20,220 :ERROR :log_print :
+ For 'test_tabs': Tab 'More' is disabled, skipping click.
