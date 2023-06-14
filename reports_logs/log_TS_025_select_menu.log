@@ -1,0 +1,118 @@
+2023-06-14 17:55:48,309 :INFO :verify_url :
+ Asserted in 'test_url_menu': 'select-menu' found in URL.
+2023-06-14 17:55:48,492 :INFO :explicitly_wait :
+ For 'test_select_value': EC condition 'visibility_of_element_located' satisfied within 5sec.
+2023-06-14 17:55:48,516 :INFO :log_print :
+ For 'test_select_value': There are '6' items in 'Select Value' menu.
+2023-06-14 17:55:48,685 :INFO :verify_equal :
+ Asserted in 'test_select_value': 'Group 1, option 1' value is equal to 'Group 1, option 1'.
+2023-06-14 17:55:48,777 :INFO :explicitly_wait :
+ For 'test_select_value': EC condition 'visibility_of_element_located' satisfied within 5sec.
+2023-06-14 17:55:48,876 :INFO :verify_equal :
+ Asserted in 'test_select_value': 'Group 1, option 2' value is equal to 'Group 1, option 2'.
+2023-06-14 17:55:48,971 :INFO :explicitly_wait :
+ For 'test_select_value': EC condition 'visibility_of_element_located' satisfied within 5sec.
+2023-06-14 17:55:49,075 :INFO :verify_equal :
+ Asserted in 'test_select_value': 'Group 2, option 1' value is equal to 'Group 2, option 1'.
+2023-06-14 17:55:49,159 :INFO :explicitly_wait :
+ For 'test_select_value': EC condition 'visibility_of_element_located' satisfied within 5sec.
+2023-06-14 17:55:49,258 :INFO :verify_equal :
+ Asserted in 'test_select_value': 'Group 2, option 2' value is equal to 'Group 2, option 2'.
+2023-06-14 17:55:49,346 :INFO :explicitly_wait :
+ For 'test_select_value': EC condition 'visibility_of_element_located' satisfied within 5sec.
+2023-06-14 17:55:49,447 :INFO :verify_equal :
+ Asserted in 'test_select_value': 'A root option' value is equal to 'A root option'.
+2023-06-14 17:55:49,526 :INFO :explicitly_wait :
+ For 'test_select_value': EC condition 'visibility_of_element_located' satisfied within 5sec.
+2023-06-14 17:55:49,621 :INFO :verify_equal :
+ Asserted in 'test_select_value': 'Another root option' value is equal to 'Another root option'.
+2023-06-14 17:55:49,708 :INFO :explicitly_wait :
+ For 'test_select_value': EC condition 'visibility_of_element_located' satisfied within 5sec.
+2023-06-14 17:55:49,865 :INFO :explicitly_wait :
+ For 'test_select_one': EC condition 'visibility_of_element_located' satisfied within 5sec.
+2023-06-14 17:55:49,890 :INFO :log_print :
+ For 'test_select_one': There are '6' items in 'Select One' menu.
+2023-06-14 17:55:49,995 :INFO :verify_equal :
+ Asserted in 'test_select_one': 'Dr.' value is equal to 'Dr.'.
+2023-06-14 17:55:50,075 :INFO :explicitly_wait :
+ For 'test_select_one': EC condition 'visibility_of_element_located' satisfied within 5sec.
+2023-06-14 17:55:50,173 :INFO :verify_equal :
+ Asserted in 'test_select_one': 'Mr.' value is equal to 'Mr.'.
+2023-06-14 17:55:50,249 :INFO :explicitly_wait :
+ For 'test_select_one': EC condition 'visibility_of_element_located' satisfied within 5sec.
+2023-06-14 17:55:50,339 :INFO :verify_equal :
+ Asserted in 'test_select_one': 'Mrs.' value is equal to 'Mrs.'.
+2023-06-14 17:55:50,424 :INFO :explicitly_wait :
+ For 'test_select_one': EC condition 'visibility_of_element_located' satisfied within 5sec.
+2023-06-14 17:55:50,519 :INFO :verify_equal :
+ Asserted in 'test_select_one': 'Ms.' value is equal to 'Ms.'.
+2023-06-14 17:55:50,604 :INFO :explicitly_wait :
+ For 'test_select_one': EC condition 'visibility_of_element_located' satisfied within 5sec.
+2023-06-14 17:55:50,708 :INFO :verify_equal :
+ Asserted in 'test_select_one': 'Prof.' value is equal to 'Prof.'.
+2023-06-14 17:55:50,795 :INFO :explicitly_wait :
+ For 'test_select_one': EC condition 'visibility_of_element_located' satisfied within 5sec.
+2023-06-14 17:55:50,884 :INFO :verify_equal :
+ Asserted in 'test_select_one': 'Other' value is equal to 'Other'.
+2023-06-14 17:55:50,964 :INFO :explicitly_wait :
+ For 'test_select_one': EC condition 'visibility_of_element_located' satisfied within 5sec.
+2023-06-14 17:55:51,126 :INFO :explicitly_wait :
+ For 'test_old_style_menu': EC condition 'visibility_of_element_located' satisfied within 5sec.
+2023-06-14 17:55:51,157 :INFO :log_print :
+ For 'test_old_style_menu': Clicking item: 'Red'
+2023-06-14 17:55:51,203 :INFO :verify_is_selected :
+ Asserted in 'test_old_style_menu': element(s) selected.
+2023-06-14 17:55:51,224 :INFO :log_print :
+ For 'test_old_style_menu': Clicking item: 'Blue'
+2023-06-14 17:55:51,260 :INFO :verify_is_selected :
+ Asserted in 'test_old_style_menu': element(s) selected.
+2023-06-14 17:55:51,280 :INFO :log_print :
+ For 'test_old_style_menu': Clicking item: 'Green'
+2023-06-14 17:55:51,316 :INFO :verify_is_selected :
+ Asserted in 'test_old_style_menu': element(s) selected.
+2023-06-14 17:55:51,336 :INFO :log_print :
+ For 'test_old_style_menu': Clicking item: 'Yellow'
+2023-06-14 17:55:51,374 :INFO :verify_is_selected :
+ Asserted in 'test_old_style_menu': element(s) selected.
+2023-06-14 17:55:51,394 :INFO :log_print :
+ For 'test_old_style_menu': Clicking item: 'Purple'
+2023-06-14 17:55:51,431 :INFO :verify_is_selected :
+ Asserted in 'test_old_style_menu': element(s) selected.
+2023-06-14 17:55:51,451 :INFO :log_print :
+ For 'test_old_style_menu': Clicking item: 'Black'
+2023-06-14 17:55:51,487 :INFO :verify_is_selected :
+ Asserted in 'test_old_style_menu': element(s) selected.
+2023-06-14 17:55:51,507 :INFO :log_print :
+ For 'test_old_style_menu': Clicking item: 'White'
+2023-06-14 17:55:51,545 :INFO :verify_is_selected :
+ Asserted in 'test_old_style_menu': element(s) selected.
+2023-06-14 17:55:51,564 :INFO :log_print :
+ For 'test_old_style_menu': Clicking item: 'Voilet'
+2023-06-14 17:55:51,600 :INFO :verify_is_selected :
+ Asserted in 'test_old_style_menu': element(s) selected.
+2023-06-14 17:55:51,620 :INFO :log_print :
+ For 'test_old_style_menu': Clicking item: 'Indigo'
+2023-06-14 17:55:51,656 :INFO :verify_is_selected :
+ Asserted in 'test_old_style_menu': element(s) selected.
+2023-06-14 17:55:51,677 :INFO :log_print :
+ For 'test_old_style_menu': Clicking item: 'Magenta'
+2023-06-14 17:55:51,714 :INFO :verify_is_selected :
+ Asserted in 'test_old_style_menu': element(s) selected.
+2023-06-14 17:55:51,734 :INFO :log_print :
+ For 'test_old_style_menu': Clicking item: 'Aqua'
+2023-06-14 17:55:51,771 :INFO :verify_is_selected :
+ Asserted in 'test_old_style_menu': element(s) selected.
+2023-06-14 17:55:52,036 :INFO :verify_equal :
+ Asserted in 'test_multiselect_dropdown': '4' value is equal to '4'.
+2023-06-14 17:55:52,068 :INFO :verify_is_displayed :
+ Asserted in 'test_multiselect_dropdown': element displayed.
+2023-06-14 17:55:52,097 :INFO :verify_is_displayed :
+ Asserted in 'test_multiselect_dropdown': element displayed.
+2023-06-14 17:55:52,126 :INFO :verify_is_displayed :
+ Asserted in 'test_multiselect_dropdown': element displayed.
+2023-06-14 17:55:52,164 :INFO :verify_is_displayed :
+ Asserted in 'test_multiselect_dropdown': element displayed.
+2023-06-14 17:55:52,290 :INFO :verify_equal :
+ Asserted in 'test_multiselect_dropdown_delete': '2' value is equal to '2'.
+2023-06-14 17:55:52,364 :INFO :verify_equal :
+ Asserted in 'test_multiselect_dropdown_delete': '0' value is equal to '0'.
