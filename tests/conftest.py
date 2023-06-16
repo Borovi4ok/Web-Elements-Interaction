@@ -77,6 +77,7 @@ def urls():
             "tooltips": "https://demoqa.com/tool-tips",
             "menu": "https://demoqa.com/menu",
             "select_menu": "https://demoqa.com/select-menu",
+            "sortable": "https://demoqa.com/sortable",
             }
 
 

@@ -1,0 +1,6 @@
+2023-06-15 21:57:32,775 :INFO :verify_url :
+ Asserted in 'test_url_sortable': 'sortable' found in URL.
+2023-06-15 21:57:36,292 :INFO :verify_equal :
+ Asserted in 'test_sortable_list': '['Six', 'Five', 'Four', 'Three', 'Two', 'One']' value is equal to '['Six', 'Five', 'Four', 'Three', 'Two', 'One']'.
+2023-06-15 21:57:39,292 :INFO :verify_equal :
+ Asserted in 'test_sortable_grid': '['Four', 'One', 'Three', 'Five', 'Nine', 'Two', 'Six', 'Seven', 'Eight']' value is equal to '['Four', 'One', 'Three', 'Five', 'Nine', 'Two', 'Six', 'Seven', 'Eight']'.
