@@ -1,6 +1,7 @@
 import pytest
 from selenium.webdriver.common.action_chains import ActionChains
 from WebInteractionDemoQA.page_objects.objects_TS_026_sortable import Sortable
+from WebInteractionDemoQA.page_objects.objects_TS_027_selectable import Selectable
 from WebInteractionDemoQA.utilities.assert_functions import Assertions
 from WebInteractionDemoQA.utilities.reusable_functions import ReusableFunctions
 from WebInteractionDemoQA.data.excel_data import get_excel_data
@@ -85,4 +86,3 @@ class TestSortable(Assertions, ReusableFunctions):
 
         # verify actual/expected
         self.verify_equal(sorted_grid_items_text, original_grid_items_text)
-        

@@ -72,6 +72,23 @@ class Assertions:
             print(message)
             log.info(message)
 
+    @staticmethod
+    def verify_not_in_text(short_text, full_text):
+        test_func_name = inspect.stack()[1][3]
+        log = Assertions.get_logger()
+
+        try:
+            assert short_text not in full_text
+        except AssertionError:
+            message = f"\n Assertion in '{test_func_name}' failed: text '{short_text}' is present in full text '{full_text}'."
+            print(message)
+            log.error(message)
+            raise
+        else:
+            message = f"\n Asserted in '{test_func_name}': '{short_text}' not found in full text."
+            print(message)
+            log.info(message)
+
     def verify_is_displayed(self, element):
         test_func_name = inspect.stack()[1][3]
         log = Assertions.get_logger()
@@ -314,4 +331,3 @@ class Assertions:
                       f"with tolerance'{tolerance}'."
             print(message)
             log.info(message)
-

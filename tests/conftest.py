@@ -78,6 +78,7 @@ def urls():
             "menu": "https://demoqa.com/menu",
             "select_menu": "https://demoqa.com/select-menu",
             "sortable": "https://demoqa.com/sortable",
+            "selectable": "https://demoqa.com/selectable",
             }
 
 
