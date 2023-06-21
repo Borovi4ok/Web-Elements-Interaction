@@ -1,0 +1,14 @@
+2023-06-21 18:15:26,155 :INFO :verify_url :
+ Asserted in 'test_url_resizable': 'resizable' found in URL.
+2023-06-21 18:15:26,202 :INFO :verify_equal :
+ Asserted in 'test_restricted_box_original_size': 'height: 200, width: 200' value is equal to 'height: 200, width: 200'.
+2023-06-21 18:15:26,833 :INFO :verify_equal :
+ Asserted in 'test_restricted_box_min': 'height: 150, width: 150' value is equal to 'height: 150, width: 150'.
+2023-06-21 18:15:27,485 :INFO :verify_equal :
+ Asserted in 'test_restricted_box_max': '{'height': 300, 'width': 500}' value is equal to '{'height': 300, 'width': 500}'.
+2023-06-21 18:15:27,526 :INFO :verify_equal :
+ Asserted in 'test_unrestricted_box_original_size': 'height: 200, width: 200' value is equal to 'height: 200, width: 200'.
+2023-06-21 18:15:27,598 :INFO :verify_equal :
+ Asserted in 'test_unrestricted_box_min': '2x2' value is equal to '2x2'.
+2023-06-21 18:15:27,638 :INFO :verify_equal :
+ Asserted in 'test_unrestricted_box_max': '840x1552' value is equal to '840x1552'.
