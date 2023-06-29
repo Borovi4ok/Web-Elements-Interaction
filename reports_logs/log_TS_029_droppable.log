@@ -1,0 +1,30 @@
+2023-06-29 12:24:31,556 :INFO :verify_url :
+ Asserted in 'test_url_droppable': 'droppable' found in URL.
+2023-06-29 12:24:32,268 :INFO :wait_for_text_change :
+ Wait for text change is completed. Text 'Drop here' changed to 'Dropped!'.
+2023-06-29 12:24:36,096 :ERROR :wait_for_text_change :
+ Text failed to change. Initial text: 'Drop here', current text: 'Drop here'.
+2023-06-29 12:24:36,689 :INFO :wait_for_text_change :
+ Wait for text change is completed. Text 'Drop here' changed to 'Dropped!'.
+2023-06-29 12:24:37,382 :INFO :wait_for_text_change :
+ Wait for text change is completed. Text 'Inner droppable (not greedy)' changed to 'Dropped!'.
+2023-06-29 12:24:37,413 :INFO :verify_in_text :
+ Asserted in 'test_prevent_propagation_not_greedy': 'Dropped!' found in full text.
+2023-06-29 12:24:37,424 :INFO :verify_not_in_text :
+ Asserted in 'test_prevent_propagation_not_greedy': 'Outer droppable
+Inner droppable (not greedy)' not found in full text.
+2023-06-29 12:24:38,088 :INFO :wait_for_text_change :
+ Wait for text change is completed. Text 'Inner droppable (greedy)' changed to 'Dropped!'.
+2023-06-29 12:24:38,122 :INFO :verify_equal :
+ Asserted in 'test_prevent_propagation_greedy': 'Outer droppable' value is equal to 'Outer droppable'.
+2023-06-29 12:24:38,715 :INFO :wait_for_text_change :
+ Wait for text change is completed. Text 'Outer droppable' changed to 'Dropped!
+Dropped!'.
+2023-06-29 12:24:39,448 :INFO :wait_for_text_change :
+ Wait for text change is completed. Text '' changed to 'Dropped!'.
+2023-06-29 12:24:39,968 :INFO :verify_equal :
+ Asserted in 'test_revertable': '{'x': 552, 'y': 301}' value is equal to '{'x': 552, 'y': 301}'.
+2023-06-29 12:24:40,740 :INFO :explicitly_wait :
+ For 'test_not_revertable': EC condition 'visibility_of_element_located' satisfied within 5sec.
+2023-06-29 12:24:41,604 :INFO :wait_for_text_change :
+ Wait for text change is completed. Text 'Drop here' changed to 'Dropped!'.

@@ -1,33 +1,9 @@
+import time
 import pytest
 from selenium.webdriver.common.action_chains import ActionChains
-from WebInteractionDemoQA.page_objects.objects_TS_019_date_picker import DatePicker
-from WebInteractionDemoQA.page_objects.objects_TS_020_slider import Slider
-from WebInteractionDemoQA.page_objects.objects_TS_023_tooltips import Tooltips
-from WebInteractionDemoQA.page_objects.objects_TS_025_select_menu import SelectMenu
-from WebInteractionDemoQA.page_objects.objects_TS_026_sortable import Sortable
-from WebInteractionDemoQA.page_objects.objects_TS_027_selectable import Selectable
-from WebInteractionDemoQA.page_objects.objects_TS_028_resizable import Resizable
 from WebInteractionDemoQA.page_objects.objects_TS_029_droppable import Droppable
 from WebInteractionDemoQA.utilities.assert_functions import Assertions
 from WebInteractionDemoQA.utilities.reusable_functions import ReusableFunctions
-from datetime import datetime
-import inspect
-import os
-import random
-from selenium.common import NoSuchElementException
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
-from WebInteractionDemoQA.data.test_data import TestData
-from selenium.webdriver.chrome.options import Options
-from WebInteractionDemoQA.page_objects.objects_TS_017_accordion import Accordion
-import time
-from WebInteractionDemoQA.data.excel_data import get_excel_data
-from WebInteractionDemoQA.page_objects.objects_TS_024_menu import Menu
-from WebInteractionDemoQA.page_objects.objects_TS_015_nested_frames import NestedFrames
-from WebInteractionDemoQA.page_objects.objects_TS_016_modal_dialogs import ModalDialogs
-from WebInteractionDemoQA.page_objects.objects_TS_018_auto_complete import AutoComplete
 from WebInteractionDemoQA.data.excel_data import get_excel_data
 
 
@@ -92,7 +68,6 @@ class TestDroppable(Assertions, ReusableFunctions):
             actions.click_and_hold(box).move_by_offset(offset_x, offset_y).release().perform()
             self.wait_for_text_change(by_locator, target_box_text)
 
-
     @pytest.mark.droppable
     def test_prevent_propagation_not_greedy(self, droppable_page, actions):
         # logic - both not_greedy outer and inner boxes should change text when source box dropped into inner box
@@ -152,7 +127,7 @@ class TestDroppable(Assertions, ReusableFunctions):
 
             # drag and drop source box to inner box (should change text in inner box only)
             actions.drag_and_drop_by_offset(source_box, offset_x, offset_y).perform()
-            
+
             # wait and verify text to be changed
             self.wait_for_text_change(by_locator, target_box_text)
 

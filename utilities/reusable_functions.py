@@ -113,5 +113,21 @@ class ReusableFunctions:
     def attribute_contains(self, element, attribute, value):
         return lambda driver=self.driver: value in element.get_attribute(attribute)
 
+    # custom wait for text to change
+    def wait_for_text_change(self, by_locator, initial_text):
+        log = Assertions.get_logger()
+        element = self.driver.find_element(*by_locator)
+        wait = WebDriverWait(self.driver, 3)
 
+        try:
+            wait.until(lambda _: element.text != initial_text)
+            current_text = element.text
+            message = f"\n Wait for text change is completed. Text '{initial_text}' changed to '{current_text}'."
+            print(message)
+            log.info(message)
 
+        except TimeoutException:
+            current_text = element.text
+            message = f"\n Text failed to change. Initial text: '{initial_text}', current text: '{current_text}'."
+            print(message)
+            log.error(message)

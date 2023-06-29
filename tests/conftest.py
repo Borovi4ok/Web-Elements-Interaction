@@ -80,6 +80,7 @@ def urls():
             "sortable": "https://demoqa.com/sortable",
             "selectable": "https://demoqa.com/selectable",
             "resizable": "https://demoqa.com/resizable",
+            "droppable": "https://demoqa.com/droppable",
             }
 
 
