@@ -1,12 +1,14 @@
 # Web Interactions Demo QA
 ## Table of content
-[Introduction](https://github.com/Borovi4ok/Web-Elements-Interaction/blob/master/README.md?plain=1#introduction)
++ [Introduction](https://github.com/Borovi4ok/Web-Elements-Interaction/blob/master/README.md?plain=1#introduction)
 
-[Technologies Used](#technologies-used)
++ [Technologies Used](#technologies-used)
 
-[Installation guide](#introduction)
++ [Installation guide](#installation-guide)
 
-[Usage guide](#introduction)
+  + [Prerequisites](#prerequisites)
+
++ [Usage guide](#introduction)
 
 Tests descriptions
 
