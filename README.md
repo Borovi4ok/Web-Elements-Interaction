@@ -15,20 +15,19 @@ Contact information
 Your accomplishments and what makes this project stand out
 
 ## Introduction
-Welcome to the WebInteractionDemoQA repository, a testament to the extensive proficiency and skills in Python, Selenium, and Pytest that have been utilized to build a robust and comprehensive test automation project. Comprising a total of 29 test suites and 133 test cases, the project is divided into two sections that exemplify two distinct testing approaches - the classic model and the page object model.
+Welcome to the WebInteractionDemoQA project, a unique portfolio project aimed at demonstrating a comprehensive range of skills and proficiency as an Automation Tester / Test Engineer using Python, Selenium, and Pytest. This project emphasizes hands-on experience with different web elements, mastery of Python/Selenium/Pytest methods, capability in building frameworks following different models, and the adeptness in employing various approaches to data management.
 
-The project stands out for its interaction with a wide array of web elements, such as text boxes, checkboxes, radio buttons, tables, file transfers, dynamic properties, forms, modal dialogs, links, images, browser windows, alerts, frames, auto complete, date picker, slider, progress bars, tooltips, sortable, selectable, droppable, resizable elements, and more. All the interactions are meticulously scripted using Selenium WebDriver and Python, highlighting a strong understanding of web element handling and control in automation testing.
+The project houses 29 test suites with a total of 133 test cases, encompassing a vast array of web elements like text boxes, checkboxes, radio buttons, tables, forms, and more. Additionally, it showcases effective interaction with dynamic properties, file transfers, modal dialogs, nested frames, tooltips, menus, and sortable/selectable/droppable/resizable elements, among others.  All the interactions are meticulously scripted using Selenium WebDriver and Python, highlighting a strong understanding of web element handling and control in automation testing.
+
+Although every test function in this project concludes with at least one assertion, the primary focus of this portfolio project is not on implementing comprehensive testing approaches, but rather on demonstrating the abilities to handle and interact with a multitude of web elements, and build robust automation frameworks. While some forms and tables in the project may require more tests to achieve comprehensive coverage, the emphasis of this project is on the demonstration of technical skills and capabilities, rather than full test coverage.
 
 A core part of this project is the 'data package', a testament to adept handling and structuring of complex test data. Two key files, test_data.py and excel_data.py, provide data for the classic model and Page Object Model respectively, demonstrating the use of Python for data organization, as well as using Excel data for data-driven testing.
 
 The project utilizes a 'utility package', showcasing a sophisticated implementation of assert functions and reusable functions. The assert functions incorporate custom assertion methods for a multitude of test scenarios, such as verifying element presence, URL changes, and comparing values with tolerance, demonstrating an intermediate and above level of proficiency. The reusable functions ensure code efficiency and maintainability, with operations for data manipulation, form interaction, JavaScript execution, and more.
 
-The test suites showcase the use of both classic and page object model testing approaches, each contributing uniquely to the project's success. conftest.py, a pivotal file, serves to share the WebDriver instance across the project, facilitating interactions with the web application.
-
 Lastly, this project includes 'report_logs' that provide comprehensive reports on each test suite, aiding in understanding test outcomes, spotting patterns, and improving the project's overall effectiveness.
 
-This portfolio is a testament to strong abilities in writing efficient, reusable, and maintainable test automation scripts using Python, Selenium, and Pytest. It demonstrates a profound understanding of automation testing principles, hands-on experience with Selenium WebDriver, and a knack for crafting organized and scalable test data. The implemented solutions are a blend of complexity, necessity, and innovation, aimed at providing a positive impact on the projects they are employed in.
-
+We encourage you to delve into the project to appreciate the deftness and expertise employed in handling different web elements, managing data, and building frameworks in diverse models. By doing so, we hope you gain a better understanding of the competence and potential showcased in this portfolio project.
 
 ## Technologies Used
 This project utilizes a combination of modern technologies and methodologies in the field of automation testing. Here's an overview of the primary tools and frameworks used:
@@ -111,50 +110,60 @@ For any issues encountered during the installation or running of the project, pl
 ## Usage Guide
 Once you've followed the installation instructions and successfully set up the project on your local machine, you're ready to run the tests and explore the project. Here's a guide to help you get started:
 
-Running the Tests:
+#### Running the Tests:
 
 The test suites can be executed using the Pytest command. Open a terminal/command prompt, navigate to the project directory, and run the following command:
 
-bash
-Copy code
-pytest
+***pytest***
+
 You can run specific test suites by specifying the path to the suite, as in the following example:
 
-bash
-Copy code
-pytest test_package/classic_tests/test_suite_001.py
-Replace "test_suite_001.py" with the name of the test suite you want to run.
+***pytest test_package/classic_tests/test_suite_001.py***
 
-Key-Driven Testing:
+_Replace "test_suite_001.py" with the name of the test suite you want to run._
 
-This project uses key (or mark)-driven testing. Each test function within a test suite is marked with a pytest mark. This allows for tests to be easily grouped and executed together. To run all tests marked with a specific key, use the '-m' option with pytest. For example, to run all tests marked as 'nested_frames', use:
+#### Key-Driven Testing:
 
-bash
-Copy code
-pytest -m nested_frames
-Generating HTML Reports:
+This project includes an example of key (or mark)-driven testing using pytest marks. Each test function within a test suite is marked with a pytest mark, allowing for tests to be easily grouped and executed together. This feature is showcased for illustrative purposes and to demonstrate the capability to implement such a testing strategy.
 
-The project also supports generation of detailed HTML reports for each test suite execution. To create a report, use the following command:
+However, given the organization of the project, where all test functions inside a test suite (file) share an identical mark, running tests by marks or by specifying the file name in the command prompt will yield the same result. Therefore, while the pytest marks in this project technically do not provide additional functionality, they serve as a good example of how to utilize key-driven testing.
 
-bash
-Copy code
-py.test test_package/classic_tests/test_suite_001.py --html=report.html --self-contained-html -v
-Replace "test_suite_001.py" with the name of the test suite for which you want to generate a report, and "report.html" with your desired name for the report file. The -v flag is for verbosity, providing detailed output in the terminal.
+To run all tests marked with a specific key, use the '-m' option with pytest. 
 
-Analyzing the Results:
+For example, to run all tests marked as 'nested_frames', use:
 
-The results of each test suite execution are stored in the 'report_logs' directory. You'll find detailed logs for each test suite, including information about passed and failed tests, and any errors or exceptions that occurred. Additionally, you can open the HTML report in your web browser for a more interactive and comprehensive view of the test results.
+***pytest -m nested_frames***
 
-Modifying Test Data:
+Similarly, to run all tests within a specific file by indicating the file name. 
+
+For example:
+
+***pytest test_TS_015_nested_frames.py***
+
+_Both commands will have the same result if the mark matches all tests within the indicated file._
+
+ #### Generation of HTML reports:
+
+The project also supports generation of detailed HTML reports for each test suite execution. 
+
+To create a report, use the following command:
+
+***py.test test_package/classic_tests/test_suite_001.py --html=report.html --self-contained-html -v***
+Replace "test_suite_001.py" with the name of the test suite for which to generate a report, and "report.html" with a desired name for the report file. The -v flag is for verbosity, providing detailed output in the terminal.
+
+#### Analyzing the Results:
+
+The results of each test suite execution are automatically recorded in the "logfile.log" file, located in either the 'tests\page_objects_model_tests' or 'tests\classic_tests' directories, depending on the tests run. This log file, created upon the first run, serves as a consolidated repository of subsequent logs unless it is renamed or relocated. It offers detailed information about each test suite, including info on passed and failed tests, as well as any errors or exceptions encountered. For a more interactive and comprehensive view of test results, an HTML report can be generated and viewed in your preferred web browser.
+
+#### Modifying Test Data:
 
 You can change the test data by modifying the 'test_data.py' or 'excel_data.py' files in the 'data' package, or the 'test_data_excel.xlsx' Excel spreadsheet. Please ensure that the data format is maintained to avoid errors.
 
-Exploring the Code:
+#### Exploring the Code:
 
 The project is structured to facilitate easy understanding and modification:
 
-The 'test' package contains the test suites. You can explore these to understand how the tests are structured and how different web elements are interacted with.
-The 'page_objects' package contains files with page objects for the tests following the Page Object Model approach. These page objects abstract the way the tests interact with the web pages.
-The 'data' package contains test data files, showcasing different approaches to handling test data.
-The 'utility' package contains utility scripts ('assert_functions.py' and 'reusable_functions.py'), which are used across the project to avoid code duplication and improve readability and maintainability.
-Feel free to explore the code, run the tests, modify the test data, and even improve the test suites. If you encounter any issues or have any questions, please open a new issue in the GitHub repository. Enjoy testing!
++ The 'test' package contains the test suites. You can explore these to understand how the tests are structured and how different web elements are interacted with.
++ The 'page_objects' package contains files with page objects for the tests following the Page Object Model approach. These page objects abstract the way the tests interact with the web pages.
++ The 'data' package contains test data files, showcasing different approaches to handling test data.
++ The 'utility' package contains utility scripts ('assert_functions.py' and 'reusable_functions.py'), which are used across the project to avoid code duplication and improve readability and maintainability.
