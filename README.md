@@ -2,11 +2,11 @@
 ## Table of content
 [Introduction](https://github.com/Borovi4ok/Web-Elements-Interaction/blob/master/README.md?plain=1#introduction)
 
-[Technologies Used](https://github.com/Borovi4ok/Web-Elements-Interaction/blob/master/README.md?plain=1#introduction)
+[Technologies Used](#technologies-used)
 
-[Installation guide](https://github.com/Borovi4ok/Web-Elements-Interaction/blob/master/README.md?plain=1#introduction)
+[Installation guide](#introduction)
 
-[Usage guide](https://github.com/Borovi4ok/Web-Elements-Interaction/blob/master/README.md?plain=1#introduction)
+[Usage guide](#introduction)
 
 Tests descriptions
 
