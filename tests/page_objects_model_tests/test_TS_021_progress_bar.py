@@ -1,5 +1,5 @@
 import pytest
-from WebInteractionDemoQA.page_objects.object_TS_021_progtess_bar import ProgressBar
+from WebInteractionDemoQA.page_objects.objects_TS_021_progress_bar import ProgressBar
 from WebInteractionDemoQA.utilities.assert_functions import Assertions
 from WebInteractionDemoQA.utilities.reusable_functions import ReusableFunctions
 import time

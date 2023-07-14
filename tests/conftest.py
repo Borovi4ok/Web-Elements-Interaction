@@ -1,14 +1,9 @@
 import pytest
 from selenium import webdriver
-from selenium.common import TimeoutException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.support import expected_conditions as EC
-import logging
 from WebInteractionDemoQA.data.test_data import TestData
 
 driver = None
@@ -88,7 +83,7 @@ def urls():
 def action_chains():
     return ActionChains(driver)
 
-"""
+
 # code - two func - that captures screenshot when TC failed and place in report
 @pytest.mark.hookwrapper
 def pytest_runtest_makereport(item):
@@ -114,4 +109,4 @@ def pytest_runtest_makereport(item):
 
 def _capture_screenshot(name):
     driver.get_screenshot_as_file(name)
-"""
+

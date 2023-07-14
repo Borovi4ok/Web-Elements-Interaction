@@ -1,6 +1,0 @@
-TS_28 - two different attitudes Actions class & JavaScript Executor
-
-TS 29 drag and drop with  element to element and differently with offset
-    actions.click_and_hold(box).move_by_offset(offset_x, offset_y).release().perform()
-     actions.drag_and_drop_by_offset(source_box, offset_x, offset_y).perform()
-     actions.drag_and_drop(source_box, target_inner_box).perform()
