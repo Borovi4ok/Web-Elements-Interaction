@@ -1,15 +1,20 @@
 # Web Interactions Demo QA
 ## Table of content
 + [Introduction](https://github.com/Borovi4ok/Web-Elements-Interaction/blob/master/README.md?plain=1#introduction)
-
 + [Technologies Used](#technologies-used)
-
 + [Installation guide](#installation-guide)
-
   + [Prerequisites](#prerequisites)
-
-+ [Usage guide](#introduction)
-
+  + [Dependencies](#dependencies)
+  + [Getting the Project](#getting-the-project)
+  + [Running the Project](#running-the-project)
++ [Usage guide](#usage-guide)
+  + [Tests execution](#tests-execution)
+  + [Key-Driven Testing](#key-driven-testing)
+  + [Generation of HTML reports](#generation-of-html-reports)
+  + [Analyzing the Results](#analyzing-the-results)
+  + [Modifying Test Data](#modifying-test-data)
+  + [Exploring the Code](#exploring-the-code)
+    
 Tests descriptions
 
 Contact information
@@ -112,7 +117,7 @@ For any issues encountered during the installation or running of the project, pl
 ## Usage Guide
 Once you've followed the installation instructions and successfully set up the project on your local machine, you're ready to run the tests and explore the project. Here's a guide to help you get started:
 
-#### Running the Tests:
+#### Tests execution:
 
 The test suites can be executed using the Pytest command. Open a terminal/command prompt, navigate to the project directory, and run the following command:
 
@@ -165,7 +170,8 @@ You can change the test data by modifying the 'test_data.py' or 'excel_data.py' 
 
 The project is structured to facilitate easy understanding and modification:
 
-+ The 'test' package contains the test suites. You can explore these to understand how the tests are structured and how different web elements are interacted with.
-+ The 'page_objects' package contains files with page objects for the tests following the Page Object Model approach. These page objects abstract the way the tests interact with the web pages.
 + The 'data' package contains test data files, showcasing different approaches to handling test data.
-+ The 'utility' package contains utility scripts ('assert_functions.py' and 'reusable_functions.py'), which are used across the project to avoid code duplication and improve readability and maintainability.
++ The 'page_objects' package contains files with page objects for the tests following the Page Object Model approach. These page objects abstract the way the tests interact with the web pages.
++ The 'tests' package contains the test suites. You can explore these to understand how the tests are structured and how different web elements are interacted with.
++ The 'report_logs' package contains .log and .html reports for test suites, as well as .png screenshots captured when an error occurred.
++ The 'utilities' package contains utility scripts ('assert_functions.py' and 'reusable_functions.py'), which are used across the project to avoid code duplication and improve readability and maintainability.
