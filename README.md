@@ -62,7 +62,7 @@ This project utilizes a combination of modern technologies and methodologies in 
 ## Installation Guide
 To run this test automation project on your local machine, you need to follow these steps:
 
-#### Prerequisites:
+#### Prerequisites
 
 Ensure you have the following software installed on your machine:
 
@@ -78,7 +78,7 @@ Ensure you have the following software installed on your machine:
 
   + Visual Studio Code: Download and install from code.visualstudio.com
 
-#### Dependencies:
+#### Dependencies
 
 This project has a few dependencies which can be installed via pip:
 
@@ -93,7 +93,7 @@ To install these, run the following command in your terminal/command prompt:
 ***pip install selenium pytest openpyxl***
 
 
-#### Getting the Project:
+#### Getting the Project
 
 Open a terminal/command prompt, navigate to the directory where you want to clone this project.
 
@@ -104,7 +104,7 @@ Clone the repository by running the following command:
 _Replace "YourGitHubUsername" with your actual GitHub username._
 
 
-#### Running the Project:
+#### Running the Project
 
 Once the project is cloned, navigate to the project directory (WebInteractionDemoQA) in your terminal/command prompt and run the pytest command to start the tests:
 
@@ -123,7 +123,7 @@ For any issues encountered during the installation or running of the project, pl
 ## Usage Guide
 Once you've followed the installation instructions and successfully set up the project on your local machine, you're ready to run the tests and explore the project. Here's a guide to help you get started:
 
-#### Tests execution:
+#### Tests execution
 
 The test suites can be executed using the Pytest command. Open a terminal/command prompt, navigate to the project directory, and run the following command:
 
@@ -135,7 +135,7 @@ You can run specific test suites by specifying the path to the suite, as in the 
 
 _Replace "test_suite_001.py" with the name of the test suite you want to run._
 
-#### Key-Driven Testing:
+#### Key-Driven Testing
 
 This project includes an example of key (or mark)-driven testing using pytest marks. Each test function within a test suite is marked with a pytest mark, allowing for tests to be easily grouped and executed together. This feature is showcased for illustrative purposes and to demonstrate the capability to implement such a testing strategy.
 
@@ -155,7 +155,7 @@ For example:
 
 _Both commands will have the same result if the mark matches all tests within the indicated file._
 
- #### Generation of HTML reports:
+ #### Generation of HTML reports
 
 The project also supports generation of detailed HTML reports for each test suite execution. 
 
@@ -164,7 +164,7 @@ To create a report, use the following command:
 ***py.test test_package/classic_tests/test_suite_001.py --html=report.html --self-contained-html -v***
 Replace "test_suite_001.py" with the name of the test suite for which to generate a report, and "report.html" with a desired name for the report file. The -v flag is for verbosity, providing detailed output in the terminal.
 
-#### Analyzing the Results:
+#### Analyzing the Results
 
 The results of each test suite execution are automatically recorded in the "logfile.log" file, located in either the 'tests\page_objects_model_tests' or 'tests\classic_tests' directories, depending on the tests run. This log file, created upon the first run, serves as a consolidated repository of subsequent logs unless it is renamed or relocated. It offers detailed information about each test suite, including info on passed and failed tests, as well as any errors or exceptions encountered. For a more interactive and comprehensive view of test results, an HTML report can be generated and viewed in your preferred web browser.
 
@@ -172,7 +172,7 @@ The results of each test suite execution are automatically recorded in the "logf
 
 You can change the test data by modifying the 'test_data.py' or 'excel_data.py' files in the 'data' package, or the 'test_data_excel.xlsx' Excel spreadsheet. Please ensure that the data format is maintained to avoid errors.
 
-#### Exploring the Code:
+#### Exploring the Code
 
 The project is structured to facilitate easy understanding and modification:
 
@@ -183,7 +183,7 @@ The project is structured to facilitate easy understanding and modification:
 + The 'utilities' package contains utility scripts ('assert_functions.py' and 'reusable_functions.py'), which are used across the project to avoid code duplication and improve readability and maintainability.
 
 ## Project description
-### Structure:
+### Structure
 **WebInteractionDemoQA**
   + [data (Package)](#data-package)
     + excel_data.py
@@ -206,11 +206,11 @@ The project is structured to facilitate easy understanding and modification:
     + assert_functions.py
     + reusable_functions.py
     + 
-### Inter-Page Interactions and Class Inheritance:
+### Inter-Page Interactions and Class Inheritance
 ![image](https://github.com/Borovi4ok/Web-Elements-Interaction/assets/116018918/48c58405-ce16-4a34-b650-30ed243aeb9f)
 
-#### Interaction Flow 1: Conftest.py, Assertions, ReusableFunctions, and Test Suites
-**Technical Description**: The interaction starts with the conftest.py file, which orchestrates the setup and teardown procedures for the project. Here, a pytest fixture is utilized to initialize the WebDriver instance scoped at the class level. This WebDriver instance, commonly referred to as 'driver', is essential for managing browser interactions during the tests.
+**Interaction Flow 1: Conftest.py, Assertions, ReusableFunctions, and Test Suites**
+***Technical Description***: The interaction starts with the conftest.py file, which orchestrates the setup and teardown procedures for the project. Here, a pytest fixture is utilized to initialize the WebDriver instance scoped at the class level. This WebDriver instance, commonly referred to as 'driver', is essential for managing browser interactions during the tests.
 
 The 'driver' is shared across the project via the usefixtures decorator, which passes the instance to the Assertions and ReusableFunctions classes. Both of these utility classes have direct access to the WebDriver instance, providing reusable assertions and functions for the test suites.
 
@@ -218,33 +218,33 @@ The test suites, on the other hand, inherit from Assertions and ReusableFunction
 
 Additionally, the conftest.py file introduces other fixtures like '***urls***' and '***action_chains***' which are centrally defined for project-wide usage. The 'urls' fixture provides a dictionary containing the URLs to be used in the tests. Each test suite, in its first test function, obtains the 'urls' instance as an argument, using the .get() method to fetch the respective URL from the dictionary for navigating to the appropriate webpage.
 
-**Summary**: This interaction flow exemplifies efficient setup and sharing of a WebDriver instance, in addition to other important fixtures like 'urls' and 'action_chains', through the use of pytest's setup, teardown, and usefixtures facilities. It showcases code reusability and systematic session management through effective use of fixtures and class inheritance. Furthermore, it illustrates the integration of utility classes and PageObjects within the test suites, contributing to a flexible and maintainable testing framework. The design also highlights the ability to manage web navigation dynamically via the centrally managed 'urls' fixture, further enhancing the maintainability of the tests.
+***Summary***: This interaction flow exemplifies efficient setup and sharing of a WebDriver instance, in addition to other important fixtures like 'urls' and 'action_chains', through the use of pytest's setup, teardown, and usefixtures facilities. It showcases code reusability and systematic session management through effective use of fixtures and class inheritance. Furthermore, it illustrates the integration of utility classes and PageObjects within the test suites, contributing to a flexible and maintainable testing framework. The design also highlights the ability to manage web navigation dynamically via the centrally managed 'urls' fixture, further enhancing the maintainability of the tests.
 
-#### Interaction Flow 2: Test Suites and Page Object Model (POM)
-**Technical Description**: In the test suites, POM classes are initialized with the WebDriver instance from the setup fixture. This allows the suite to perform actions on the web application by interacting with the web elements encapsulated in the page objects. Each test case uses these page objects to simulate user behavior.
+**Interaction Flow 2: Test Suites and Page Object Model (POM)**
+***Technical Description***: In the test suites, POM classes are initialized with the WebDriver instance from the setup fixture. This allows the suite to perform actions on the web application by interacting with the web elements encapsulated in the page objects. Each test case uses these page objects to simulate user behavior.
 
-**Summary**: This flow emphasizes the implementation of the Page Object Model, showcasing encapsulation and abstraction techniques for enhancing readability and maintainability of test cases.
+***Summary***: This flow emphasizes the implementation of the Page Object Model, showcasing encapsulation and abstraction techniques for enhancing readability and maintainability of test cases.
 
-#### Interaction Flow 3: Test Suites, Assertions, and ReusableFunctions
-**Technical Description**: Each test suite has a test class which inherits properties from the Assertions and ReusableFunctions classes. This enables the test methods to use utility functions and assertion methods provided by these classes by simply calling 'self'. The driver from setup is passed to the test class indirectly through inheritance.
+**Interaction Flow 3: Test Suites, Assertions, and ReusableFunctions**
+***Technical Description***: Each test suite has a test class which inherits properties from the Assertions and ReusableFunctions classes. This enables the test methods to use utility functions and assertion methods provided by these classes by simply calling 'self'. The driver from setup is passed to the test class indirectly through inheritance.
 
-**Summary**: This interaction demonstrates effective use of class inheritance to reduce code duplication and enhance code organization.
+***Summary***: This interaction demonstrates effective use of class inheritance to reduce code duplication and enhance code organization.
 
-#### Interaction Flow 4: Test Suites and TestData
-**Technical Description**: In the classic model, test functions directly initiate data variables by importing the TestData class. For POM and data-driven tests, test functions fetch test data from an Excel spreadsheet via a custom get_excel_data function, which retrieves the required data based on the provided row and column names.
+**Interaction Flow 4: Test Suites and TestData**
+***Technical Description***: In the classic model, test functions directly initiate data variables by importing the TestData class. For POM and data-driven tests, test functions fetch test data from an Excel spreadsheet via a custom get_excel_data function, which retrieves the required data based on the provided row and column names.
 
-**Summary**: This interaction shows the ability to manage and manipulate test data using both static and dynamic methods, which are essential for a dynamic testing environment.
+***Summary***: This interaction shows the ability to manage and manipulate test data using both static and dynamic methods, which are essential for a dynamic testing environment.
 
 
-### Data package:
+### Data package
 The data package serves as a cornerstone for a well-organized Python/Selenium/Pytest-based project, providing the necessary resources and data that enable efficient testing. It exemplifies effective use of Python in managing and manipulating data, including image files and Excel spreadsheets, for web interaction testing through Selenium.
 
 This project module ensures comprehensive and efficient testing of the web interface. It also highlights the importance of effective data management and the use of data-driven testing in enhancing the overall reliability and efficiency of test automation.
 
-#### sampleFile.jpeg: 
+***sampleFile.jpeg:***
 This image file is used in upload/download tests, testing file handling capabilities of the web interface.
 
-#### test_data.py: 
+***test_data.py:***
 This Python file contains the TestData class, a highly organized source of test data, for different test suites in the first part of the project (classic model). It showcases my ability to create well-structured and reusable data as well as proficiently to handle different data types such as strings, lists, and dictionaries, thereby allowing a wide range of test scenarios. These are the key methods:
 + data_text_box is used to test a text-box submit form.
 + data_add_row_table and data_edit_row_table are used to validate operations in web tables such as adding, editing, and deleting rows.
@@ -255,15 +255,15 @@ This Python file contains the TestData class, a highly organized source of test 
   
 This class demonstrates how various data-sets can be derived from multiple data types, including string, list, and dictionary, which are all quintessential in designing effective test cases. 
 
-#### excel_data.py: 
+***excel_data.py:***
 This Python file features data for the second part of the project - the Page Object Model (POM) and data-driven testing. It demonstrates my proficiency in leveraging Excel data in a Selenium-based project and implementing pytest fixtures. The key methods include:
 + get_excel_row_data(test_case_name): A function that extracts data from an Excel spreadsheet based on the test_case_name. It utilizes the openpyxl library to interact with Excel documents, showing my ability to incorporate third-party libraries for specific requirements.
 + get_excel_data(): A pytest fixture which acts as a wrapper for get_excel_row_data(), enabling to fetch particular data values for test cases in a seamless manner.
 
-#### test_data_excel.xlsx: 
+***test_data_excel.xlsx:***
 This Excel spreadsheet contains the test data for the POM and data-driven tests, underscoring the ability to effectively handle and use complex data sets for test automation.
 
-### Page objects package:
+### Page objects package
 The page_objects package is a pivotal component of the project, showcasing proficiency in utilizing Python, Selenium, and Pytest to significantly streamline the testing process. The Page Object Model (POM) is utilized in the second part of this project, encompassing test suites TS_011 through TS_029. This implementation showcases a modern approach to web automation testing, enhancing test maintainability and reducing code duplication by providing a clear separation between test code and page specific code.
 
 The package comprises multiple files/classes, with each one representing a unique page of the web application. These classes are furnished with defined methods and properties facilitating interactions with the web elements on their respective pages. This architecture helps segregate the test code from the navigation code, which in turn lends clarity and simplicity to the test scripts.
@@ -280,7 +280,7 @@ Furthermore, the use of '***argument unpacking***' (*) when locating web element
 
 In summary, the page_objects package attests to the ability to design efficient, maintainable, and robust web automation testing solutions. Its structure facilitates reliable verification of a web application's behavior, accommodating changes in the UI without necessitating significant changes to the test scripts. This skill set is vital in a rapidly evolving web development landscape where applications are perpetually updated and refined.
 
-### Report logs package:
+### Report logs package
 The reports_logs package in this Selenium/Python automation project is a testament to the project's thorough documentation and rigorous error management approach. This package contains a collection of 29 logs (***.log***) for each test suite and case as well as error-screenshots (***.png***), and a few examples of HTML-based logs (***.html***), providing clear visibility into the testing process and results.
 
 Each '.log' file documents the detailed step-by-step process and status of each test case (test function) for each test suite. The logs are meticulously maintained using Python's logging and inspect libraries. The logging level is set to INFO, ensuring every critical step is recorded. The assertive nature of the logs showcases the project's robust validation mechanisms and the commitment to transparency and accuracy.
@@ -291,8 +291,8 @@ Further supplementing the package are the HTML-based logs that offer an easily n
 
 In conclusion, the reports_logs package is a crucial asset to the project, offering insights into test execution, aiding in error identification, and facilitating efficient debugging. The use of advanced logging and error capturing mechanisms reaffirms the project's commitment to quality assurance, and shows my skills in implementing such sophisticated features.
 
-### Tests package:
-#### Classic tests package - overview:
+### Tests package
+#### Classic tests package - overview
 The presented test suites, ranging from TS_001 to TS_010, employ a traditional approach in carrying out functional testing of a web application. They interact seamlessly with distinct components of the project and utilize a TestData file to effectively ensure reliable, maintainable, and scalable tests.
 
 Comprising of ten comprehensive test suites, this section has been meticulously crafted to cover an extensive range of application features. Each suite validates specific functionalities:
@@ -316,9 +316,9 @@ The suites also illustrate a familiarity with PyTest, as they skillfully incorpo
 
 In summary, these test suites encapsulate a broad and deep competency in Selenium, Python, and PyTest, and showcase proficiency in software testing. Leveraging these skills, a robust and efficient testing framework was built that offers extensive coverage and high reusability, thus positioning this project as a reliable and skilled professional work sample in the field.
 
-#### Classic tests package - detailed description:
+#### Classic tests package - detailed description
 
-**Test Suite 1: TestElementsPage**
+***Test Suite 1: TestElementsPage***
 The first test suite, TestElementsPage, exemplifies the ability to interact with various web elements, showcasing the skill of verifying the presence and correctness of different parts of a web page. There are five individual tests in this suite:
 
 
@@ -333,7 +333,7 @@ Furthermore, the application of pytest's marker feature (@pytest.mark.elements) 
 
 Finally, the use of custom methods from Assertions and ReusableFunctions classes reflects an understanding of code reusability and maintainability, highlighting an efficient coding approach for large-scale projects.
 
-**Test Suite 2: TestTextBox**
+***Test Suite 2: TestTextBox***
 The TestTextBox suite, demonstrates the ability to automate interactions with a text-box submission form, a common component across many web applications. The suite contains two main test functions:
 + test_url_box - Validates the successful navigation to the designated "text_box" URL, ensuring the page loads as expected.
 + test_submission_form - Automates the filling out of a submission form, validates the submitted data, and verifies the accuracy of the output message.
@@ -344,7 +344,7 @@ The test also exhibits the capability to handle JavaScript commands via the Sele
 
 Lastly, the test function verifies that the data in the output message matches the submitted data. This involves transforming a list of web elements into a list of text strings, and checking each string against the corresponding expected value. This operation reflects familiarity with list comprehension, a popular and powerful feature in Python, and also showcases the skill to perform detailed assertions based on the application's response.
 
-**Test Suite 3: TestCheckBox**
+***Test Suite 3: TestCheckBox***
 The TestCheckBox suite reflects the capability to automate and validate interaction with checkboxes, an essential element in web forms. This suite includes seven test functions showcasing various automation strategies:
 
 + test_url_checkbox - Confirms the successful navigation to the specific "checkbox" URL, ensuring the correct page is loaded.
@@ -359,7 +359,7 @@ The suite incorporates various Selenium WebDriver features such as finding eleme
 
 Overall, this suite highlights the ability to handle complex scenarios in web automation and the proficient usage of a variety of Python and Selenium WebDriver's functionalities.
 
-**Test Suite 4: TestRadioButtons**
+***Test Suite 4: TestRadioButtons***
 The TestRadioButtons suite demonstrates my ability to automate and validate interaction with radio buttons, a crucial part of many web forms. It consists of two test functions:
 
 + test_url_radio_button - Confirms successful navigation to the specific "radio_button" URL, ensuring the correct page is loaded.
@@ -375,7 +375,7 @@ Finally, if the last radio button is clicked, the test function reselects the fi
 
 In summary, this test suite illustrates the capacity to interact with a variety of web elements, manipulate element attributes, perform detailed checks, and create detailed logging for test execution.
 
-**Test Suite 5: TestWebTable**
+***Test Suite 5: TestWebTable***
 The TestWebTable suite, shows the ability to interact with web tables - a critical element in many web applications. The suite is made up of six test functions:
 
 + test_url_webtable - Validates successful navigation to the "webtables" URL to ensure the correct page is loaded.
@@ -387,7 +387,7 @@ The TestWebTable suite, shows the ability to interact with web tables - a critic
    
 Overall, this test suite showcases the capability to interact with complex web elements like tables, manipulate the data within them, and validate their functionalities like sorting, searching, adding, editing, and deleting rows. This level of detail and comprehensive testing is crucial for web applications where data manipulation and presentation in table form are key functionalities.
 
-**Test Suite 6: TestActionClick**
+***Test Suite 6: TestActionClick***
 This test suite, displays the ability to interact with various types of clickable elements on a webpage by using different types of clicks.
 
 Here are the tests included in the TestActionClick suite:
@@ -399,7 +399,7 @@ Here are the tests included in the TestActionClick suite:
   
 These tests highlights proficiency in simulating different user interactions (double-click, right-click, and standard click) and validating the system's response. This suite would be crucial for testing any web application where different types of click actions lead to different outcomes.
 
-**Test Suite 7: TestLinks**
+***Test Suite 7: TestLinks***
 This test suite is designed to test different types of links, specifically dynamic links and API call links, which can be vital for a web application to function correctly.
 
 The tests included in the TestLinks suite are:
@@ -410,7 +410,7 @@ The tests included in the TestLinks suite are:
    
 The tests in this suite are designed to ensure that all the links on a page work correctly. Any application that heavily relies on links to perform its functionality would greatly benefit from these types of tests.
 
-**Test Suite 8: TestBrokenLinksImages**
+***Test Suite 8: TestBrokenLinksImages***
 This test suite is designed to test both broken and functioning links and images. Web applications often include images and links, making it crucial to test whether these components are correctly displayed or direct to the right URL.
 
 The tests included in the TestBrokenLinksImages suite are:
@@ -423,7 +423,7 @@ The tests included in the TestBrokenLinksImages suite are:
 
 Overall, this test suite ensures that all images and links on a webpage behave as expected, which is crucial for a good user experience. If a website includes numerous images and links, these tests can help quickly identify any issues.
 
-**Test Suite 9: TestFileTransfer**
+***Test Suite 9: TestFileTransfer***
 This test suite is designed to verify the file upload and download functionalities of a website, which are important features for any web application that handles file transfer operations.
 
 The tests included in the TestFileTransfer suite are:
@@ -434,7 +434,7 @@ The tests included in the TestFileTransfer suite are:
    
 In conclusion, this test suite checks the crucial file transfer functionalities of a website, ensuring that users can successfully upload and download files. It also verifies the proper functioning of associated success messages and file path displays.
 
-**Test Suite 10: TestDynamicProperties**
+***Test Suite 10: TestDynamicProperties***
 This test suite is designed to validate various dynamic properties that might be present on a web page. Dynamic properties can change in response to certain user actions or after a certain amount of time has passed, and validating these is crucial to ensure that the website's dynamic features function as intended.
 
 The tests included in the TestDynamicProperties suite are:
@@ -447,7 +447,7 @@ The tests included in the TestDynamicProperties suite are:
    
 In conclusion, this test suite helps ensure that the website's dynamic features, such as time-based functionalities and dynamic CSS updates, work as expected.
 
-#### Page object model tests package - overview:
+#### Page object model tests package - overview
 The second part of the project, titled "page_objects_model_tests", houses a selection of test suites that concentrate on a plethora of web elements and functionalities, all while integrating the Page Object Model (POM) design pattern. The POM design pattern integration ensures a tidy and manageable structure to the test suites, enhancing the overall readability and maintenance of the codebase.
 
 The novelty of this part is the incorporation of Excel data-driven tests, an approach that markedly increases test flexibility and scalability. This approach allows for dynamic retrieval of test data from external sources like Excel sheets, contributing to the adaptability and scalability of the test suites. As a result, alterations in test data can be accommodated effortlessly without needing to modify the test code.
@@ -462,124 +462,124 @@ In terms of test design and approach, explicit waits have been incorporated for 
 
 Overall, this part, along with the entire project, exemplifies the skill set and proficiency in Python programming, Selenium WebDriver, JavaScript (when needed), and the Pytest framework. It underscores the ability to handle various web elements, employ the POM design pattern, incorporate data-driven testing, and utilize a wide range of capabilities offered by the used technologies.
 
-#### Page object model tests package - detailed description:
-**Test Suite 11: TestForms**
+#### Page object model tests package - detailed description
+***Test Suite 11: TestForms***
 + This suite tests form input functionality using the POM design pattern.
 + It covers a variety of web elements such as input fields, radio buttons, checkboxes, dropdowns, and more.
 + Python, Selenium, and Pytest are used to automate the testing process.
 + Key features include Pytest fixtures for test environment setup, the implementation of POM for code organization, and the utilization of Selenium WebDriver for interacting with web elements.
 + The suite ensures input validation, error handling, form submission, and data persistence.
 
-**Test Suite 12: Test Browser Windows**
+***Test Suite 12: Test Browser Windows***
 + This suite focuses on testing browser windows and tabs.
 + It interacts with URLs, success messages, and performs actions such as window switching and closing.
 + Key features include utilizing driver.close() to close extra tabs/windows, using driver.switch_to.window() to switch focus, and integration of data-driven testing with Excel sheets.
 + The suite ensures correct handling of multi-tab and multi-window scenarios.
 
-**Test Suite 13: Test Alerts**
+***Test Suite 13: Test Alerts***
 + This suite automates testing of different types of alerts.
 + It deals with alert buttons, text, and result messages.
 + Key features include explicit waits for alert presence, switching focus with driver.switch_to.alert, and integration of data-driven testing with Excel sheets.
 + The suite showcases proficiency in handling alerts during automated testing.
 
-**Test Suite 14: Test Frames**
+***Test Suite 14: Test Frames***
 + This suite focuses on interacting with iframes on a web page.
 + It utilizes driver.switch_to.frame() to switch focus and validate expected text within iframes.
 + Key features include switching focus with driver.switch_to.default_content(), validation with assertion methods, and integration of data-driven testing with Excel sheets.
 + The suite demonstrates the ability to handle nested frames and ensure correct content display.
 
-**Test Suite 15: Test Nested Frames**
+***Test Suite 15: Test Nested Frames***
 + This suite tests nested frames on a web page.
 + It handles parent and child frames and verifies content display.
 + Key features include switching focus between frames, validating expected text, and integration of data-driven testing with Excel sheets.
 + The suite demonstrates proficiency in handling nested frames and interacting with their contents.
 
-**Test Suite 16: Test Modal Dialogs**
+***Test Suite 16: Test Modal Dialogs***
 + This suite automates testing of modal dialogs on a web page.
 + It interacts with dialog buttons, text, and close buttons.
 + Key features include utilizing driver.window_handles, explicit waits, and integration of data-driven testing with Excel sheets.
 + The suite ensures correct behavior and information display in modal dialogs.
 
-**Test Suite 17: Test Accordion**
+***Test Suite 17: Test Accordion***
 + This suite tests an accordion component on a web page.
 + It focuses on expanding/collapsing accordion cards and verifying content visibility.
 + Key features include iterating over cards, verifying toggle indicators, custom waits, and retrieval of data from Excel sheets.
 + The suite demonstrates proficiency in handling dynamic web elements and creating custom waits.
 
-**Test Suite 18: Test Auto Complete**
+***Test Suite 18: Test Auto Complete***
 + This suite tests auto-complete fields on a web page.
 + It interacts with color selection and verifies selected colors.
 + Key features include data retrieval and splitting, handling auto-complete options, and assertion-based verification.
 + The suite demonstrates the ability to handle dynamic input, interact with web elements, and perform data-driven testing.
 
-**Test Suite 19: Test Date Picker**
+***Test Suite 19: Test Date Picker***
 + This suite focuses on testing a date picker component.
 + It covers selecting a date, year, month, day, time, and verifying selected values.
 + Key features include splitting testing year, formatting dates, dynamic year creation, and parsing date and time.
 + The suite demonstrates proficiency in handling date-related scenarios and complex parsing operations.
 
-**Test Suite 20: Test Slider**
+***Test Suite 20: Test Slider***
 + This suite tests a slider component on a web page.
 + It verifies the original position of the slider thumb and sliding action.
 + Key features include retrieving slider values, performing drag-and-drop actions, and tolerance-based verification.
 + The suite demonstrates the ability to interact with and verify properties of a slider component.
 
-**Test Suite 21: Test ProgressBar**
+***Test Suite 21: Test ProgressBar***
 + This suite tests the functionality of a progress bar on a web page.
 + It validates the initial position, progress, completion, and reset functionality of the progress bar.
 + Key features include retrieving progress information, dynamic waiting, and verifying progress bar width.
 + The suite showcases proficiency in interacting with dynamic web elements and validating progress bar behavior.
 
-**Test Suite 22: Test Tabs**
+***Test Suite 22: Test Tabs***
 + This suite focuses on testing tab navigation on a web page.
 + It verifies the associated content for each tab and handles disabled tabs.
 + Key features include retrieving tabs and content, iterating through tabs, and generating informative log messages.
 + The suite demonstrates proficiency in handling tab interactions and logging informative messages.
 
-**Test Suite 23: Test Tooltips**
+***Test Suite 23: Test Tooltips***
 + This suite tests tooltips functionality on a web page.
 + It interacts with various elements and verifies tooltip visibility and text.
 + Key features include using actions fixture for mouse hover actions, explicit waits, and element verification.
 + The suite demonstrates proficiency in performing mouse hover actions and verifying tooltip behavior.
 
-**Test Suite 24: Test Menu**
+***Test Suite 24: Test Menu***
 + This suite tests the functionality of a menu component on a web page.
 + It interacts with main menu items, sub-items, and dropdown menus.
 + Key features include retrieving menu items, performing mouse hover actions, and verifying visibility and enabled status.
 + The suite showcases proficiency in handling menu interactions and validating menu behavior.
 
-**Test Suite 25: Test Select Menu**
+***Test Suite 25: Test Select Menu***
 + This suite tests select menu functionality using the POM design pattern.
 + It interacts with different types of select menus and verifies their behavior.
 + Key features include retrieving select menu elements, selecting and deleting items, and verifying selected items.
 + The suite demonstrates proficiency in handling select menus and performing data-driven testing.
 
-**Test Suite 26: Test Sortable**
+***Test Suite 26: Test Sortable***
 + This suite tests sortable elements, including a list and a grid.
 + It performs drag and drop actions and verifies the resulting order.
 + Key features include retrieving sortable elements, dragging and dropping items, and verifying order.
 + The suite showcases proficiency in handling sortable elements and ensuring correct order.
 
-**Test Suite 27: Test Selectable**
+***Test Suite 27: Test Selectable***
 + This suite tests selectable elements, including a list and a grid.
 + It verifies the selection status of elements based on presence/absence of selection indicators.
 + Key features include retrieving selectable elements, simulating selection, and verifying selection status.
 + The suite demonstrates proficiency in handling selectable elements and verifying selection behavior.
 
-**Test Suite 28: Test Resizable**
+***Test Suite 28: Test Resizable***
 + This suite tests resizable elements, including a restricted box and an unrestricted box.
 + It interacts with the elements and validates their sizes.
 + Key features include retrieving resizable elements, obtaining size and CSS property values, and resizing using JavaScript.
 + The suite demonstrates proficiency in handling resizable elements and validating sizes.
 
-**Test Suite 29: Test Droppable**
+***Test Suite 29: Test Droppable***
 + This suite tests droppable elements, covering various scenarios.
 + It performs drag and drop actions and verifies the expected behavior.
 + Key features include retrieving droppable elements, drag and drop actions, and verifying behavior.
 + The suite demonstrates versatility in handling different droppable scenarios and accurately verifying behavior.
 
 
-#### conftest.py file:
+#### conftest.py file
 The conftest.py file is an integral part of a Python-based Selenium automation testing project. It handles the configuration of the Selenium WebDriver and outlines various Pytest fixtures, which serve to set up conditions needed for running different tests.
 
 At the start, it imports the required modules, such as Pytest, Selenium WebDriver, and its associated options, WebDriver Manager, and the project-specific test data. This operation indicates an understanding of the libraries needed for Selenium automation testing with Python and pytest.
@@ -594,4 +594,4 @@ The **pytest_runtest_makereport** function showcases advanced pytest capabilitie
 
 In short, the **conftest.py** file is indicative of solid skills in Python, Selenium, and Pytest. It demonstrates the capability to control browser settings, reutilize test components, customize test reports, and manage various test outcomes. This file's structure and contents contribute significantly to the effectiveness and efficiency of the automation testing project.
 
-### Utilities package:
+### Utilities package
