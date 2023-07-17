@@ -410,7 +410,7 @@ This test suite is designed to test different types of links, specifically dynam
 The tests included in the TestLinks suite are:
 
 + test_url_links - This test checks that the correct URL is accessed (with "links" in the URL), which is necessary to set the stage for the following tests.
-+ test_dynamic_link - In this test, performed: click on a dynamic link, switch to the new window that it opens, and verification that the correct URL ("https://demoqa.com/") is displayed. Then, script switches back to the original window. This verifies the correct behavior of the dynamic link.
++ test_dynamic_link - In this test, performed: click on a dynamic link, switch to the new window that it opens, and verification that the correct URL "https://demoqa.com/" is displayed. Then, script switches back to the original window. This verifies the correct behavior of the dynamic link.
 + test_api_call_link - This test covers multiple links that send an API call when clicked. For each link, the test scrolls to the link, clicks it, and waits until the status code is updated. It verifies the status code matches the expected value. If the status code doesn't change after 5 retries (with 0.5-second waits between each), the loop breaks to prevent an infinite loop. This test verifies the API calls made by the links return the correct status codes.
    
 The tests in this suite are designed to ensure that all the links on a page work correctly. Any application that heavily relies on links to perform its functionality would greatly benefit from these types of tests.
