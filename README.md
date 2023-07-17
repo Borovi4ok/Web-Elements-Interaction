@@ -178,23 +178,23 @@ The project is structured to facilitate easy understanding and modification:
 ## Project description
 ### Structure:
 **WebInteractionDemoQA**
-  + data (Package)
+  + [data (Package)](#data-package)
     + excel_data.py
     + sampleFile.jpeg
     + test_data.py
     + test_data_excel.xlsx
-  + page_objects (Package)
+  + [page_objects (Package)](#page-objects-package)
     + objects.py (Contains object files for each test suite in the Page Object Model (POM) - TS_011-TS_029)
-  + report_logs (Package)
+  + [report_logs (Package)](#page-objects-package)
     + log.log (For each test suite - TS_001 - TS_029)
     + screenshots.png (Captures error scenarios)
     + log.html (Contains examples for some test suites)
-  + tests (Package)
-    + classic_tests (Sub-Package)
+  + [tests (Package)](#page-objects-package)
+    + [classic_tests (Sub-Package)](#classic-tests-package-overview)
       + test.py (Contains test suites TS_001-TS_010)
-    + page_objects_model_tests (Sub-Package)
+    + [page_objects_model_tests (Sub-Package)](#page-object-model-tests-package-overview)
       + test.py (Contains test suites TS_011-TS_029)
-    + conftest.py (Setup file)
+    + [conftest.py (Setup file)](#conftest.py-file)
   + utilities (Package)
     + assert_functions.py
     + reusable_functions.py
