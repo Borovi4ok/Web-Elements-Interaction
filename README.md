@@ -15,6 +15,13 @@
   + [Modifying Test Data](#modifying-test-data)
   + [Exploring the Code](#exploring-the-code)
 + [Project description](#project-description)
+  + [Structure](#structure)
+  + [Inter-Page Interactions and Class Inheritance](#inter-Page-interactions-and-class-inheritance)
+  + [Data package](#data-package)
+  + [Page objects package](#page-objects-package)
+  + [Report logs package](#report-logs-package)
+  + [Tests package](#tests-package)
+  + [Utilities package](#utilities-package)
 
 Contact information
 
@@ -194,8 +201,8 @@ The project is structured to facilitate easy understanding and modification:
       + test.py (Contains test suites TS_001-TS_010)
     + page_objects_model_tests (Sub-Package)
       + test.py (Contains test suites TS_011-TS_029)
-    + [conftest.py (Setup file)](#conftest.py-file)
-  + utilities (Package)
+    + conftest.py (Setup file)
+  + [utilities (Package)](#utilities-ackage)
     + assert_functions.py
     + reusable_functions.py
     + 
@@ -587,4 +594,4 @@ The **pytest_runtest_makereport** function showcases advanced pytest capabilitie
 
 In short, the **conftest.py** file is indicative of solid skills in Python, Selenium, and Pytest. It demonstrates the capability to control browser settings, reutilize test components, customize test reports, and manage various test outcomes. This file's structure and contents contribute significantly to the effectiveness and efficiency of the automation testing project.
 
-
+### Utilities package:
