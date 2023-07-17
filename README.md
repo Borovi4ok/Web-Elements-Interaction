@@ -21,6 +21,11 @@
   + [Page objects package](#page-objects-package)
   + [Report logs package](#report-logs-package)
   + [Tests package](#tests-package)
+    + [Classic tests package - overview](#classic-tests-package---overview)
+    + [Classic tests package - detailed description](#classic-tests-package---detailed-description)
+    + [Page object model tests package - overview](#page-object-model-tests-package---overview)
+    + [Page object model tests package - detailed description](#page-objec- model-tests-package---detailed description)
+    + [conftest.py file](#conftestpy-file)
   + [Utilities package](#utilities-package)
 
 Contact information
@@ -197,15 +202,15 @@ The project is structured to facilitate easy understanding and modification:
     + screenshots.png (Captures error scenarios)
     + log.html (Contains examples for some test suites)
   + [tests (Package)](#tests-package)
-    + classic_tests (Sub-Package)
+    + [classic_tests (Sub-Package)](#classic-tests-package---overview)
       + test.py (Contains test suites TS_001-TS_010)
-    + page_objects_model_tests (Sub-Package)
+    + [page_objects_model_tests (Sub-Package)](#page-object-model-tests-package---overview)
       + test.py (Contains test suites TS_011-TS_029)
-    + conftest.py (Setup file)
+    + [conftest.py (Setup file)](#conftestpy-file)
   + [utilities (Package)](#utilities-ackage)
-    + assert_functions.py
-    + reusable_functions.py
-    + 
+    + [assert_functions.py](#assert-functions-file)
+    + [reusable_functions.py](#reusable-functions_file)
+      
 ### Inter-Page Interactions and Class Inheritance
 ![image](https://github.com/Borovi4ok/Web-Elements-Interaction/assets/116018918/48c58405-ce16-4a34-b650-30ed243aeb9f)
 
