@@ -24,7 +24,7 @@
     + [Classic tests package - overview](#classic-tests-package---overview)
     + [Classic tests package - detailed description](#classic-tests-package---detailed-description)
     + [Page object model tests package - overview](#page-object-model-tests-package---overview)
-    + [Page object model tests package - detailed description](#page-objec-model-tests-package---detailed description)
+    + [Page object model tests package - detailed description](#page-objec-model-tests-package---detailed-description)
     + [conftest.py file](#conftestpy-file)
   + [Utilities package](#utilities-package)
 
