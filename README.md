@@ -27,6 +27,8 @@
     + [Page object model tests package - detailed description](#page-object-model-tests-package---detailed-description)
     + [conftest.py file](#conftestpy-file)
   + [Utilities package](#utilities-package)
+    + [Assert functions file](#assert-functions-file)
+    + [Reusable functions file](#reusable-functions-file)
 
 Contact information
 
@@ -600,3 +602,43 @@ The **pytest_runtest_makereport** function showcases advanced pytest capabilitie
 In short, the **conftest.py** file is indicative of solid skills in Python, Selenium, and Pytest. It demonstrates the capability to control browser settings, reutilize test components, customize test reports, and manage various test outcomes. This file's structure and contents contribute significantly to the effectiveness and efficiency of the automation testing project.
 
 ### Utilities package
+The utilities package in this Selenium/Python automation project is a combination of two crucial modules: assert_functions.py and reusable_functions.py.
+
+The assert_functions.py file acts as a comprehensive toolkit for automating assertions during tests. It encapsulates a rich set of custom assertion methods for verifying URL changes, checking element presence, and asserting equalities and inequalities, even accommodating more complex tasks like verifying values with a tolerance level. Enhanced with integrated logging, this script plays a pivotal role in maintaining the accuracy and reliability of the automation tests.
+
+On the other hand, reusable_functions.py houses a variety of reusable functions designed to perform commonly-used operations across testing scripts. It aids in data extraction, form interactions, text extraction, random number generation, JavaScript execution, explicit waits, and custom logging, thereby reducing code redundancy and enhancing readability and maintainability.
+
+Overall, the utilities package effectively streamlines the automated testing process by providing a set of high-quality, reusable functions and assertions. This package is indispensable for improving the efficiency, coverage, and robustness of the project's test suite.
+
+#### Assert functions file
+The assert_functions.py script is a fundamental part of this Selenium/Python automation project. This file significantly simplifies the task of making assertions during tests, by providing a comprehensive set of custom assertion methods that can be utilized in numerous scenarios. These methods take care of everything from logging assertions, checking for element presence, and verifying equalities and inequalities, to more complex tasks like verifying URL changes or comparing values with a tolerance level. This script is a powerful toolkit for validation and ensuring the accuracy of the automation tests.
+
+In detail:
++ Logging is incorporated into each of the present methods to provide detailed information during test execution. This helps track the flow of the tests and provides clear context when tests fail.
++ A significant number of custom assertion methods are implemented. Each of these methods accepts parameters, performs a specific assertion, and logs a message with the result of the assertion. They also handle exceptions and clearly log when an assertion fails.
++ To handle web element assertions, the script utilizes Selenium's capabilities. For example, the verify_is_displayed() and verify_is_not_displayed() methods check if a specific web element is visible on the page or not. Similarly, the verify_is_selected() method checks if a specific web element is selected or not. These methods provide a robust way to validate the state of web elements.
++ verify_text_present() and verify_text_not_present() these two methods ensure that specific text content appears or does not appear on the page, respectively. This scenario involves managing timing issues inherent to web applications (asynchronous loading and rendering), which is addressed by implementing explicit waits.
++ verify_file_downloaded() method checks whether a file has been successfully downloaded to a specified location, an essential feature for any web application dealing with file handling.
++ The assert_url_change() function is another complex but necessary feature. It confirms the URL changes post user action, effectively validating navigational operations and ensuring the application's flow is as expected. By combining Selenium's wait functions with Pytest's assertion capabilities, it offers an elegant solution to handle this scenario.
++ The verify_element_color() is a solution that showcases my ability to integrate Selenium's methods in unique ways to check the color of a web element. This function plays an integral role in testing visual aspects of the application, which impacts user experience.
++ A noteworthy aspect is using of the Python inspect module to capture the calling function's name, providing further context in the logs.
++ The more advanced custom assertion methods such as verify_url_change and verify_with_tolerance designed to handle more complex testing scenarios. The verify_with_tolerance() function uses Python's math.isclose() function to validate floating-point numbers with a certain degree of tolerance. This is a useful method when dealing with real numbers, which may have precision issues due to how they are represented in computers and their implemented CSS properties.
+  
+Overall, the assert_functions.py file is an example of how to create a comprehensive, reusable utility for use in a Selenium WebDriver testing framework that cover diverse scenarios. These implementations are essential for effective automated testing, which has a direct positive impact on the product's reliability and quality.
+
+#### Reusable functions file
+The reusable_functions.py script is another key part of this Selenium/Python automation project. It encompasses various reusable functions used across the testing scripts to perform commonly used operations, thus reducing code redundancy and enhancing readability and maintainability.
+
+Key features of the reusable_functions.py script:
++ Data Manipulation and Extraction: The get_column_data method is used for the extraction of column data from web tables. It also allows for the flexibility of returning the data as either integers or strings.
++ Form Interaction: The clear_and_fill_in method is a solution that handles interaction with forms, specifically clearing and inputting text into form fields.
++ Text Extraction: The extract_text_from_list method is another utility that's used to extract the text from a list of web elements.
++ Random Number Generation: The function get_random_number plays a crucial role as a utility that generates random numbers within a specified range. It is particularly beneficial when conducting tests on a multitude of similar web elements, ensuring wide-ranging test coverage. By leveraging this randomness, the test suite can verify the behavior of diverse web elements - be it grids, tables, rows, or otherwise - under various and unexpected situations. Consequently, this enhances both the depth and breadth of the test suite, ensuring a more robust evaluation of the system.
++ Element Matching: The select_match method highlights a method for matching web elements based on their text.
++ JavaScript Execution: The scroll_into_view method demonstrates the ability to execute JavaScript within Python/Selenium tests, specifically for scrolling a particular element into view. This is an essential technique when working with web applications that have elements loaded dynamically or upon scrolling.
++ Explicit Waits: The explicitly_wait method represents an advanced understanding of Selenium's explicit wait capabilities. It includes dynamic retrieval of expected conditions from the Selenium library based on the input parameters and handles waiting for both elements and conditions. It further enhances this functionality by incorporating logging for each condition's status.
++ Custom Logging: The log_print method showcases the ability to write flexible logging functions. It uses Python's inspect module to capture the name of the calling function and the getattr function to dynamically retrieve the correct logging method.
++ Lambda and Custom Waits: The attribute_contains and wait_for_text_change methods demonstrate a more advanced creating custom wait conditions using lambda functions.
+  
+Overall, the reusable_functions.py script is an example of a utility module that encapsulates commonly used functions and techniques in a Selenium/Python automation project. It covers areas such as element interaction, data extraction, waiting for conditions, and logging. 
+
