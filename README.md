@@ -404,7 +404,7 @@ Here are the tests included in the TestActionClick suite:
 + test_action_right_click - utilize the context_click() method from the action_chains class to simulate a right-click on a button. After the action is executed, the verification of the correct success message is shown.
 + test_action_dynamic_click - This test demonstrates the ability to locate a button using XPath and click on it dynamically. Once the click action is performed, test confirms that the appropriate success message is shown.
   
-These tests highlights proficiency in simulating different user interactions (double-click, right-click, and standard click) and validating the system's response. This suite would be crucial for testing any web application where different types of click actions lead to different outcomes.
+These tests highlight proficiency in simulating different user interactions (double-click, right-click, and standard click) and validating the system's response. This suite would be crucial for testing any web application where different types of click actions lead to different outcomes.
 
 ***Test Suite 7: TestLinks***
 This test suite is designed to test different types of links, specifically dynamic links and API call links, which can be vital for a web application to function correctly.
@@ -640,4 +640,4 @@ Key features of the reusable_functions.py script:
 + Custom Logging: The log_print method showcases the ability to write flexible logging functions. It uses Python's inspect module to capture the name of the calling function and the getattr function to dynamically retrieve the correct logging method.
 + Lambda and Custom Waits: The attribute_contains and wait_for_text_change methods demonstrate a more advanced creating custom wait conditions using lambda functions.
   
-Overall, the reusable_functions.py script is an example of a utility module that encapsulates commonly used functions and techniques in a Selenium/Python automation project. It covers areas such as element interaction, data extraction, waiting for conditions, and logging. 
+Overall, the reusable_functions.py script is an example of a utility module that encapsulates commonly used functions and techniques in a Selenium/Python automation project. It covers areas such as element interaction, data extraction, waiting for conditions, and logging.
