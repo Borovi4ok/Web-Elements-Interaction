@@ -641,4 +641,3 @@ Key features of the reusable_functions.py script:
 + Lambda and Custom Waits: The attribute_contains and wait_for_text_change methods demonstrate a more advanced creating custom wait conditions using lambda functions.
   
 Overall, the reusable_functions.py script is an example of a utility module that encapsulates commonly used functions and techniques in a Selenium/Python automation project. It covers areas such as element interaction, data extraction, waiting for conditions, and logging. 
-
