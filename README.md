@@ -639,5 +639,5 @@ Key features of the reusable_functions.py script:
 + Explicit Waits: The explicitly_wait method represents an advanced understanding of Selenium's explicit wait capabilities. It includes dynamic retrieval of expected conditions from the Selenium library based on the input parameters and handles waiting for both elements and conditions. It further enhances this functionality by incorporating logging for each condition's status.
 + Custom Logging: The log_print method showcases the ability to write flexible logging functions. It uses Python's inspect module to capture the name of the calling function and the getattr function to dynamically retrieve the correct logging method.
 + Lambda and Custom Waits: The attribute_contains and wait_for_text_change methods demonstrate a more advanced creating custom wait conditions using lambda functions.
-  
+
 Overall, the reusable_functions.py script is an example of a utility module that encapsulates commonly used functions and techniques in a Selenium/Python automation project. It covers areas such as element interaction, data extraction, waiting for conditions, and logging.
