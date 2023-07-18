@@ -644,9 +644,13 @@ Overall, the reusable_functions.py script is an example of a utility module that
 For any questions, suggestions, or discussions about this project, feel free to contact me. Here are the best ways to reach me:
 
 Name: Roman Bohodist
+
 Email: romandevelop2304@gmail.com
+
 LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/roman-bohodist-3667a5242/)
+
 GitHub: [GitHub Profile](https://github.com/Borovi4ok)
+
 If you'd like to contribute to the project, please submit a pull request through GitHub.
 
 Disclaimer: This is a portfolio project, and while I welcome constructive feedback and discussions, please understand that I may not always be able to provide immediate responses.
